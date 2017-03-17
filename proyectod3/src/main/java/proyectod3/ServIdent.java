@@ -23,12 +23,12 @@ public class ServIdent extends HttpServlet {
 		servidor= request.getParameter("servidor");
 		usuario = request.getParameter("nombre");
 		contrasena = request.getParameter("contrasena");
-//		try {
-//			Stardog st= new Stardog();
-//			st.executeQuery("Select * where{?s ?o ?p}");
-//		} catch (RepositoryException e) {
-//			e.printStackTrace();
-//		}
+		try {
+			Stardog st= new Stardog();
+			st.executeQuery("Select * where{?s ?o ?p}");
+		} catch (RepositoryException e) {
+			e.printStackTrace();
+		}
 //		GraphDB gdb= new GraphDB();
 //		gdb.executeQuery("Select * where {?s ?o ?p}");
 		response.sendRedirect("index.jsp");

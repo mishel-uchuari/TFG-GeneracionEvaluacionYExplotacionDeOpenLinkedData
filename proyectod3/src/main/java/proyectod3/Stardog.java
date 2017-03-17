@@ -4,6 +4,7 @@ package proyectod3;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.util.Iterator;
 
 import org.openrdf.model.Model;
@@ -70,8 +71,13 @@ public class Stardog {
 			OutputStream os = new FileOutputStream(file);
 			TupleQuery query = repository.prepareTupleQuery(QueryLanguage.SPARQL, pQuery);
 			TupleQueryResult results = query.evaluate();
-			QueryResultIO.write(results, TupleQueryResultFormat.JSON, os);
+			PrintWriter pw = new PrintWriter(os);
+			while(results.hasNext()){
+				pw.println(results.next());
+			}
+			//QueryResultIO.write(results, TupleQueryResultFormat.JSON, os);
 			results.close();
+			pw.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
