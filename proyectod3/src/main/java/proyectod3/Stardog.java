@@ -12,6 +12,7 @@ import org.openrdf.model.Statement;
 import org.openrdf.query.QueryLanguage;
 import org.openrdf.query.TupleQuery;
 import org.openrdf.query.TupleQueryResult;
+import org.openrdf.query.TupleQueryResultHandler;
 import org.openrdf.query.resultio.QueryResultIO;
 import org.openrdf.query.resultio.TupleQueryResultFormat;
 import org.openrdf.repository.Repository;
@@ -30,8 +31,8 @@ public class Stardog {
 	 * 
 	 */
 	public Stardog() throws RepositoryException {
-		serverURL = "http://opendata.eurohelp.es:5820";
-		Repository stardogRepository = new StardogRepository(ConnectionConfiguration.to("test").server(serverURL).credentials("admin", "admin"));
+		serverURL = "http://ckan.eurohelp.es:5820";
+		Repository stardogRepository = new StardogRepository(ConnectionConfiguration.to("LODgenAppTurismo").server(serverURL).credentials("admin", "ctxakurra"));
 		stardogRepository.initialize();
 		repository = stardogRepository.getConnection();
 	}
@@ -71,13 +72,16 @@ public class Stardog {
 			OutputStream os = new FileOutputStream(file);
 			TupleQuery query = repository.prepareTupleQuery(QueryLanguage.SPARQL, pQuery);
 			TupleQueryResult results = query.evaluate();
-			PrintWriter pw = new PrintWriter(os);
-			while(results.hasNext()){
-				pw.println(results.next());
-			}
+			QueryResultIO.writeTuple(results, TupleQueryResultFormat.JSON, os);
+			//QueryResultIO.write(results, TupleQueryResultFormat.JSON, os);
+		//	results.close();
+//			PrintWriter pw = new PrintWriter(os);
+//			while(results.hasNext()){
+//				pw.println(results.next());
+//			}
 			//QueryResultIO.write(results, TupleQueryResultFormat.JSON, os);
 			results.close();
-			pw.close();
+			//pw.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

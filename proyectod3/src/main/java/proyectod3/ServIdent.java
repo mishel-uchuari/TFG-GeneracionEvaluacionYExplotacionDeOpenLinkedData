@@ -31,7 +31,7 @@ public class ServIdent extends HttpServlet {
 		}
 //		GraphDB gdb= new GraphDB();
 //		gdb.executeQuery("Select * where {?s ?o ?p}");
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("NewFile.jsp");
 	}
 
 	/**

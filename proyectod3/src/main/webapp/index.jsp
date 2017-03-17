@@ -13,7 +13,6 @@
           <button class="btn" type="button" onclick="exec_offline()">Use cache</button>
           <button class="btn" type="button" onclick="toggle()">Hide<i id="button" class="icon-chevron-up"></i></button>
           	<input type="submit" value="Identificarse">
-          
         </div>
       </form>
       <textarea id="sparql" class="span9" rows=15>
