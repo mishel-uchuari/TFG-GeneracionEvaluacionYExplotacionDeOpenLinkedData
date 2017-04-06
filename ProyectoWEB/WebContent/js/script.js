@@ -177,10 +177,10 @@ function perri(json, config){
        .attr({"x":function(d){return d.x;},
               "y":function(d){return d.y;},
               "class":"nodelabel",
-              'font-size':15,
-              "stroke":"black"})
+              'font-size':10,
+              })
        .text(function(d){return d.key;});
-
+    //se refiere las aristas del grafo
     var edgepaths = svg.selectAll(".edgepath")
         .data(graph.links)
         .enter()
@@ -209,7 +209,7 @@ function perri(json, config){
     edgelabels.append('textPath')
         .attr('xlink:href',function(d,i) {return '#edgepath'+i})
         .style("pointer-events", "none")
-        .text(function(d,i){return d.source.value });
+        .text(function(d,i){return d.target.value});
     
     
 
