@@ -80,17 +80,17 @@
                                                   (Integer/parseInt x))))
 
 ;Pone etiqueta de idioma a un determinado literal (espanol)
-(defn langSp
+(defn idiomaEs
   [st]
     (io/s st :es))
 
 ;Pone etiqueta de idioma a un determinado literal (ingles)
-(defn langEn
+(defn idiomaIn
   [st]
     (io/s st :en))
 
 ;Pone etiqueta de idioma a un determinado literal (euskera)
-(defn langVq
+(defn idiomaEusk
   [st]
     (io/s st :eu))
 

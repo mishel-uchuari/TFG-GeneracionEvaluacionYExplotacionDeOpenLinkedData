@@ -14,7 +14,7 @@
 		<artifactId>clojure-maven-plugin</artifactId>
 		<version>1.3.10</version>
 		<configuration>
-		<sourceDirectories>src/main/clojure/AvenidaGasteiz/vitoriagasteiz.clj</sourceDirectories>
+		<sourceDirectories>src/main/clojure/pipelines/CalidadDelAire.clj</sourceDirectories>
 		<testScript>src/test/clojure/test.clj</testScript>
 		</configuration>
 		<extensions>true</extensions>
