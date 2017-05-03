@@ -4,10 +4,11 @@
     [grafter.rdf.protocols :as pr]
    ;[grafter.rdf :refer [prefixer s]] 
     [grafter.rdf.io :as io ]
+    [transformaciones.TransformacionGeneral :refer :all]
     [grafter.rdf :refer [prefixer]]
     ))
 
-(def base-graph (prefixer (http://opendata.euskadi.eus/catalogo/id/calidad-aire-en-euskadi-2017)))
+(def base-graph (prefixer "http://opendata.euskadi.eus/catalogo/id/calidad-aire-en-euskadi-2017"))
 (def base-medicion (prefixer "http://opendata.euskadi.eus/def/medio-ambiente/medicion/"))
 (def base-elemento (prefixer "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/"))
 (def base-estacion (prefixer "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/AV-GASTEIZ-"))
@@ -44,7 +45,7 @@
 ;Uris Elementos Generales
 (def uriCOgen (prefixer (base-medicion CO)))
 (def uriCO8hAirQualitygen (prefixer (base-medicion CO8hAQ)))
-(def uriCO8hgen (prefixer (base-medicion CO8hmax)))
+(def uriCO8hmaxgen (prefixer (base-medicion CO8hmax)))
 (def uriNOgen (prefixer (base-medicion NO)))
 (def uriNO2gen (prefixer (base-medicion NO2)))
 (def uriNO2maxgen (prefixer (base-medicion NO2max)))
@@ -122,7 +123,7 @@
 ;Comentarios Elementos
 
 (def CO-coment (idiomaEs (str "The value of " CO " in a determinate date")))
-(def CO8hAQ-coment (idiomaEs (str CO8h " Air Quality in a determinate date")))
+(def CO8hAQ-coment (idiomaEs (str CO8hmax " Air Quality in a determinate date")))
 (def CO8hmax-coment (idiomaEs (str "The value of " CO8hmax " in a determinate date")))
 (def NO-coment (idiomaEs (str "The value of " NO " in a determinate date")))
 (def NO2-coment (idiomaEs (str "The value of " NO2 " in a determinate date")))

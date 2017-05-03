@@ -34,8 +34,6 @@
     observation-Ortoxileno observation-PM10 observation-PM10AQ 
     observation-PM25 observation-PM25AQ observation-Tolueno
     observation-ICAAQ Date dateValue
-    
-  
      ;Datos String
     CO-8h-Air-Quality varCO8AQ-CAST ;Version Castellano-Euskera
     NO2-Air-Quality  varNO2AQ-CAST  ;Version Castellano-Euskera
@@ -44,7 +42,7 @@
     ICA-estacion varICAE-CAST ;Version Castellano-Euskera
     ;Datos numéricos
     Benceno CO CO-8hmax NO NO2 NOX Ortoxileno                
-    PM10 PM25 Tolueno NO2max Etilbenceno
+    PM10 PM25 Tolueno NO2max Etilbenceno uriEstacion
     ]
              :as row }]
            ;Nombre de la 
@@ -56,7 +54,7 @@
                  [prefix-localizacion estacionVitoria]
                  [base-medicion uriCOgen]
                  [base-medicion uriCO8hAirQualitygen]
-                 [base-medicion uriCO8hgen]
+                 [base-medicion uriCO8hmaxgen]
                  [base-medicion uriNOgen]
                  [base-medicion uriNO2gen]
                  [base-medicion uriNO2maxgen]
@@ -192,7 +190,7 @@
  (derive-column :varNO2AQ-CAST "NO2-Air-Quality")
  (derive-column :varPM10AQ-CAST "PM10-Air-Quality")
  (derive-column :varPM25AQ-CAST "PM25-Air-Quality")
- (derive-column :varICAE-CAST "ICA-Estacion")
+ (derive-column :varICAE-CAST "ICA-estacion")
       (mapc {"Date" organizeDate
           "Benceno" parseValue
           "CO" parseValue
@@ -223,9 +221,9 @@
           :varPM25AQ-CAST makeSplitCast
           "Tolueno" parseValue
           ;Version euskera
-          "ICA-estacion" makeSplitCast
+          "ICA-estacion" makeSplitEusk  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
           ;Version castellano
-          :varICAE-CAST makeSplitEusk
+          :varICAE-CAST makeSplitCast
           })
   (derive-column :uriEstacion [:Date] prefixEstacion)
   (derive-column :dateValue [:Date] dateTime)

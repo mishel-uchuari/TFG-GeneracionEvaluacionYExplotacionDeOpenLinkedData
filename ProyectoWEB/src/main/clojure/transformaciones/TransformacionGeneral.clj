@@ -4,7 +4,7 @@
     [grafter.rdf.protocols :as pr]
     [grafter.rdf :refer [prefixer s]] 
     [grafter.rdf.io :as io ]
-    [AvenidaGasteiz.prefix :refer [base-graph base-domain base-medicion base-estacion]]
+    
     )
 )
 
@@ -103,12 +103,3 @@
 
 ;(defn ->s [st] (if st (s st) ""))
 
-;Cambia comas para formato adecuado del CSV
-(defn removeComma[data]
-(def s (slurp data))
-(def sr (clojure.string/replace s "," "."))
-(spit data sr)
-(def s (slurp data))
-(def sj (clojure.string/replace s ";" ","))
-(spit data sj)
-)
