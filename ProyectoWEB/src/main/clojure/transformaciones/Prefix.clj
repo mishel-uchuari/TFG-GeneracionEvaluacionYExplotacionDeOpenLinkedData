@@ -11,3 +11,9 @@
 (def prefix-micragramo-mcubico  "http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3")
 (def prefix-medicion  "http://opendata.euskadi.eus/def/medio-ambiente/medicion")
 (def estacionVitoria "http://opendata.euskadi.eus/recurso/medio-ambiente/estacion/C040")
+
+;Prefijos comunes
+(def base-graph (prefixer "http://opendata.euskadi.eus/catalogo/id/"))
+(def base-medicion  (prefixer "http://opendata.euskadi.eus/def/medio-ambiente/medicion/"))
+(def base-elemento (prefixer "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/"))
+

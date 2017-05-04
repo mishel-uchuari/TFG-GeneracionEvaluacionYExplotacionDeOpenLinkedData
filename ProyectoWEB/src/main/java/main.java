@@ -15,28 +15,27 @@ import clojure.lang.LazySeq;
 import clojure.lang.RT;
 
 public class main {
-public static void main(String[] args) throws IOException, RDFHandlerException {
-	RT.loadResourceScript("pipelines/CalidadDelAire.clj");
-	//LazySeq lazy = (LazySeq) RT.var("AvenidaGasteiz.sensorLocation", "convertidor").invoke("./data/estaciones.csv");
-	LazySeq lazy = (LazySeq) RT.var("pipelines.CalidadDelAire", "convertidor").invoke("./DatosIniciales/AV._GASTEIZ.csv");
-	Iterator ite = lazy.iterator();
-	Model model = new LinkedHashModel();
-	while (ite.hasNext()) {
-		model.add((Statement) ite.next());
-//		 Statement cn=(Statement) RT.var("grafterdatacube.core",
-//		 "convertidor").invoke(ite.next());0
-//		 System.out.println(cn.getClass());
+	public static void main(String[] args) throws IOException, RDFHandlerException {
+		RT.loadResourceScript("pipelines/CalidadDelAire.clj");
+		 LazySeq lazy = (LazySeq) RT.var("pipelines.CalidadDelAire",
+		 "convertidor").invoke("./DatosIniciales/AV._GASTEIZ.csv");
+		 Iterator ite = lazy.iterator();
+		 Model model = new LinkedHashModel();
+		 while (ite.hasNext()) {
+		 model.add((Statement) ite.next());
+		// Statement cn=(Statement) RT.var("grafterdatacube.core",
+		// "convertidor").invoke(ite.next());0
+		// System.out.println(cn.getClass());
+		 }
+		 /**
+		 * Código para sacar el archivo RDF/XML-TURTLE
+		 *
+		 */
+		 File file = new File("./DatosConvertidos/archivoRDFAvenidaGasteiz.rdf");
+		 FileOutputStream fileTurtle = new FileOutputStream(file);
+		 Rio.write(model, fileTurtle, RDFFormat.NQUADS);
+		 // PruebasModel pM = new PruebasModel(model);
+		 // pM.testModel();
+		 // System.out.println(pM.testModel2());
 	}
-	/**
-	 * Código para sacar el archivo RDF/XML-TURTLE
-	 * 
-	 */
-	//File file = new File("./data/archivoRDFDatosLocalizacionEstaciones.rdf");
-	File file = new File("./DatosConvertidos/archivoRDFAvenidaGasteiz.rdf");
-	FileOutputStream fileTurtle = new FileOutputStream(file);
-	Rio.write(model, fileTurtle, RDFFormat.NQUADS);
-	// PruebasModel pM = new PruebasModel(model);
-	// pM.testModel();
-	// System.out.println(pM.testModel2());
-}
 }

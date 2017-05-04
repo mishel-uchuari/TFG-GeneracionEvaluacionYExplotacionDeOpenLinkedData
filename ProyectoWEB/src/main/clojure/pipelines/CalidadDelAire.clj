@@ -226,7 +226,7 @@
           :varICAE-CAST makeSplitCast
           })
   (derive-column :uriEstacion [:Date] prefixEstacion)
-  (derive-column :dateValue [:Date] dateTime)
+  (derive-column :dateValue [:Date] etiquetaFecha)
   (derive-column :observation-CO [:Date] base-CO)
   (derive-column :observation-CO8hmax [:Date] base-CO8hmax)
   (derive-column :observation-C8hAQ [:Date] base-CO8hAQ)

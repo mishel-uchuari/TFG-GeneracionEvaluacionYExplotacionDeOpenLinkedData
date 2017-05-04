@@ -39,13 +39,22 @@
       (apply str (interpose "-" [y m d] )))))
 
 ;Crea xsd:DateTime a partir de una fecha determinada
-(defn dateTime
-  [date]
-  (when  (seq date)
-    (let [d date
+(defn etiquetaFecha
+  [pFecha]
+  (when  (seq pFecha)
+    (let [d pFecha
           ;dt (str d "T" time)
           ]
       (read-string (str "#inst " (pr-str d))))))
+
+(defn etiquetaFechaHora
+  "Given a date dd/mm/yyyy and a time hh:mm
+  returns a XSDDatetime"
+  [pFecha pHora]
+  (when (and (seq pFecha) (seq pHora))
+    (let [d (etiquetaFecha pFecha)
+          dt (str d "T" pHora)]
+      (read-string (str "#inst " (pr-str dt))))))
 
 ;Elimina simbolos "innecesarios"
 (defn removeSymbols

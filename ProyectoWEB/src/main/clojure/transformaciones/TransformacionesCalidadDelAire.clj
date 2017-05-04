@@ -5,15 +5,12 @@
    ;[grafter.rdf :refer [prefixer s]] 
     [grafter.rdf.io :as io ]
     [transformaciones.TransformacionGeneral :refer :all]
+    [transformaciones.Prefix :refer :all]      
     [grafter.rdf :refer [prefixer]]
     ))
 
-(def base-graph (prefixer "http://opendata.euskadi.eus/catalogo/id/"))
-(def base-medicion  (prefixer "http://opendata.euskadi.eus/def/medio-ambiente/medicion/"))
-(def base-elemento (prefixer "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/"))
+
 (def base-estacion (prefixer  "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/AV-GASTEIZ"))
-
-
 
 ;Elementos
 (def CO "CO")
