@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Iterator;
 
 import org.openrdf.model.Model;
+import org.openrdf.model.Statement;
 import org.openrdf.model.impl.LinkedHashModel;
 import org.openrdf.rio.RDFFormat;
 import org.openrdf.rio.RDFHandlerException;
@@ -20,13 +21,12 @@ public static void main(String[] args) throws IOException, RDFHandlerException {
 	LazySeq lazy = (LazySeq) RT.var("pipelines.CalidadDelAire", "convertidor").invoke("./DatosIniciales/AV._GASTEIZ.csv");
 	Iterator ite = lazy.iterator();
 	Model model = new LinkedHashModel();
-////	while (ite.hasNext()) {
-////		model.add((Statement) ite.next());
-////		// System.out.println(ite.next().getClass());
-////		// Statement cn=(Statement) RT.var("grafterdatacube.core",
-////		// "convertidor").invoke(ite.next());
-////		// System.out.println(cn.getClass());
-////	}
+	while (ite.hasNext()) {
+		model.add((Statement) ite.next());
+//		 Statement cn=(Statement) RT.var("grafterdatacube.core",
+//		 "convertidor").invoke(ite.next());0
+//		 System.out.println(cn.getClass());
+	}
 	/**
 	 * Código para sacar el archivo RDF/XML-TURTLE
 	 * 

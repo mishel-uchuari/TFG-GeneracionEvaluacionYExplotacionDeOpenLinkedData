@@ -98,8 +98,8 @@
 (defn missing-data-filter [triples]
                                (remove #(nil? (pr/object %)) triples))
 
-(defn base-date[a] 
-    (str "/" a ))
+(defn formatoFecha[pFecha] 
+    (str/replace pFecha #"/" "-"))
 
 ;(defn ->s [st] (if st (s st) ""))
 

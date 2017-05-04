@@ -8,17 +8,11 @@
     [grafter.rdf :refer [prefixer]]
     ))
 
-(def base-graph (prefixer "http://opendata.euskadi.eus/catalogo/id/calidad-aire-en-euskadi-2017"))
-(def base-medicion (prefixer "http://opendata.euskadi.eus/def/medio-ambiente/medicion/"))
+(def base-graph (prefixer "http://opendata.euskadi.eus/catalogo/id/"))
+(def base-medicion  (prefixer "http://opendata.euskadi.eus/def/medio-ambiente/medicion/"))
 (def base-elemento (prefixer "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/"))
-(def base-estacion (prefixer "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/AV-GASTEIZ-"))
-;Prefijos
-(def prefix-fecha (prefixer "http://purl.org/dc/terms/date"))
-(def prefix-localizacion (prefixer "http://www.w3.org/2003/01/geo/wgs84_pos#location"))
-(def prefix-unidad-medida (prefixer "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"))
-(def prefix-valor-observacion (prefixer "http://purl.org/linked-data/sdmx/2009/measure#obsValue"))
-(def prefix-miligramo-mcubico (prefixer "http://dd.eionet.europa.eu/vocabulary/uom/concentration/mg.m-3"))
-(def prefix-micragramo-mcubico (prefixer "http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3"))
+(def base-estacion (prefixer  "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/AV-GASTEIZ"))
+
 
 
 ;Elementos
@@ -43,30 +37,29 @@
 
 
 ;Uris Elementos Generales
-(def uriCOgen (prefixer (base-medicion CO)))
-(def uriCO8hAirQualitygen (prefixer (base-medicion CO8hAQ)))
-(def uriCO8hmaxgen (prefixer (base-medicion CO8hmax)))
-(def uriNOgen (prefixer (base-medicion NO)))
-(def uriNO2gen (prefixer (base-medicion NO2)))
-(def uriNO2maxgen (prefixer (base-medicion NO2max)))
-(def uriNO2AirQualitygen (prefixer (base-medicion NO2AQ)))
-(def uriNOXgen (prefixer (base-medicion NOX)))
-(def uriPM10gen (prefixer (base-medicion PM10)))
-(def uriPM10AirQualitygen (prefixer (base-medicion PM10AQ)))
-(def uriPM25gen (prefixer (base-medicion PM25)))
-(def uriPM25AirQualitygen (prefixer (base-medicion PM25AQ)))
-(def uriICAEstaciongen (prefixer (base-medicion ICAAQ)))
-(def uriOrtoxilenogen (prefixer (base-medicion Ortoxileno)))
-(def uriToluenogen (prefixer (base-medicion Tolueno)))
-(def uriBencenogen (prefixer (base-medicion Benceno)))
-(def uriEtilbencenogen (prefixer (base-medicion Benceno)))
+(def uriCOgen  (base-medicion CO)) 
+(def uriCO8hAirQualitygen (base-medicion CO8hAQ))
+(def uriCO8hmaxgen  (base-medicion CO8hmax))
+(def uriNOgen  (base-medicion NO))
+(def uriNO2gen  (base-medicion NO2))
+(def uriNO2maxgen  (base-medicion NO2max))
+(def uriNO2AirQualitygen  (base-medicion NO2AQ))
+(def uriNOXgen (base-medicion NOX))
+(def uriPM10gen  (base-medicion PM10))
+(def uriPM10AirQualitygen (base-medicion PM10AQ))
+(def uriPM25gen  (base-medicion PM25))
+(def uriPM25AirQualitygen (base-medicion PM25AQ))
+(def uriICAEstaciongen (base-medicion ICAAQ))
+(def uriOrtoxilenogen  (base-medicion Ortoxileno))
+(def uriToluenogen (base-medicion Tolueno))
+(def uriBencenogen (base-medicion Benceno))
+(def uriEtilbencenogen  (base-medicion Etilbenceno))
 
 
 ;Uri estacion
 (defn prefixEstacion[pFecha]
-  (base-elemento
-    (str pFecha)))
-(def estacionVitoria (prefixer "http://opendata.euskadi.eus/recurso/medio-ambiente/estacion/C040"))
+  (base-estacion
+    (str "-" (formatoFecha pFecha))))
 ;Uris Especificas a la medicion 
 (defn base-CO[pFecha]
   (base-elemento
