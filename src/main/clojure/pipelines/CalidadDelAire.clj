@@ -18,7 +18,7 @@
             [grafter.pipeline :refer [declare-pipeline]]
             [grafter.vocabularies.rdf :refer :all]
             [transformaciones.TransformacionesCalidadDelAire :refer :all]      
-            [transformaciones.Prefix :refer :all]      
+            [transformaciones.Predicados :refer :all]      
             [transformaciones.TransformacionGeneral :refer :all]
             [clojure.string :as str]
               )
@@ -52,23 +52,23 @@
                  [rdf:a qb:Observation]
                  [prefix-fecha dateValue]
                  [prefix-localizacion estacionVitoria]
-                 [prefix-medicion uriCOgen]
-                 [prefix-medicion uriCO8hAirQualitygen]
-                 [prefix-medicion uriCO8hmaxgen]
-                 [prefix-medicion uriNOgen]
-                 [prefix-medicion uriNO2gen]
-                 [prefix-medicion uriNO2maxgen]
-                 [prefix-medicion uriNO2AirQualitygen]
-                 [prefix-medicion uriNOXgen]
-                 [prefix-medicion uriPM10gen]
-                 [prefix-medicion uriPM10AirQualitygen]
-                 [prefix-medicion uriPM25gen]
-                 [prefix-medicion uriPM25AirQualitygen]
-                 [prefix-medicion uriICAEstaciongen]
-                 [prefix-medicion uriOrtoxilenogen]
-                 [prefix-medicion uriEtilbencenogen]
-                 [prefix-medicion uriToluenogen]
-                 [prefix-medicion uriBencenogen]
+                 [base-medicion-recurso uriCOgen]
+                 [base-medicion-recurso uriCO8hAirQualitygen]
+                 [base-medicion-recurso uriCO8hmaxgen]
+                 [base-medicion-recurso uriNOgen]
+                 [base-medicion-recurso uriNO2gen]
+                 [base-medicion-recurso uriNO2maxgen]
+                 [base-medicion-recurso uriNO2AirQualitygen]
+                 [base-medicion-recurso uriNOXgen]
+                 [base-medicion-recurso uriPM10gen]
+                 [base-medicion-recurso uriPM10AirQualitygen]
+                 [base-medicion-recurso uriPM25gen]
+                 [base-medicion-recurso uriPM25AirQualitygen]
+                 [base-medicion-recurso uriICAEstaciongen]
+                 [base-medicion-recurso uriOrtoxilenogen]
+                 [base-medicion-recurso uriEtilbencenogen]
+                 [base-medicion-recurso uriToluenogen]
+                 [base-medicion-recurso uriBencenogen]
                  ]          
                 [observation-CO
                  [rdf:a uriCOgen]
@@ -179,7 +179,7 @@
   (-> (read-dataset data-file)
     ;Creamos el dataset de los datos a cargar
  (make-dataset ["Date" "Benceno" "CO" "CO-8hmax" "CO-8h-Air-Quality"
-                 "Etilbenceno" "NO" "NO2" "NO2max" 
+                "Etilbenceno" "NO" "NO2" "NO2max" 
                 "NO2-Air-Quality" "NOX" "Ortoxileno"
                 "PM10" "PM10-Air-Quality" "PM25"
                 "PM25-Air-Quality" "Tolueno" "ICA-estacion"])

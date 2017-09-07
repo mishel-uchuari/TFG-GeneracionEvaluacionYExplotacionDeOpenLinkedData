@@ -16,9 +16,9 @@ import clojure.lang.RT;
 
 public class main {
 	public static void main(String[] args) throws IOException, RDFHandlerException {
-		RT.loadResourceScript("pipelines/CalidadDelAire.clj");
-		 LazySeq lazy = (LazySeq) RT.var("pipelines.CalidadDelAire",
-		 "convertidor").invoke("./DatosIniciales/AV._GASTEIZ.csv");
+		RT.loadResourceScript("pipelines/RetribucionesNominativas.clj");
+		 LazySeq lazy = (LazySeq) RT.var("pipelines.RetribucionesNominativas",
+		 "convertidor").invoke("./DatosIniciales/retribuciones_nominativas.csv");
 		 Iterator ite = lazy.iterator();
 		 Model model = new LinkedHashModel();
 		 while (ite.hasNext()) {
@@ -29,9 +29,8 @@ public class main {
 		 }
 		 /**
 		 * Código para sacar el archivo RDF/XML-TURTLE
-		 *
 		 */
-		 File file = new File("./DatosConvertidos/archivoRDFAvenidaGasteiz.rdf");
+		 File file = new File("./DatosConvertidos/archivoRnominativas.rdf");
 		 FileOutputStream fileTurtle = new FileOutputStream(file);
 		 Rio.write(model, fileTurtle, RDFFormat.NQUADS);
 		 // PruebasModel pM = new PruebasModel(model);

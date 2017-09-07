@@ -4,7 +4,8 @@
     [grafter.rdf.protocols :as pr]
     [grafter.rdf :refer [prefixer s]] 
     [grafter.rdf.io :as io ]
-    
+    [transformaciones.TransformacionGeneral :refer :all]
+    [transformaciones.Predicados :refer :all]   
     )
 )
 
@@ -48,8 +49,6 @@
       (read-string (str "#inst " (pr-str d))))))
 
 (defn etiquetaFechaHora
-  "Given a date dd/mm/yyyy and a time hh:mm
-  returns a XSDDatetime"
   [pFecha pHora]
   (when (and (seq pFecha) (seq pHora))
     (let [d (etiquetaFecha pFecha)
@@ -107,8 +106,14 @@
 (defn missing-data-filter [triples]
                                (remove #(nil? (pr/object %)) triples))
 
-(defn formatoFecha[pFecha] 
-    (str/replace pFecha #"/" "-"))
+;(defn formatoFecha[pFecha] 
+;    (str/replace pFecha #"/" "-"))
 
-;(defn ->s [st] (if st (s st) ""))
 
+(defn commify [s]
+  (let [s (reverse s)]
+    (loop [[group remainder] (split-at 3 s)
+           result '()]
+      (if (empty? remainder)
+        (apply str (reverse (rest (concat result (list \.) group)))) ; rest to remove extraneous ,
+        (recur (split-at 3 remainder) (concat result (list \.) group)))) ))

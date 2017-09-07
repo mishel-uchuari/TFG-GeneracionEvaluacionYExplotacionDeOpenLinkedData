@@ -18,7 +18,7 @@
             [grafter.vocabularies.qb :refer :all]
             [grafter.pipeline :refer [declare-pipeline]]
             [grafter.vocabularies.rdf :refer :all]
-            [transformaciones.Prefix :refer :all]      
+            [transformaciones.Predicados :refer :all]      
             [transformaciones.TransformacionGeneral :refer :all]
             [clojure.string :as str]
               )
@@ -162,7 +162,7 @@
   [data-file]
   (-> (read-dataset data-file)
     ;Creamos el dataset de los datos a cargar
- (make-dataset ["Fecha" "Hora" "DirMedia" "Humedad620"
+ (make-dataset ["IdDia" "Fecha" "Hora" "DirMedia" "Humedad620"
                 "Irradia" "Presion" "SigDir" "SigVel" "TemAire"
                 "VelMax" "VelMedia"])
     ;Borra la primera fila correspondiente a los nombres de las columnas

@@ -5,7 +5,7 @@
    ;[grafter.rdf :refer [prefixer s]] 
     [grafter.rdf.io :as io ]
     [transformaciones.TransformacionGeneral :refer :all]
-    [transformaciones.Prefix :refer :all]      
+    [transformaciones.Predicados :refer :all]      
     [grafter.rdf :refer [prefixer]]
     ))
 
@@ -32,25 +32,24 @@
 (def Etilbenceno "Etilbenceno")
 
 
-
 ;Uris Elementos Generales
-(def uriCOgen  (base-medicion CO)) 
-(def uriCO8hAirQualitygen (base-medicion CO8hAQ))
-(def uriCO8hmaxgen  (base-medicion CO8hmax))
-(def uriNOgen  (base-medicion NO))
-(def uriNO2gen  (base-medicion NO2))
-(def uriNO2maxgen  (base-medicion NO2max))
-(def uriNO2AirQualitygen  (base-medicion NO2AQ))
-(def uriNOXgen (base-medicion NOX))
-(def uriPM10gen  (base-medicion PM10))
-(def uriPM10AirQualitygen (base-medicion PM10AQ))
-(def uriPM25gen  (base-medicion PM25))
-(def uriPM25AirQualitygen (base-medicion PM25AQ))
-(def uriICAEstaciongen (base-medicion ICAAQ))
-(def uriOrtoxilenogen  (base-medicion Ortoxileno))
-(def uriToluenogen (base-medicion Tolueno))
-(def uriBencenogen (base-medicion Benceno))
-(def uriEtilbencenogen  (base-medicion Etilbenceno))
+(def uriCOgen  (base-medicion-pred CO)) 
+(def uriCO8hAirQualitygen (base-medicion-pred CO8hAQ))
+(def uriCO8hmaxgen  (base-medicion-pred CO8hmax))
+(def uriNOgen  (base-medicion-pred NO))
+(def uriNO2gen  (base-medicion-pred NO2))
+(def uriNO2maxgen  (base-medicion-pred NO2max))
+(def uriNO2AirQualitygen  (base-medicion-pred NO2AQ))
+(def uriNOXgen (base-medicion-pred NOX))
+(def uriPM10gen  (base-medicion-pred PM10))
+(def uriPM10AirQualitygen (base-medicion-pred PM10AQ))
+(def uriPM25gen  (base-medicion-pred PM25))
+(def uriPM25AirQualitygen (base-medicion-pred PM25AQ))
+(def uriICAEstaciongen (base-medicion-pred ICAAQ))
+(def uriOrtoxilenogen  (base-medicion-pred Ortoxileno))
+(def uriToluenogen (base-medicion-pred Tolueno))
+(def uriBencenogen (base-medicion-pred Benceno))
+(def uriEtilbencenogen  (base-medicion-pred Etilbenceno))
 
 
 ;Uri estacion
@@ -112,20 +111,20 @@
 
 ;Comentarios Elementos
 
-(def CO-coment (idiomaEs (str "The value of " CO " in a determinate date")))
-(def CO8hAQ-coment (idiomaEs (str CO8hmax " Air Quality in a determinate date")))
-(def CO8hmax-coment (idiomaEs (str "The value of " CO8hmax " in a determinate date")))
-(def NO-coment (idiomaEs (str "The value of " NO " in a determinate date")))
-(def NO2-coment (idiomaEs (str "The value of " NO2 " in a determinate date")))
-(def NO2max-coment (idiomaEs (str "The value of " NO2max " in a determinate date")))
-(def NO2AQ-coment (idiomaEs (str NO2AQ " Air Quality in a determinate date")))
-(def NOX-coment (idiomaEs (str "The value of " NOX " in a determinate date")))
-(def PM10-coment (idiomaEs (str "The value of " PM10 " in a determinate date")))
-(def PM10AQ-coment (idiomaEs (str PM10AQ " Air Quality in a determinate date")))
-(def PM25-coment (idiomaEs (str "The value of " PM25 " in a determinate date")))
-(def PM25AQ-coment (idiomaEs (str PM25AQ " Air Quality in a determinate date")))
-(def ICAAQ-coment (idiomaEs (str ICAAQ " Air Quality in a determinate date")))
-(def Benceno-coment (idiomaEs (str "The value of " Benceno " in a determinate date")))
-(def Tolueno-coment (idiomaEs (str "The value of " Tolueno " in a determinate date")))
-(def Ortoxileno-coment (idiomaEs (str "The value of " Ortoxileno " in a determinate date")))
-(def Etilbenceno-coment (idiomaEs (str "The value of " Ortoxileno " in a determinate date")))
+(def CO-coment (idiomaEs (str "El valor de " CO " en una fecha determinada")))
+(def CO8hAQ-coment (idiomaEs (str CO8hmax " La calidad del aire en una fecha determinada")))
+(def CO8hmax-coment (idiomaEs (str "El valor de " CO8hmax " en una fecha determinada")))
+(def NO-coment (idiomaEs (str "El valor de " NO " en una fecha determinada")))
+(def NO2-coment (idiomaEs (str "El valor de " NO2 " en una fecha determinada")))
+(def NO2max-coment (idiomaEs (str "El valor de " NO2max " en una fecha determinada")))
+(def NO2AQ-coment (idiomaEs (str NO2AQ " La calidad del aire en una fecha determinada")))
+(def NOX-coment (idiomaEs (str "El valor de " NOX " en una fecha determinada")))
+(def PM10-coment (idiomaEs (str "El valor de " PM10 " en una fecha determinada")))
+(def PM10AQ-coment (idiomaEs (str PM10AQ " La calidad del aire en una fecha determinada")))
+(def PM25-coment (idiomaEs (str "El valor de " PM25 " en una fecha determinada")))
+(def PM25AQ-coment (idiomaEs (str PM25AQ " La calidad del aire en una fecha determinada")))
+(def ICAAQ-coment (idiomaEs (str ICAAQ " La calidad del aire en una fecha determinada")))
+(def Benceno-coment (idiomaEs (str "El valor de " Benceno " en una fecha determinada")))
+(def Tolueno-coment (idiomaEs (str "El valor de " Tolueno " en una fecha determinada")))
+(def Ortoxileno-coment (idiomaEs (str "El valor de " Ortoxileno " en una fecha determinada")))
+(def Etilbenceno-coment (idiomaEs (str "El valor de " Etilbenceno " en una fecha determinada")))
