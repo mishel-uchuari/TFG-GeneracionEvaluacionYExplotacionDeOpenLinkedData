@@ -9,6 +9,6 @@ public class coma {
 	public static void main(String[] args) throws IOException, RDFHandlerException {
 		RT.loadResourceScript("pipelines/coma.clj");
 		 RT.var("pipelines.coma",
-		 "quitarComas").invoke("./DatosIniciales/retribuciones_nominativas.csv");
+		 "quitarComas").invoke("./DatosIniciales/estacionesMetereologicas.csv");
 	}
 }

@@ -221,7 +221,7 @@
           :varPM25AQ-CAST makeSplitCast
           "Tolueno" parseValue
           ;Version euskera
-          "ICA-estacion" makeSplitEusk  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+          "ICA-estacion" makeSplitEusk  ;
           ;Version castellano
           :varICAE-CAST makeSplitCast
           })

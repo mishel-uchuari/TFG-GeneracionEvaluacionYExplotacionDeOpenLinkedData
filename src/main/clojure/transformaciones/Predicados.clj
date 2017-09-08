@@ -8,6 +8,11 @@
 (def prefix-valor-observacion  "http://purl.org/linked-data/sdmx/2009/measure#obsValue")
 (def prefix-miligramo-mcubico  "http://dd.eionet.europa.eu/vocabulary/uom/concentration/mg.m-3")
 (def prefix-micragramo-mcubico  "http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3")
+(def prefix-porcentaje  "http://dbpedia.org/ontology/percentage")
+(def prefix-watios-m2  "http://purl.org/iot/vocab/m3-lite#WattPerMeterSquare")
+(def prefix-milibar  "http://purl.org/iot/vocab/m3-lite#Millibar")
+(def prefix-km-hora  "http://purl.org/iot/vocab/m3-lite#KilometerPerHour")
+(def prefix-grados-centigrados  "http://ontology.fiesta-iot.eu/ontologyDocs/m3-lite.owl#DegreeCelsius")
 
 (def prefix-contrato-trabajo "http://purl.org/cerif/frapo/EmploymentContract")
 (def prefix-fecha-formalizacion "http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate")
@@ -30,3 +35,6 @@
 
 (def base-contrato-pred (prefixer "http://opendata.euskadi.eus/def/sector-publico/contrato/"))
 (def base-contrato-recurso (prefixer "http://opendata.euskadi.eus/recurso/sector-publico/contrato/"))
+
+(def base-estacion (prefixer  "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/"))
+

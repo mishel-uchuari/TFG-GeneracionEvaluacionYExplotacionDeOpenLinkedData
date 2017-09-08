@@ -9,9 +9,6 @@
     [grafter.rdf :refer [prefixer]]
     ))
 
-
-(def base-estacion (prefixer  "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/AV-GASTEIZ"))
-
 ;Elementos
 (def CO "CO")
 (def CO8hAQ "CO8hAirQuality")
@@ -55,7 +52,7 @@
 ;Uri estacion
 (defn prefixEstacion[pFecha]
   (base-estacion
-    (str "-" (formatoFecha pFecha))))
+    (str "-vitoria-gazteiz-" (formatoFecha pFecha))))
 ;Uris Especificas a la medicion 
 (defn base-CO[pFecha]
   (base-elemento
@@ -103,10 +100,10 @@
   (base-elemento
     (str pFecha "/" Benceno)))
 (defn base-Tolueno [pFecha]
-  (base-elemento
+  (base-elemento-calidad-aire
     (str pFecha "/" Tolueno)))
 (defn base-Etilbenceno [pFecha]
-  (base-elemento
+  (base-elemento-calidad-aire
     (str pFecha "/" Etilbenceno)))
 
 ;Comentarios Elementos
