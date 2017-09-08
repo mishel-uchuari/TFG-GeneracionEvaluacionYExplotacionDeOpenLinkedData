@@ -14,6 +14,7 @@
 ;Elimina los espacios en blanco en un string
 (defn removeBlanks [string]
   (when (seq string)
+    (str/replace string "  " " ")
     (str/replace string " " "")
   ))
 
@@ -108,12 +109,3 @@
 
 ;(defn formatoFecha[pFecha] 
 ;    (str/replace pFecha #"/" "-"))
-
-
-(defn commify [s]
-  (let [s (reverse s)]
-    (loop [[group remainder] (split-at 3 s)
-           result '()]
-      (if (empty? remainder)
-        (apply str (reverse (rest (concat result (list \.) group)))) ; rest to remove extraneous ,
-        (recur (split-at 3 remainder) (concat result (list \.) group)))) ))

@@ -23,9 +23,6 @@ public class main {
 		 Model model = new LinkedHashModel();
 		 while (ite.hasNext()) {
 		 model.add((Statement) ite.next());
-		// Statement cn=(Statement) RT.var("grafterdatacube.core",
-		// "convertidor").invoke(ite.next());0
-		// System.out.println(cn.getClass());
 		 }
 		 /**
 		 * Código para sacar el archivo RDF/XML-TURTLE
@@ -33,8 +30,5 @@ public class main {
 		 File file = new File("./DatosConvertidos/archivoRnominativas.rdf");
 		 FileOutputStream fileTurtle = new FileOutputStream(file);
 		 Rio.write(model, fileTurtle, RDFFormat.NQUADS);
-		 // PruebasModel pM = new PruebasModel(model);
-		 // pM.testModel();
-		 // System.out.println(pM.testModel2());
 	}
 }

@@ -26,8 +26,8 @@
 
 (def make-graph
  (graph-fn [{:keys [
-NomAp CargoPublico Retribucion FechaInicio FechaFin IdDpto uriDepartamento uriGralRNominativas
-Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmpleado 
+NomAp CargoPublico FechaInicio FechaFin IdDpto uriDepartamento uriGralRNominativas Retribucion
+Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmpleado  retribucionSinEspacios
     ] :as row }]
            ;Nombre de la 
              (graph (base-graph "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
@@ -35,7 +35,6 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmplead
                  [rdf:a prefix-contrato-trabajo]
                  [prefix-empleado uriEmpleado]
                  [prefix-puesto (idiomaEs (str (removeSymbols (row "CargoPublico"))))]
-                 [prefix-condiciones-economicas (parseValue (row "Retribucion"))]
                  [prefix-fecha-formalizacion (etiquetaFecha (row "FechaInicio"))]
                  [prefix-fecha-finalizacion (etiquetaFecha (row "FechaFin"))]
                  [uriIdDpto (row "IdDpto")]
@@ -44,6 +43,7 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmplead
                  [uriIdCentroOrganico (row "IdCentro")]
                  [uriCentroOrganico (idiomaEs (str (removeSymbols (row "CentroOrganico"))))]
                  [prefix-fecha-modificacion (etiquetaFecha(row "FechaActualizado"))]
+                 [prefix-condiciones-economicas (parseValue (row "Retribucion"))]
                  ]
              ))) 
 			   
@@ -55,13 +55,14 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmplead
               "Departamento" "IdOrgano" "Organo" "IdCentro" "CentroOrganico" "FechaActualizado"])
     ;Borra la primera fila correspondiente a los nombres de las columnas
 (drop-rows 1)
+  (derive-column  :retribucionSinEspacios "Retribucion")
       (mapc {"FechaInicio" organizeDate
             "FechaFin" organizeDate
             "FechaActualizado" organizeDate
             "NomAp" removeSymbols
             "CargoPublico" removeSymbols
-            "Retribucion" removeSymbols
             "IdDpto" parseValue
+            "Retribucion" removeBlanks
             "Departamento" removeSymbols
             "IdOrgano" parseValue
             "Organo" removeSymbols
