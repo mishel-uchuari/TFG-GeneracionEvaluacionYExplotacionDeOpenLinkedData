@@ -8,7 +8,6 @@
     [transformaciones.Predicados :refer :all]   
     )
 )
-
 (use 'clojure.java.io)
 
 ;Elimina los espacios en blanco en un string
@@ -40,20 +39,27 @@
     (let [[d m y] (str/split date #"/")]
       (apply str (interpose "-" [y m d] )))))
 
+
+;Cambia el formato de la fecha [dd/mm/yyyy ~> dd-mm-yyyy]
+(defn organizeDateUSA [date]
+  (when (seq date)
+    (let [[y m d] (str/split date #"/")]
+      (apply str (interpose "-" [y m d] )))))
+
 ;Crea xsd:DateTime a partir de una fecha determinada
-(defn etiquetaFecha
-  [pFecha]
-  (when  (seq pFecha)
-    (let [d pFecha
+(defn dateLabel
+  [date]
+  (when  (seq date)
+    (let [d date
           ;dt (str d "T" time)
           ]
       (read-string (str "#inst " (pr-str d))))))
 
-(defn etiquetaFechaHora
-  [pFecha pHora]
-  (when (and (seq pFecha) (seq pHora))
-    (let [d (etiquetaFecha pFecha)
-          dt (str d "T" pHora)]
+(defn dateHourLabel
+  [date hour]
+  (when (and (seq date) (seq hour))
+    (let [d (dateLabel date)
+          dt (str d "T" hour)]
       (read-string (str "#inst " (pr-str dt))))))
 
 ;Elimina simbolos "innecesarios"
@@ -71,6 +77,7 @@
           (replace " " "-")
           (replace "/" "-")
           (replace "'" "")
+          (replace ":" "-")
           (replace "---" "-")
           (replace "--" "-")
           )
@@ -89,17 +96,17 @@
                                                   (Integer/parseInt x))))
 
 ;Pone etiqueta de idioma a un determinado literal (espanol)
-(defn idiomaEs
+(defn languageSpanish
   [st]
     (io/s st :es))
 
 ;Pone etiqueta de idioma a un determinado literal (ingles)
-(defn idiomaIn
+(defn languageEnglish
   [st]
     (io/s st :en))
 
 ;Pone etiqueta de idioma a un determinado literal (euskera)
-(defn idiomaEusk
+(defn languageVasque
   [st]
     (io/s st :eu))
 

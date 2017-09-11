@@ -33,23 +33,23 @@
            ;Nombre de la 
              (graph (base-graph "relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma-2017") 
                 [uriGeneralRPLaborales
-                 [rdf:a prefix-contrato-trabajo]
-                 [prefix-fecha-modificacion (etiquetaFecha (row "FechaMod"))]
-                 [uriFechaDesc (etiquetaFecha (row "FechaDescarga"))]
+                 [rdf:a employment-contract-predicate]
+                 [prefix-fecha-modificacion (dateLabel (row "FechaMod"))]
+                 [uriFechaDesc (dateLabel (row "FechaDescarga"))]
                  [uriCodPuesto (row "CodPuesto")]
                  [uriDotacion (row "Dotacion")]
-                 [prefix-puesto puestoTrabajo]
+                 [occupation-predicate puestoTrabajo]
                  [uriCodDepto (row "CodDep")]
                  [uriCodCentroDest (row "CodCentroDest")]
                  [uriCodCentroOrg (row "CodCentroO")]
-                 [prefix-departamento-gerente departamento]
+                 [managing-dpt-predicate departamento]
                  [uriCentroOrg centroOrganico]
                  [uriCentroDestino centroDestino]
                  [uriCategoriaRetrib (row "CatRetributiva")]
                  [uriPerfilLing (row "PerfilLinguistico")]
-                 [prefix-fecha-formalizacion (etiquetaFecha (row "FechaPreceptividad"))]
-                 [prefix-condiciones-economicas (row "ImporteRetributivo")]
-                                 ]
+                 [formalized-date-predicate (dateLabel (row "FechaPreceptividad"))]
+                 [contract-economic-conditions-predicate (row "ImporteRetributivo")]
+                 ]
              ))) 
 			 
 (defn convert-data-to-data

@@ -34,15 +34,15 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmplead
                 [uriGralRNominativas
                  [rdf:a prefix-contrato-trabajo]
                  [prefix-empleado uriEmpleado]
-                 [prefix-puesto (idiomaEs (str (removeSymbols (row "CargoPublico"))))]
-                 [prefix-fecha-formalizacion (etiquetaFecha (row "FechaInicio"))]
-                 [prefix-fecha-finalizacion (etiquetaFecha (row "FechaFin"))]
+                 [prefix-puesto (languageSpanish (str (removeSymbols (row "CargoPublico"))))]
+                 [prefix-fecha-formalizacion (dateLabel (row "FechaInicio"))]
+                 [prefix-fecha-finalizacion (dateLabel (row "FechaFin"))]
                  [uriIdDpto (row "IdDpto")]
                  [prefix-departamento-gerente uriDepartamento]
-                 [uriOrgano (idiomaEs (str (removeSymbols (row "Organo"))))]
+                 [uriOrgano (languageSpanish (str (removeSymbols (row "Organo"))))]
                  [uriIdCentroOrganico (row "IdCentro")]
-                 [uriCentroOrganico (idiomaEs (str (removeSymbols (row "CentroOrganico"))))]
-                 [prefix-fecha-modificacion (etiquetaFecha(row "FechaActualizado"))]
+                 [uriCentroOrganico (languageSpanish (str (removeSymbols (row "CentroOrganico"))))]
+                 [prefix-fecha-modificacion (dateLabel (row "FechaActualizado"))]
                  [prefix-condiciones-economicas (parseValue (row "Retribucion"))]
                  ]
              ))) 
@@ -69,7 +69,7 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmplead
             "IdCentro" parseValue
           })
   (derive-column  :uriGralRNominativas [:CargoPublico :NomAp :Departamento :Organo :FechaActualizado] uriGralRNominativas)
-  (derive-column :uriEmpleado [:NomAp] uriGralEmpleado)
+  (derive-column :uriEmpleado [:NomAp] uriGralEmployee)
   (derive-column :uriDepartamento [:Departamento] uriGralDpto)
  ))
 

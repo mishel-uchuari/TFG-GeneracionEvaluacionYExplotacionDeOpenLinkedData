@@ -18,8 +18,9 @@
             [grafter.vocabularies.qb :refer :all]
             [grafter.pipeline :refer [declare-pipeline]]
             [grafter.vocabularies.rdf :refer :all]
-            [transformaciones.Predicados :refer :all]      
+            [transformaciones.Predicados :refer :all]
             [transformaciones.TransformacionGeneral :refer :all]
+            [transformaciones.TransformacionesEstacionesMetereologicas :refer :all]
             [clojure.string :as str]
               )
      )
@@ -28,79 +29,91 @@
  (graph-fn [{:keys [
   Fecha Hora DirMedia Humedad620 Irradia Presion observation-dirMedia observation-humedad620 observation-irradia200 
   observation-presion150 observation-sigDir1100 observation-sigVel1100 observation-temAire610 observation-velMax1100 
-  SigDir SigVel TemAire VelMax VelMedia fechaHora uriEstacion
+  SigDir SigVel TemAire VelMax VelMedia 
+  ;fechaHora 
+  uriEstacion observation-VelMedia1100
     ] :as row }]
            ;Nombre de la 
              (graph (base-graph "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
                 [uriEstacion
                  [rdf:a qb:Observation]
-                 [prefix-fecha fechaHora]
-                 [prefix-localizacion estacionVitoria]
-                 [prefix-medicion uriDirMediaGen]
-                 [prefix-medicion uriHumedad620Gen]
-                 [prefix-medicion uriIrradia200Gen]
-                 [prefix-medicion uriPresion150Gen]
-                 [prefix-medicion uriSigDir1100Gen]
-                 [prefix-medicion uriSigVel1100Gen]
-                 [prefix-medicion uriTemAire610Gen]
-                 [prefix-medicion uriVelMax1100Gen]
-                 [prefix-medicion uriVelMedia1100Gen]
+              ;   [date-predicate fechaHora]
+                 [location-predicate vitoria-station]
+                 [resource-measurement-base uriDirMediaGen]
+                 [resource-measurement-base uriHumedad620Gen]
+                 [resource-measurement-base uriIrradia200Gen]
+                 [resource-measurement-base uriPresion150Gen]
+                 [resource-measurement-base uriSigDir1100Gen]
+                 [resource-measurement-base uriSigVel1100Gen]
+                 [resource-measurement-base uriTemAire610Gen]
+                 [resource-measurement-base uriVelMax1100Gen]
+                 [resource-measurement-base uriVelMedia1100Gen]
                  ]
-                [observation-dirMedia
+                ;Observacion direccion media
+                [uriDirMediaGen
                  [rdf:a uriDirMediaGen]
                  [rdfs:comment dirMedia-coment]
-                 [prefix-unidad-medida prefix-grados-centigrados]
-                 [prefix-valor-observacion (row "DirMedia")]
+                 [unit-measure-predicate degrees-celsius-predicate]
+                 [observation-value-predicate (row "DirMedia")]
                    ]
+                ;Observacion humedad 620
                 [observation-humedad620
                  [rdf:a uriHumedad620Gen]
                  [rdfs:comment humedad-coment]
-                 [prefix-unidad-medida prefix-porcentaje]
-                 [prefix-valor-observacion (row "Humedad620")]
+                 [unit-measure-predicate percentage-predicate]
+                 [observation-value-predicate (row "Humedad620")]
                    ]
+                ;Observacion irradia 200
                 [observation-irradia200
                  [rdf:a uriIrradia200Gen]
                  [rdfs:comment irradia-coment]
-                 [prefix-unidad-medida prefix-watios-m2]
-                 [prefix-valor-observacion (row "Irradia")]
+                 [unit-measure-predicate watios-m2-predicate]
+                 [observation-value-predicate (row "Irradia")]
                    ]
+                ;Observacion Presion 150
                    [observation-presion150
                  [rdf:a uriPresion150Gen]
                  [rdfs:comment  presion-coment]
-                 [prefix-unidad-medida prefix-micragramo-mcubico]
-                 [prefix-valor-observacion (row "Presion")]
+                 [unit-measure-predicate milibar-predicate]
+                 [observation-value-predicate (row "Presion")]
                    ]
+                   ;Observacion Sigdir 1100
                     [observation-sigDir1100
                  [rdf:a uriSigDir1100Gen]
-                 [rdfs:comment  sigDir-coment ]
-                 [prefix-unidad-medida prefix-micragramo-mcubico]
-                 [prefix-valor-observacion (row "SigDir")]
+                 [rdfs:comment  sigDir-coment]
+                 [unit-measure-predicate degrees-celsius-predicate]
+                 [observation-value-predicate (row "SigDir")]
                    ]
+                    ;Observacion Sigvel 1100
                      [observation-sigVel1100
                  [rdf:a uriSigVel1100Gen]
                  [rdfs:comment  sigVel-coment]
-                 [prefix-unidad-medida prefix-micragramo-mcubico]
-                 [prefix-valor-observacion (row "SigVel")]
+                 [unit-measure-predicate km-hour-predicate]
+                 [observation-value-predicate (row "SigVel")]
                    ]
+                     ;Observacion Temperatura aire 610
                    [observation-temAire610
                  [rdf:a uriTemAire610Gen]
                  [rdfs:comment temAire-coment]
-                 [prefix-valor-observacion (row "TemAire")]
+                 [unit-measure-predicate degrees-celsius-predicate]
+                 [observation-value-predicate (row "TemAire")]
                    ]
+                   ;Observacion VelMax 1100
                     [observation-velMax1100
                  [rdf:a uriVelMax1100Gen]
                  [rdfs:comment  velMax-coment]
-                [prefix-unidad-medida prefix-micragramo-mcubico]
-                 [prefix-valor-observacion (row "VelMax")]
+                [unit-measure-predicate km-hour-predicate]
+                 [observation-value-predicate (row "VelMax")]
                    ]
+                    ;Observacion Vel Media 1100
                      [observation-VelMedia1100
                  [rdf:a uriVelMedia1100Gen]
                  [rdfs:comment velMedia-coment]
-                 [prefix-unidad-medida prefix-micragramo-mcubico]
-                 [prefix-valor-observacion (row "VelMedia")]
+                 [unit-measure-predicate km-hour-predicate]
+                 [observation-value-predicate (row "VelMedia")]
                    ] 
              ))) 
-			   
+
 (defn convert-data-to-data
   [data-file]
   (-> (read-dataset data-file)
@@ -112,7 +125,8 @@
 (drop-rows 1)
     ;Creamos nuevas columnas donde almacenar el valor en castellano de las columnas
      (mapc {
-            "Fecha" organizeDate
+            "Fecha" organizeDateUSA
+            "Hora" removeSymbols
             "DirMedia" parseValue
             "Humedad620" parseValue
             "Irradia" parseValue
@@ -124,24 +138,23 @@
             "VelMedia" parseValue
           })
       
- (derive-colum  :fechaHora [:Fecha :Hora] etiquetaFechaHora)
- (derive-column :uriEstacion [:Fecha] prefixEstacion)
- (derive-column :observation-dirMedia [:Fecha :Hora] base-dirMedia)
- (derive-column :observation-humedad620 [:Fecha :Hora] base-humedad620)
- (derive-column :observation-irradia200 [:Fecha :Hora] base-irradia200)
- (derive-column :observation-presion150 [:Fecha :Hora] base-presion150)
- (derive-column :observation-sigDir1100 [:Fecha :Hora] base-sigDir1100)
- (derive-column :observation-sigVel1100 [:Fecha :Hora] base-sigVel1100)
- (derive-column :observation-temAire610 [:Fecha :Hora] base-temAire610)
- (derive-column :observation-velMax1100 [:Fecha :Hora] base-velMax1100)
- (derive-column :observation-VelMedia1100 [:Fecha :Hora] base-velMedia1100)
+; (derive-column  :fechaHora [:Fecha :Hora] etiquetaFechaHora)
+ (derive-column :uriEstacion [:Fecha] station-uri)
+ (derive-column :observation-dirMedia [:Fecha :Hora] uri-recurso-dirMedia)
+ (derive-column :observation-humedad620 [:Fecha :Hora] uri-recurso-humedad620)
+ (derive-column :observation-irradia200 [:Fecha :Hora] uri-recurso-irradia200)
+ (derive-column :observation-presion150 [:Fecha :Hora] uri-recurso-presion150)
+ (derive-column :observation-sigDir1100 [:Fecha :Hora] uri-recurso-sigDir1100)
+ (derive-column :observation-sigVel1100 [:Fecha :Hora] uri-recurso-sigVel1100)
+ (derive-column :observation-temAire610 [:Fecha :Hora] uri-recurso-temAire610)
+ (derive-column :observation-velMax1100 [:Fecha :Hora] uri-recurso-velMax1100)
+ (derive-column :observation-VelMedia1100 [:Fecha :Hora] uri-recurso-velMedia1100)
 
-      ))
+))
 
 (defn convert-data-to-graph
   [dataset]
   (-> dataset convert-data-to-data make-graph missing-data-filter))
-
 
 (declare-pipeline convert-data-to-graph [Dataset -> (Seq Statement)]
                   {dataset "The data file to convert into a graph."})
@@ -149,4 +162,3 @@
 ;Convierte una IStatement en una statement Sesame
 (defn convertidor [is]
   (map io/IStatement->sesame-statement (convert-data-to-graph is)))
-

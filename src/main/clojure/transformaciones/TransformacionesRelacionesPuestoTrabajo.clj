@@ -21,17 +21,17 @@
 (def categoriaRetrib "categoria-retributiva")
 (def perfilLing "perfil-linguistico")
 
-(def uriFechaDesc  (base-contrato-pred fechaDesc)) 
-(def uriCodPuesto  (base-contrato-pred codPuesto)) 
-(def uriDotacion  (base-contrato-pred dotacion)) 
-(def uriCodDepto  (base-contrato-pred codDepto)) 
-(def uriCodCentroOrg  (base-contrato-pred codCentroOrg)) 
-(def uriCentroOrg  (base-contrato-pred centroOrg)) 
-(def uriCodCentroDest  (base-contrato-pred codCentroDest)) 
-(def uriCentroDestino  (base-contrato-pred centroDestino)) 
-(def uriCategoriaRetrib  (base-contrato-pred categoriaRetrib)) 
-(def uriPerfilLing  (base-contrato-pred perfilLing)) 
+(def uriFechaDesc  (contract-predicate-base fechaDesc)) 
+(def uriCodPuesto  (contract-predicate-base codPuesto)) 
+(def uriDotacion  (contract-predicate-base dotacion)) 
+(def uriCodDepto  (contract-predicate-base codDepto)) 
+(def uriCodCentroOrg  (contract-predicate-base codCentroOrg)) 
+(def uriCentroOrg  (contract-predicate-base centroOrg)) 
+(def uriCodCentroDest  (contract-predicate-base codCentroDest)) 
+(def uriCentroDestino  (contract-predicate-base centroDestino)) 
+(def uriCategoriaRetrib  (contract-predicate-base categoriaRetrib)) 
+(def uriPerfilLing  (contract-predicate-base perfilLing)) 
 
-(defn uriGeneralRPuestoTrabajo[dotacion centroDestino codPuesto fechaModificacion] 
-  (base-contrato-recurso
-    (str dotacion "-" centroDestino "-" codPuesto "-" fechaModificacion)))
+(defn uriGeneralRPuestoTrabajo[dotation destinationCenter occupationCod modifiedDate] 
+  (contract-resource-base
+    (str dotation "-" (str/lower-case destinationCenter) "-" occupationCod "-" modifiedDate)))
