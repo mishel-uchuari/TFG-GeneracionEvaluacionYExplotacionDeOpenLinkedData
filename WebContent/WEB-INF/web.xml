@@ -10,11 +10,11 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>ServQuery</servlet-name>
-    <servlet-class>servlet.ServQuery</servlet-class>
+    <servlet-name>ServGeneradorResultados</servlet-name>
+    <servlet-class>servlet.ServGeneradorResultados</servlet-class>
   </servlet>
     <servlet-mapping>
-    <servlet-name>ServQuery</servlet-name>
-    <url-pattern>/ServQuery</url-pattern>
+    <servlet-name>ServGeneradorResultados</servlet-name>
+    <url-pattern>/ServGeneradorResultados</url-pattern>
   </servlet-mapping>
 </web-app>
