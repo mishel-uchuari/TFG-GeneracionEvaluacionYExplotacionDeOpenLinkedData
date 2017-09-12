@@ -9,7 +9,6 @@
             [grafter.pipeline :refer [declare-pipeline]]
             [grafter.rdf :as rdf]
             [grafter.rdf.io :as io]
-           ; [grafter.rdf :refer [xsd:dateTime]]
             [grafter.vocabularies.qb :refer :all]
             [grafter.rdf.protocols :refer [->Quad]]
             [grafter.rdf.protocols :refer [ITripleWriteable]]
@@ -30,14 +29,13 @@
   Fecha Hora DirMedia Humedad620 Irradia Presion observation-dirMedia observation-humedad620 observation-irradia200 
   observation-presion150 observation-sigDir1100 observation-sigVel1100 observation-temAire610 observation-velMax1100 
   SigDir SigVel TemAire VelMax VelMedia 
-  ;fechaHora 
-  uriEstacion observation-VelMedia1100
+  dateHour stationUri observation-VelMedia1100
     ] :as row }]
            ;Nombre de la 
-             (graph (base-graph "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
-                [uriEstacion
+             (graph (graph-base "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
+                [stationUri
                  [rdf:a qb:Observation]
-              ;   [date-predicate fechaHora]
+                 [date-predicate dateHour]
                  [location-predicate vitoria-station]
                  [resource-measurement-base uriDirMediaGen]
                  [resource-measurement-base uriHumedad620Gen]
@@ -50,7 +48,7 @@
                  [resource-measurement-base uriVelMedia1100Gen]
                  ]
                 ;Observacion direccion media
-                [uriDirMediaGen
+                [observation-dirMedia
                  [rdf:a uriDirMediaGen]
                  [rdfs:comment dirMedia-coment]
                  [unit-measure-predicate degrees-celsius-predicate]
@@ -118,15 +116,17 @@
   [data-file]
   (-> (read-dataset data-file)
     ;Creamos el dataset de los datos a cargar
-(make-dataset ["Fecha" "Hora" "DirMedia" "Humedad620"
+(make-dataset [
+               "Fecha" "Hora" "DirMedia" "Humedad620"
                "Irradia" "Presion" "SigDir" "SigVel" "TemAire"
-               "VelMax" "VelMedia"])
+               "VelMax" "VelMedia"
+               ])
     ;Borra la primera fila correspondiente a los nombres de las columnas
 (drop-rows 1)
     ;Creamos nuevas columnas donde almacenar el valor en castellano de las columnas
+     (derive-column :hour [:Hora] removeSymbols)
      (mapc {
             "Fecha" organizeDateUSA
-            "Hora" removeSymbols
             "DirMedia" parseValue
             "Humedad620" parseValue
             "Irradia" parseValue
@@ -137,20 +137,19 @@
             "VelMax" parseValue
             "VelMedia" parseValue
           })
-      
-; (derive-column  :fechaHora [:Fecha :Hora] etiquetaFechaHora)
- (derive-column :uriEstacion [:Fecha] station-uri)
- (derive-column :observation-dirMedia [:Fecha :Hora] uri-recurso-dirMedia)
- (derive-column :observation-humedad620 [:Fecha :Hora] uri-recurso-humedad620)
- (derive-column :observation-irradia200 [:Fecha :Hora] uri-recurso-irradia200)
- (derive-column :observation-presion150 [:Fecha :Hora] uri-recurso-presion150)
- (derive-column :observation-sigDir1100 [:Fecha :Hora] uri-recurso-sigDir1100)
- (derive-column :observation-sigVel1100 [:Fecha :Hora] uri-recurso-sigVel1100)
- (derive-column :observation-temAire610 [:Fecha :Hora] uri-recurso-temAire610)
- (derive-column :observation-velMax1100 [:Fecha :Hora] uri-recurso-velMax1100)
- (derive-column :observation-VelMedia1100 [:Fecha :Hora] uri-recurso-velMedia1100)
-
-))
+ (derive-column :dateHour [:Fecha :Hora] dateHourLabel)
+ (derive-column :stationUri [:Fecha] station-uri)
+ (derive-column :observation-dirMedia [:Fecha :hour] base-dirMedia)
+ (derive-column :observation-humedad620 [:Fecha :hour] base-humedad620)
+ (derive-column :observation-irradia200 [:Fecha :hour] base-irradia200)
+ (derive-column :observation-presion150 [:Fecha :hour] base-presion150)
+ (derive-column :observation-sigDir1100 [:Fecha :hour] base-sigDir1100)
+ (derive-column :observation-sigVel1100 [:Fecha :hour] base-sigVel1100)
+ (derive-column :observation-temAire610 [:Fecha :hour] base-temAire610)
+ (derive-column :observation-velMax1100 [:Fecha :hour] base-velMax1100)
+ (derive-column :observation-VelMedia1100 [:Fecha :hour] base-velMedia1100)
+)
+  )
 
 (defn convert-data-to-graph
   [dataset]

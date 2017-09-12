@@ -43,78 +43,41 @@
 ;Uri estacion
 (defn station-uri[date]
   (station-base
-    (str "c040" (organizeDate date))))
-
-;Uris predicados
-;(defn base-dirMedia[pFecha elemento] 
-;  (base-medicion-pred
-;    (str pFecha "/" dirMedia )))
-;
-;(defn base-humedad620[pFecha elemento] 
-;  (base-medicion-pred
-;    (str pFecha "/" humedad620 )))
-;
-;(defn base-irradia200[pFecha elemento] 
-;  (base-medicion-pred
-;    (str pFecha "/" irradia200 )))
-;
-;(defn base-presion150[pFecha elemento] 
-;  (base-medicion-pred
-;    (str pFecha "/" presion150 )))
-;
-;(defn base-sigDir1100[pFecha elemento] 
-;  (base-medicion-pred
-;    (str pFecha "/" sigDir1100 )))
-;
-;(defn base-sigVel1100[pFecha elemento] 
-;  (base-medicion-pred
-;    (str pFecha "/" sigVel1100 )))
-;
-;(defn base-temAire610[pFecha elemento]
-;  (base-medicion-pred
-;    (str pFecha "/" temAire610)))
-;
-;(defn base-velMax1100[pFecha elemento] 
-;  (base-medicion-pred
-;    (str pFecha "/" velMax1100 )))
-;
-;(defn base-velMedia1100[pFecha elemento] 
-;  (base-medicion-pred
-;    (str pFecha "/" velMedia1100 )))
+    (str "c040-" date)))
 
 ;Uris recursos
-(defn uri-recurso-dirMedia[date hour] 
+(defn base-dirMedia[date hour] 
   (element-base
-    (str date "-" hour "-" dirMedia "-" dirMedia)))
+    (str date "-" hour "-" dirMedia)))
 
-(defn uri-recurso-velMax1100[date hour] 
+(defn base-velMax1100[date hour] 
   (element-base
     (str date "-" hour "-" velMax1100 )))
 
-(defn uri-recurso-humedad620[date hour]
+(defn base-humedad620[date hour]
   (element-base
     (str date "-" hour "-" humedad620)))
 
-(defn uri-recurso-irradia200[date hour]
+(defn base-irradia200[date hour]
   (element-base
     (str date "-" hour "-" irradia200)))
 
-(defn uri-recurso-presion150[date hour]
+(defn base-presion150[date hour]
   (element-base
     (str date "-" hour "-" presion150)))
 
-(defn uri-recurso-sigDir1100[date hour] 
+(defn base-sigDir1100[date hour] 
   (element-base
     (str date "-" hour "-"  sigDir1100)))
 
-(defn uri-recurso-sigVel1100[date hour] 
+(defn base-sigVel1100[date hour] 
   (element-base
     (str date "-" hour "-" sigVel1100)))
 
-(defn uri-recurso-temAire610[date hour] 
+(defn base-temAire610[date hour] 
   (element-base
     (str date "-" hour "-" temAire610)))
 
-(defn uri-recurso-velMedia1100[date hour] 
+(defn base-velMedia1100[date hour] 
   (element-base
     (str date "-" hour "-" velMedia1100)))

@@ -11,14 +11,14 @@ public class main {
 				 "./DatosConvertidos/calidadAire-VitoriaGasteiz.rdf");
 		 Pipeline pipeEstacionesMetereologicas = new Pipeline("EstacionesMetereologicas", "convertidor", "./DatosIniciales/estacionesMetereologicas-c040.csv", 
 				 "./DatosConvertidos/estacionesMetereologicas-c040.rdf");
-		 Pipeline pipeRetribNominativas = new Pipeline("RetribucionesNominativas", "convertidor", "./DatosIniciales/retribucionesNominativas-2017.csv", 
-				 "./DatosConvertidos/relacionPuestosTrabajo-2017.rdf");
 		 Pipeline pipeRelacionesPuestosT = new Pipeline("RelacionesPuestoTrabajo", "convertidor", "./DatosIniciales/relacionPuestosTrabajo-2017.csv", 
 				 "./DatosConvertidos/relacionPuestosTrabajo-2017.rdf");
-		 pipeCalidadAire.start();
-		 pipeEstacionesMetereologicas.start();
-	//	 pipeRelacionesPuestosT.start();
-		 pipeRetribNominativas.start();
-
+		 Pipeline pipeRetribNominativas = new Pipeline("RetribucionesNominativas", "convertidor", "./DatosIniciales/retribucionesNominativas-2017.csv", 
+				 "./DatosConvertidos/retribucionesNominativas-2017.rdf");
+		 
+		// pipeCalidadAire.start();
+		// pipeEstacionesMetereologicas.start();
+		 pipeRelacionesPuestosT.start();
+		// pipeRetribNominativas.start();
 	}
 }

@@ -52,75 +52,75 @@
 ;Uri estacion
 (defn station-uri[date]
   (station-base
-    (str "-vitoria-gazteiz-" (organizeDate date))))
+    (str "av-gazteiz-" date)))
 ;Uris Especificas a la medicion 
 (defn base-CO[date]
   (element-base
-    (str date "/" CO )))
+    (str date "-" CO )))
 (defn base-CO8hmax[date]
   (element-base
-    (str date "/" CO8hmax )))
-(defn base-CO8hAQ [date]
+    (str date "-" CO8hmax )))
+(defn base-CO8hAQ [date] 
   (element-base
-    (str date "/" CO8hAQ) ))
+    (str date "-" CO8hAQ) ))
 (defn base-NO[date] 
   (element-base
-    (str date "/" NO )))
+    (str date "-" NO )))
 (defn base-NO2[date] 
   (element-base
-    (str date "/"NO2 )))
+    (str date "-" NO2 )))
 (defn base-NO2max[date] 
   (element-base
-    (str date "/" NO2max )))
+    (str date "-" NO2max )))
 (defn base-NO2AQ [date]
   (element-base
-    (str date "/" NO2AQ)))
+    (str date "-" NO2AQ)))
 (defn base-NOX[date] 
   (element-base
-    (str date "/" NOX )))
+    (str date "-" NOX )))
 (defn base-PM10 [date] 
   (element-base
-    (str date "/" PM10)))
+    (str date "-" PM10)))
 (defn base-PM10AQ [date] 
   (element-base
-    (str date "/" PM10AQ)))
+    (str date "-" PM10AQ)))
 (defn base-PM25 [date]
   (element-base
-    (str date "/" PM25)))
+    (str date "-" PM25)))
 (defn base-PM25AQ [date]
   (element-base
-    (str date "/" PM25AQ) ))
+    (str date "-" PM25AQ) ))
 (defn base-ICAAQ [date]
   (element-base
-    (str date "/" ICAAQ)))
+    (str date "-" ICAAQ)))
 (defn base-Ortoxileno [date]
   (element-base
-    (str date "/" Ortoxileno)))
+    (str date "-" Ortoxileno)))
 (defn base-Benceno [date]
   (element-base
-    (str date "/" Benceno)))
+    (str date "-" Benceno)))
 (defn base-Tolueno [date]
   (element-base
-    (str date "/" Tolueno)))
+    (str date "-" Tolueno)))
 (defn base-Etilbenceno [date]
   (element-base
-    (str date "/" Etilbenceno)))
+    (str date "-" Etilbenceno)))
 
 ;Comentarios Elementos
 
 (def CO-coment (languageSpanish (str "El valor de " CO " en una fecha determinada")))
-(def CO8hAQ-coment (languageSpanish (str CO8hmax " La calidad del aire en una fecha determinada")))
+(def CO8hAQ-coment (languageSpanish (str " La calidad del aire " CO8hmax " en una fecha determinada")))
 (def CO8hmax-coment (languageSpanish (str "El valor de " CO8hmax " en una fecha determinada")))
 (def NO-coment (languageSpanish (str "El valor de " NO " en una fecha determinada")))
 (def NO2-coment (languageSpanish (str "El valor de " NO2 " en una fecha determinada")))
 (def NO2max-coment (languageSpanish (str "El valor de " NO2max " en una fecha determinada")))
-(def NO2AQ-coment (languageSpanish (str NO2AQ " La calidad del aire en una fecha determinada")))
+(def NO2AQ-coment (languageSpanish (str " La calidad del aire " NO2AQ " en una fecha determinada")))
 (def NOX-coment (languageSpanish (str "El valor de " NOX " en una fecha determinada")))
 (def PM10-coment (languageSpanish (str "El valor de " PM10 " en una fecha determinada")))
-(def PM10AQ-coment (languageSpanish (str PM10AQ " La calidad del aire en una fecha determinada")))
+(def PM10AQ-coment (languageSpanish (str " La calidad del aire " PM10AQ " en una fecha determinada")))
 (def PM25-coment (languageSpanish (str "El valor de " PM25 " en una fecha determinada")))
-(def PM25AQ-coment (languageSpanish (str PM25AQ " La calidad del aire en una fecha determinada")))
-(def ICAAQ-coment (languageSpanish (str ICAAQ " La calidad del aire en una fecha determinada")))
+(def PM25AQ-coment (languageSpanish (str  " La calidad del aire " PM25AQ " en una fecha determinada")))
+(def ICAAQ-coment (languageSpanish (str  " La calidad del aire " ICAAQ " en una fecha determinada")))
 (def Benceno-coment (languageSpanish (str "El valor de " Benceno " en una fecha determinada")))
 (def Tolueno-coment (languageSpanish (str "El valor de " Tolueno " en una fecha determinada")))
 (def Ortoxileno-coment (languageSpanish (str "El valor de " Ortoxileno " en una fecha determinada")))

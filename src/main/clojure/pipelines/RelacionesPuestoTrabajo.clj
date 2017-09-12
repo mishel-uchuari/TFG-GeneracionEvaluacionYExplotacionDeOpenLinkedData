@@ -7,7 +7,6 @@
             [grafter.pipeline :refer [declare-pipeline]]
             [grafter.rdf :as rdf]
             [grafter.rdf.io :as io]
-           ; [grafter.rdf :refer [xsd:dateTime]]
             [grafter.vocabularies.qb :refer :all]
             [grafter.rdf.protocols :refer [->Quad]]
             [grafter.rdf.protocols :refer [ITripleWriteable]]
@@ -26,27 +25,28 @@
 
 (def make-graph
  (graph-fn [{:keys [
-   FechaMod FechaDescarga CodPuesto Dotacion CodDep CodCentroDest CodCentroO CatRetributiva uriGeneralRPLaborales
-   PerfilLinguistico FechaPreceptividad ImporteRetributivo departamento puestoTrabajo centroOrganico centroDestino
+   FechaMod FechaDescarga CodPuesto Dotacion CodDep CodCentroDest CodCentroO CatRetributiva 
+   PerfilLinguistico FechaPreceptividad ImporteRetributivo uriGeneralRPLaborales
+   dCenter department occupation organicCenter
     ]
              :as row }]
            ;Nombre de la 
-             (graph (base-graph "relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma-2017") 
+             (graph (graph-base "relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma-2017") 
                 [uriGeneralRPLaborales
                  [rdf:a employment-contract-predicate]
-                 [prefix-fecha-modificacion (dateLabel (row "FechaMod"))]
-                 [uriFechaDesc (dateLabel (row "FechaDescarga"))]
-                 [uriCodPuesto (row "CodPuesto")]
-                 [uriDotacion (row "Dotacion")]
-                 [occupation-predicate puestoTrabajo]
-                 [uriCodDepto (row "CodDep")]
-                 [uriCodCentroDest (row "CodCentroDest")]
-                 [uriCodCentroOrg (row "CodCentroO")]
-                 [managing-dpt-predicate departamento]
-                 [uriCentroOrg centroOrganico]
-                 [uriCentroDestino centroDestino]
-                 [uriCategoriaRetrib (row "CatRetributiva")]
-                 [uriPerfilLing (row "PerfilLinguistico")]
+                 [modified-date-predicate (dateLabel (row "FechaMod"))]
+                 [discharge-date-predicate (dateLabel (row "FechaDescarga"))]
+                 [occupation-cod-predicate (row "CodPuesto")]
+                 [endowment-predicate (row "Dotacion")]
+                 [occupation-predicate occupation]
+                 [dpto-cod-predicate (row "CodDep")]
+                 [destination-center-cod-predicate (row "CodCentroDest")]
+                 [organic-cod-predicate (row "CodCentroO")]
+                 [managing-dpt-predicate department]
+                 [organic-center-predicate organicCenter]
+                 [destination-center-predicate dCenter]
+                 [retributive-category-predicate (row "CatRetributiva")]
+                 [linguistic-profile-predicate (row "PerfilLinguistico")]
                  [formalized-date-predicate (dateLabel (row "FechaPreceptividad"))]
                  [contract-economic-conditions-predicate (row "ImporteRetributivo")]
                  ]
@@ -78,10 +78,10 @@
         "ImporteRetributivo" parseValue
           })
   (derive-column :uriGeneralRPLaborales [:Dotacion :cDestino :CodPuesto :FechaMod] uriGeneralRPuestoTrabajo)
-  (derive-column :departamento [:Departamento] idiomaEs)
-  (derive-column :puestoTrabajo [:Puesto] idiomaEs)
-  (derive-column :centroOrganico [:CentroOrg] idiomaEs)
-  (derive-column :centroDestino [:CentroDestino] idiomaEs)
+  (derive-column :department [:Departamento] languageSpanish)
+  (derive-column :occupation [:Puesto] languageSpanish)
+  (derive-column :organicCenter [:CentroOrg] languageSpanish)
+  (derive-column :dCenter [:CentroDestino] languageSpanish)
    ))
 
 (defn convert-data-to-graph

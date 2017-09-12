@@ -8,7 +8,6 @@
             [grafter.pipeline :refer [declare-pipeline]]
             [grafter.rdf :as rdf]
             [grafter.rdf.io :as io]
-           ; [grafter.rdf :refer [xsd:dateTime]]
             [grafter.vocabularies.qb :refer :all]
             [grafter.rdf.protocols :refer [->Quad]]
             [grafter.rdf.protocols :refer [ITripleWriteable]]
@@ -23,7 +22,6 @@
             [clojure.string :as str]
               )
      )
-
 
 (def make-graph
  (graph-fn [{:keys [
@@ -47,7 +45,7 @@
     ]
              :as row }]
            ;Nombre de la 
-             (graph (base-graph "calidad-aire-en-euskadi-2017") 
+             (graph (graph-base "calidad-aire-en-euskadi-2017") 
                 [uriEstacion
                  [rdf:a qb:Observation]
                  [date-predicate dateValue]
@@ -191,6 +189,7 @@
  (derive-column :varPM10AQ-CAST "PM10-Air-Quality")
  (derive-column :varPM25AQ-CAST "PM25-Air-Quality")
  (derive-column :varICAE-CAST "ICA-estacion")
+ 
       (mapc {"Date" organizeDate
           "Benceno" parseValue
           "CO" parseValue
@@ -246,7 +245,6 @@
   (derive-column :observation-Benceno [:Date] base-Benceno)
       ))
 
-
 (defn convert-data-to-graph
   [dataset]
   (-> dataset convert-data-to-data make-graph missing-data-filter))
@@ -258,4 +256,3 @@
 ;Convierte una IStatement en una statement Sesame
 (defn convertidor [is]
   (map io/IStatement->sesame-statement (convert-data-to-graph is)))
-

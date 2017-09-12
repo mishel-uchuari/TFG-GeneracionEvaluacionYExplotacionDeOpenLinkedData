@@ -21,16 +21,16 @@
 (def categoriaRetrib "categoria-retributiva")
 (def perfilLing "perfil-linguistico")
 
-(def uriFechaDesc  (contract-predicate-base fechaDesc)) 
-(def uriCodPuesto  (contract-predicate-base codPuesto)) 
-(def uriDotacion  (contract-predicate-base dotacion)) 
-(def uriCodDepto  (contract-predicate-base codDepto)) 
-(def uriCodCentroOrg  (contract-predicate-base codCentroOrg)) 
-(def uriCentroOrg  (contract-predicate-base centroOrg)) 
-(def uriCodCentroDest  (contract-predicate-base codCentroDest)) 
-(def uriCentroDestino  (contract-predicate-base centroDestino)) 
-(def uriCategoriaRetrib  (contract-predicate-base categoriaRetrib)) 
-(def uriPerfilLing  (contract-predicate-base perfilLing)) 
+(def discharge-date-predicate  (contract-predicate-base fechaDesc)) 
+(def occupation-cod-predicate  (contract-predicate-base codPuesto)) 
+(def endowment-predicate  (contract-predicate-base dotacion)) 
+(def dpto-cod-predicate  (contract-predicate-base codDepto)) 
+(def organic-cod-predicate  (contract-predicate-base codCentroOrg)) 
+(def organic-center-predicate  (contract-predicate-base centroOrg)) 
+(def destination-center-cod-predicate  (contract-predicate-base codCentroDest)) 
+(def destination-center-predicate  (contract-predicate-base centroDestino)) 
+(def retributive-category-predicate  (contract-predicate-base categoriaRetrib)) 
+(def linguistic-profile-predicate  (contract-predicate-base perfilLing)) 
 
 (defn uriGeneralRPuestoTrabajo[dotation destinationCenter occupationCod modifiedDate] 
   (contract-resource-base

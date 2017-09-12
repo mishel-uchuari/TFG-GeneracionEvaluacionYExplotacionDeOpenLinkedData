@@ -17,21 +17,21 @@
 (def idCentroOrganico "id-centro-organico")
 (def centroOrganico "centro-organico")
 
-(def uriCargoPublico (contract-predicate-base cargoPublico))
-(def uriIdOrgano (contract-predicate-base idOrgano)) 
-(def uriIdDpto (contract-predicate-base idDpto)) 
-(def uriOrgano (contract-predicate-base organo)) 
-(def uriIdCentroOrganico (contract-predicate-base idCentroOrganico)) 
-(def uriCentroOrganico (contract-predicate-base centroOrganico)) 
+(def public-occupation-predicate (contract-predicate-base cargoPublico))
+(def organ-id-predicate (contract-predicate-base idOrgano)) 
+(def dpto-id-predicate (contract-predicate-base idDpto)) 
+(def organ-predicate (contract-predicate-base organo)) 
+(def organic-center-id-predicate (contract-predicate-base idCentroOrganico)) 
+(def organic-center-predicate (contract-predicate-base centroOrganico)) 
 
 (defn uriGralRNominativas[publicPosition employee department organ currentDate ] 
   (contract-resource-base
-    (str (removeSymbols (str/lower-case publicPosition)) "-" (removeSymbols (str/lower-case employee))  "-" (removeSymbols (str/lower-case departament)) "-" (removeSymbols (str/lower-case organ)) "-" currentDate)))
+    (str (removeSymbols (str/lower-case publicPosition)) "-" (removeSymbols (str/lower-case employee))  "-" (removeSymbols (str/lower-case department)) "-" (removeSymbols (str/lower-case organ)) "-" currentDate)))
 
 (defn uriGralDpto[dpto] 
   (contract-resource-base
-    (str dpto)))
+    (str (lower-case dpto))))
 
-(defn uriGralEmployee[dpto] 
+(defn uriGralEmployee[employee] 
   (contract-resource-base
-    (str dpto)))
+    (str (lower-case employee))))

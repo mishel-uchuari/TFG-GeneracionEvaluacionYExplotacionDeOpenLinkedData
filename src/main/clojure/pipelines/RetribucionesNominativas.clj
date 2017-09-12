@@ -7,7 +7,6 @@
             [grafter.pipeline :refer [declare-pipeline]]
             [grafter.rdf :as rdf]
             [grafter.rdf.io :as io]
-           ; [grafter.rdf :refer [xsd:dateTime]]
             [grafter.vocabularies.qb :refer :all]
             [grafter.rdf.protocols :refer [->Quad]]
             [grafter.rdf.protocols :refer [ITripleWriteable]]
@@ -26,24 +25,24 @@
 
 (def make-graph
  (graph-fn [{:keys [
-NomAp CargoPublico FechaInicio FechaFin IdDpto uriDepartamento uriGralRNominativas Retribucion
-Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmpleado  retribucionSinEspacios
+NomAp CargoPublico FechaInicio FechaFin IdDpto uriGralRNominativas Retribucion
+Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUri departmentUri  retribucionSinEspacios
     ] :as row }]
            ;Nombre de la 
-             (graph (base-graph "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
+             (graph (graph-base "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
                 [uriGralRNominativas
-                 [rdf:a prefix-contrato-trabajo]
-                 [prefix-empleado uriEmpleado]
-                 [prefix-puesto (languageSpanish (str (removeSymbols (row "CargoPublico"))))]
-                 [prefix-fecha-formalizacion (dateLabel (row "FechaInicio"))]
-                 [prefix-fecha-finalizacion (dateLabel (row "FechaFin"))]
-                 [uriIdDpto (row "IdDpto")]
-                 [prefix-departamento-gerente uriDepartamento]
-                 [uriOrgano (languageSpanish (str (removeSymbols (row "Organo"))))]
-                 [uriIdCentroOrganico (row "IdCentro")]
-                 [uriCentroOrganico (languageSpanish (str (removeSymbols (row "CentroOrganico"))))]
-                 [prefix-fecha-modificacion (dateLabel (row "FechaActualizado"))]
-                 [prefix-condiciones-economicas (parseValue (row "Retribucion"))]
+                 [rdf:a employment-contract-predicate]
+                 [employee-predicate employeeUri]
+                 [occupation-predicate (languageSpanish (str (removeSymbols (row "CargoPublico"))))]
+                 [formalized-date-predicate (dateLabel (row "FechaInicio"))]
+                 [ending-date-predicate (dateLabel (row "FechaFin"))]
+                 [dpto-id-predicate (row "IdDpto")]
+                 [managing-dpt-predicate departmentUri]
+                 [organ-predicate (languageSpanish (str (removeSymbols (row "Organo"))))]
+                 [organic-center-id-predicate (row "IdCentro")]
+                 [organic-center-predicate (languageSpanish (str (removeSymbols (row "CentroOrganico"))))]
+                 [modified-date-predicate (dateLabel (row "FechaActualizado"))]
+                 [contract-economic-conditions-predicate (parseValue (row "Retribucion"))]
                  ]
              ))) 
 			   
@@ -67,10 +66,10 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado uriEmplead
             "IdOrgano" parseValue
             "Organo" removeSymbols
             "IdCentro" parseValue
-          })
+          }) 
   (derive-column  :uriGralRNominativas [:CargoPublico :NomAp :Departamento :Organo :FechaActualizado] uriGralRNominativas)
-  (derive-column :uriEmpleado [:NomAp] uriGralEmployee)
-  (derive-column :uriDepartamento [:Departamento] uriGralDpto)
+  (derive-column :employeeUri [:NomAp] uriGralEmployee)
+  (derive-column :departmentUri [:Departamento] uriGralDpto)
  ))
 
 (defn convert-data-to-graph

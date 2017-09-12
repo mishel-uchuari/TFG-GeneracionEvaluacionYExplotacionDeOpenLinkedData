@@ -56,10 +56,12 @@
       (read-string (str "#inst " (pr-str d))))))
 
 (defn dateHourLabel
-  [date hour]
-  (when (and (seq date) (seq hour))
-    (let [d (dateLabel date)
-          dt (str d "T" hour)]
+  "Given a date dd/mm/yyyy and a time hh:mm
+  returns a XSDDatetime"
+  [date time]
+  (when (and (seq date) (seq time))
+    (let [d  date
+          dt (str d "T" time)]
       (read-string (str "#inst " (pr-str dt))))))
 
 ;Elimina simbolos "innecesarios"

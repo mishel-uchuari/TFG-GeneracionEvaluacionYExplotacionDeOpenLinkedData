@@ -48,7 +48,7 @@ public class Pipeline extends Thread {
 		FileOutputStream fileTurtle;
 		try {
 			fileTurtle = new FileOutputStream(file);
-			Rio.write(model, fileTurtle, RDFFormat.NQUADS);
+			Rio.write(model, fileTurtle, RDFFormat.RDFXML);
 		} catch (FileNotFoundException | RDFHandlerException e) {
 			e.printStackTrace();
 		}
