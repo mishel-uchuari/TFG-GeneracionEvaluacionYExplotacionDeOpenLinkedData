@@ -24,6 +24,6 @@ public class main {
 	//	 pipeRelacionesPuestosT.start();
 		// pipeRetribNominativas.start();
 		GraphDB nd = new GraphDB();
-		nd.executeQuery("select * where { ?s ?p ?o .s} limit 100 ");
+		System.out.println(nd.executeQuery("select ?s ?p ?o where { ?s ?p ?o .} limit 100"));
 	}
 }
