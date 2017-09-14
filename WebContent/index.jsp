@@ -56,7 +56,29 @@
 <script src="<%=request.getContextPath()%>/js/d3sparql.js"></script>
 <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
 <script src="<%=request.getContextPath()%>/js/GestorIndice.js"></script>
+<script src="<%=request.getContextPath()%>/js/GestorTabla.js"></script>
 
+<script>
+function ejecutarServlet() {
+	var form = $("#form");
+	$
+			.ajax({
+				url : "ServGeneradorResultados",
+				data : form.serialize(),
+				type : "post",
+				success : function(data) {
+					crearGrafo(data);
+				}
+			});
+}
+
+  function render(json) {
+    var config = {
+      "selector": "#result"
+    }
+    d3sparql.htmltable(json, config)
+  }
+  </script>
 </head>
 <body>
 	<div class="blended_grid">
@@ -74,17 +96,15 @@
 				<textarea class="form-control" rows="7" cols="50" name="textArea"
 					placeholder="Escribe tu consulta"></textarea>
 			</form>
-			<div id="button"></div>
-			<button class="btn btn-primary" type="button"
-				onclick="ejecutarServlet()">
+			<div id="button"><button class="btn btn-primary" type="button"
+				onclick="ejecutarServlet()" id="botonRun">
 				<span class="glyphicon glyphicon-play"></span>RUN
-			</button>
-			<div></div>
+			</button></div>			
 			<div class="btn-group" role="group" aria-label="...">
 				<button type="button" class="btn btn-default">Tabla</button>
 				<button type="button" class="btn btn-default">Grafo</button>
 
-				<div class="btn-group" role="group">
+				
 					<button type="button" class="btn btn-default dropdown-toggle"
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Descargar<span class="caret"></span>
@@ -93,10 +113,13 @@
 						<li><a href="#">RDF/XML</a></li>
 						<li><a href="#">JSON</a></li>
 					</ul>
-				</div>
+				
 			</div>
-			<div class="pageFooter"></div>
-			<div id="result"></div>
+			<div id="result">
+			<table id="table" border="1" class="table table-striped">
+			</table>
+			</div>
 		</div>
+		<div class="pageFooter"></div>
 </body>
 </html>

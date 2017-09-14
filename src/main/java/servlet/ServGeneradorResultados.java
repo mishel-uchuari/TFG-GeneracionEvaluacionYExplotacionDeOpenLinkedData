@@ -6,7 +6,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.openrdf.query.MalformedQueryException;
+import org.openrdf.query.QueryEvaluationException;
+import org.openrdf.repository.RepositoryException;
+
 import triplestore.GraphDB;
+
 
 
 public class ServGeneradorResultados extends HttpServlet {
@@ -29,10 +34,15 @@ public class ServGeneradorResultados extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String textAreaValue = request.getParameter("textArea");
 		GraphDB gdb = new GraphDB();
-		String result=gdb.executeQuery(textAreaValue);
+		String result="";
+		try {
+			result = gdb.executeGraphQuery(textAreaValue);
+		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(result);
 	}
-
 }

@@ -1,6 +1,7 @@
 function crearGrafo(data) {
-    var links = getFormatoJson(data);
-    
+	console.log(data);
+    var links = getFormatoJsonGrafo(data);
+    console.log(links);
     var nodos = {};
     links.forEach(function(link) {
         link.source = nodos[link.source] || (nodos[link.source] = {
@@ -75,7 +76,7 @@ function crearGrafo(data) {
             "r": 15,
             "fill": "#ccc",
             "stroke": "#000000"
-        });
+        }).call(force.drag);
 
     var rectangle = svg.append("svg:g").selectAll("rectangle").data(d3.values(literales))
         .enter().append("svg:rect").attr("class", function(d) {
@@ -207,8 +208,10 @@ function eliminarSimbolos(pString) {
     pString = pString.replace(/\s/g, "");
     pString = pString.replace("+", "");
     pString = pString.replace("//", "");
-    pString = pString.replace("/", "");
+    pString = pString.replace("#", "");
+    pString = pString.replace("-", "");
     pString = pString.replace(/\./g, "");
+    pString = pString.replace(/\//g, "");
     pString = pString.replace("+", "");
     return pString;
 }
@@ -236,14 +239,14 @@ function ocultarElemento(element) {
 	  return w+10;
 	}
 
-function getFormatoJson(data){
+function getFormatoJsonGrafo(data){
 	var data=JSON.parse(JSON.stringify(data));
 	var x=data.split(";");
 	var generalElements=[];
 	var centralElements={};
 	x.forEach(function(links, i){
 	y=links.split(",");
-	generalElements.push({source:y[0], target:y[1], type:y[2]});
+	generalElements.push({source:y[0], type:y[2], target:y[1]});
 	centralElements={};
 	});
 	return generalElements;
