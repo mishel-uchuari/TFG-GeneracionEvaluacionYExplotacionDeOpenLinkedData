@@ -13,8 +13,16 @@
     <servlet-name>ServGeneradorResultados</servlet-name>
     <servlet-class>servlet.ServGeneradorResultados</servlet-class>
   </servlet>
-    <servlet-mapping>
+  <servlet>
+    <servlet-name>ServDescargas</servlet-name>
+    <servlet-class>servlet.ServDescargas</servlet-class>
+  </servlet>
+  <servlet-mapping>
     <servlet-name>ServGeneradorResultados</servlet-name>
     <url-pattern>/ServGeneradorResultados</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>ServDescargas</servlet-name>
+    <url-pattern>/ServDescargas</url-pattern>
   </servlet-mapping>
 </web-app>

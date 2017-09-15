@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	font-family: 'Bellefair', serif;
 }
 
 h3 {
@@ -16,7 +17,7 @@ body {
 
 .blended_grid {
 	display: block;
-/**	background-color: #D8D8D8;*/
+	/**	background-color: #D8D8D8;*/
 	width: 100% overflow: auto;
 	height: 100% overflow: auto;
 }
@@ -28,6 +29,7 @@ body {
 	width: 100%;
 	font-family: 'Bellefair', serif;
 }
+
 
 .glyphicon {
 	font-size: 15px;
@@ -44,13 +46,26 @@ body {
 }
 
 .pageContent {
-	margin: auto;
-    width: 50%;
-    height: 70%;
-    padding: 10px;
+	padding: 10px 15px 15px 15px;
 	font-family: 'Bellefair', serif;
 }
 
+.form {
+	margin: auto;
+	width: 50%;
+	height: 70%;
+}
+
+.btn-group {
+	
+	float: right;
+}
+
+.btn {
+	margin-top : 15px;
+	margin-bottom : 15px;
+	float: left;
+	}
 .pageFooter {
 	float: left;
 	clear: none;
@@ -59,6 +74,15 @@ body {
 	font-family: 'Bellefair', serif;
 }
 
+.table th{
+	text-align: center
+}
+
+
+.table{
+	width:90%;
+	text-align: center
+}
 .list-group-item {
 	font-family: 'Bellefair', serif;
 }
@@ -72,6 +96,8 @@ path.textpath {
 	fill: none;
 	stroke: none;
 }
+
+
 
 marker#end {
 	fill: green;
@@ -108,6 +134,11 @@ span {
 	font-size: large;
 }
 
+.btn-group {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
 .alertify-notifier .ajs-message.ajs-error {
 	background: #337ab7;
 }
@@ -119,3 +150,7 @@ span {
 .alertify-notifier.ajs-right .ajs-message.ajs-visible {
 	left: 0px;
 }
+
+/* .table-striped{
+	background-color:#A9D0F5; 
+} */

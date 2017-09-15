@@ -4,9 +4,9 @@
 <title>Eurohelp Consulting</title>
 <meta name="description"
 	content="Write some words to describe your html page">
-	
 <!-- Progress bar -->
-<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+<script
+	src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
 <!-- JavaScript -->
 <script src="//cdn.jsdelivr.net/alertifyjs/1.10.0/alertify.min.js"></script>
 <!-- CSS -->
@@ -48,17 +48,14 @@
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script
+	src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <script src="<%=request.getContextPath()%>/js/sweetalert2.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/GestorGrafo.js"></script>
+<script src="<%=request.getContextPath()%>/js/d3sparql.js"></script>
 <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
 <script src="<%=request.getContextPath()%>/js/GestorIndice.js"></script>
-
-<script>
-	$.post('ServGeneradorIndex', function(data) {
-		$('#pageLeftMenu').append(data);
-	});
-</script>
+<script src="<%=request.getContextPath()%>/js/GestorTabla.js"></script>
 </head>
 <body>
 	<div class="blended_grid">
@@ -71,12 +68,39 @@
 				</div>
 			</nav>
 		</div>
-		<div id="graph" class="pageContent" align=center>
-		      <textarea class="form-control" rows="7" cols="50" id="textArea"></textarea>
-		<button class="btn btn-primary" type="button" onclick="destacarElemento()">
-							<span class="glyphicon glyphicon-play"></span>
-						</button>
-		<div class="pageFooter"></div>
+		<div id="formulario" class="pageContent" align=center>
+			<form name="form" id="form">
+				<textarea class="form-control" rows="7" cols="50" name="textArea"
+					placeholder="Escribe tu consulta"></textarea>
+			</form>
+			<div id="button">
+				<button class="btn btn-primary" type="button"
+					onclick="getQueryData()" id="botonRun">
+					<span class="glyphicon glyphicon-play"></span>RUN
+				</button>
+			</div>
+
+			<div class="btn-group" role="group" aria-label="...">
+				<button type="button" class="btn btn-default"
+					onclick="createTable(json)">Tabla</button>
+				<button type="button" class="btn btn-default"
+					onclick="createGraph(json)">Grafo</button>
+				<button type="button" class="btn btn-default dropdown-toggle"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenu">
+					Descargar <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a name="RDF/XML" onclick="getFile(name)">RDF/XML</a></li>
+					<li><a name="JSON-LD" onclick="getFile(name)">JSON-LD</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="resultTable">
+			<table id="table" border="1" class="table table-striped">
+			</table>
+		</div>
+		<div id="resultGraph"></div>
 	</div>
+	<div class="pageFooter"></div>
 </body>
 </html>
