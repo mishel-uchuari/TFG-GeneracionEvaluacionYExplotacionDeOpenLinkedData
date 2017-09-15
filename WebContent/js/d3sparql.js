@@ -9,7 +9,7 @@
 
 var d3sparql = {
   version: "d3sparql.js version 2015-11-19",
-  debug: true  // set to true for showing debug information
+  debug: false  // set to true for showing debug information
 }
 
 /*
@@ -101,48 +101,47 @@ d3sparql.query = function(endpoint, sparql, callback) {
     Should follow the convention in the miserables.json https://gist.github.com/mbostock/4062045 to contain group for nodes and value for edges.
 */
 d3sparql.graph = function(json, config) {
-	  config = config || {}
+  config = config || {}
 
-	  var head = json.head.vars
-	  var data = json.results.bindings
+  var head = json.head.vars
+  var data = json.results.bindings
 
-	  var opts = {
-	    "key1":   config.key1   || head[0] || "key1",
-	    "key2":   config.key2   || head[1] || "key2",
-	    "label1": config.label1 || head[2] || false,
-	    "label2": config.label2 || head[3] || false,
-	    "value1": config.value1 || head[4] || false,
-	    "value2": config.value2 || head[5] || false,
-	  }
-	  var graph = {
-	    "nodes": [],
-	    "links": []
-	  }
-	  var check = d3.map()
-	  var index = 0
-	  for (var i = 0; i < data.length; i++) {
-	    var key1 = data[i][opts.key1].value
-	    var key2 = data[i][opts.key2].value
-	    var label1 = opts.label1 ? data[i][opts.label1].value : key1
-	    var label2 = opts.label2 ? data[i][opts.label2].value : key2
-	    var value1 = opts.value1 ? data[i][opts.value1].value : false
-	    var value2 = opts.value2 ? data[i][opts.value2].value : false
-	    if (!check.has(key1)) {
-	      graph.nodes.push({"key": key1, "label": label1, "value": value1})
-	      check.set(key1, index)
-	      index++
-	    }
-	    if (!check.has(key2)) {
-	      graph.nodes.push({"key": key2, "label": label2, "value": value2})
-	      check.set(key2, index)
-	      index++
-	    }
-	    graph.links.push({"source": check.get(key1), "target": check.get(key2)})
-	  }
-	  if (d3sparql.debug) { console.log(JSON.stringify(graph)) }
-	  console.log(graph);
-	  return graph
-	}
+  var opts = {
+    "key1":   config.key1   || head[0] || "key1",
+    "key2":   config.key2   || head[1] || "key2",
+    "label1": config.label1 || head[2] || false,
+    "label2": config.label2 || head[3] || false,
+    "value1": config.value1 || head[4] || false,
+    "value2": config.value2 || head[5] || false,
+  }
+  var graph = {
+    "nodes": [],
+    "links": []
+  }
+  var check = d3.map()
+  var index = 0
+  for (var i = 0; i < data.length; i++) {
+    var key1 = data[i][opts.key1].value
+    var key2 = data[i][opts.key2].value
+    var label1 = opts.label1 ? data[i][opts.label1].value : key1
+    var label2 = opts.label2 ? data[i][opts.label2].value : key2
+    var value1 = opts.value1 ? data[i][opts.value1].value : false
+    var value2 = opts.value2 ? data[i][opts.value2].value : false
+    if (!check.has(key1)) {
+      graph.nodes.push({"key": key1, "label": label1, "value": value1})
+      check.set(key1, index)
+      index++
+    }
+    if (!check.has(key2)) {
+      graph.nodes.push({"key": key2, "label": label2, "value": value2})
+      check.set(key2, index)
+      index++
+    }
+    graph.links.push({"source": check.get(key1), "target": check.get(key2)})
+  }
+  if (d3sparql.debug) { console.log(JSON.stringify(graph)) }
+  return graph
+}
 
 /*
   Convert sparql-results+json object into a JSON tree of {"name": name, "value": size, "children": []} format like in the flare.json file.
@@ -175,56 +174,56 @@ d3sparql.graph = function(json, config) {
     }
 */
 d3sparql.tree = function(json, config) {
-	  config = config || {}
+  config = config || {}
 
-	  var head = json.head.vars
-	  var data = json.results.bindings
+  var head = json.head.vars
+  var data = json.results.bindings
 
-	  var opts = {
-	    "root":   config.root   || head[0],
-	    "parent": config.parent || head[1],
-	    "child":  config.child  || head[2],
-	    "value":  config.value  || head[3] || "value",
-	  }
+  var opts = {
+    "root":   config.root   || head[0],
+    "parent": config.parent || head[1],
+    "child":  config.child  || head[2],
+    "value":  config.value  || head[3] || "value",
+  }
 
-	  var pair = d3.map()
-	  var size = d3.map()
-	  var root = data[0][opts.root].value
-	  var parent = child = children = true
-	  for (var i = 0; i < data.length; i++) {
-	    parent = data[i][opts.parent].value
-	    child = data[i][opts.child].value
-	    if (parent != child) {
-	      if (pair.has(parent)) {
-	        children = pair.get(parent)
-	        children.push(child)
-	      } else {
-	        children = [child]
-	      }
-	      pair.set(parent, children)
-	      if (data[i][opts.value]) {
-	        size.set(child, data[i][opts.value].value)
-	      }
-	    }
-	  }
-	  function traverse(node) {
-	    var list = pair.get(node)
-	    if (list) {
-	      var children = list.map(function(d) { return traverse(d) })
-	      // sum of values of children
-	      var subtotal = d3.sum(children, function(d) { return d.value })
-	      // add a value of parent if exists
-	      var total = d3.sum([subtotal, size.get(node)])
-	      return {"name": node, "children": children, "value": total}
-	    } else {
-	      return {"name": node, "value": size.get(node) || 1}
-	    }
-	  }
-	  var tree = traverse(root)
+  var pair = d3.map()
+  var size = d3.map()
+  var root = data[0][opts.root].value
+  var parent = child = children = true
+  for (var i = 0; i < data.length; i++) {
+    parent = data[i][opts.parent].value
+    child = data[i][opts.child].value
+    if (parent != child) {
+      if (pair.has(parent)) {
+        children = pair.get(parent)
+        children.push(child)
+      } else {
+        children = [child]
+      }
+      pair.set(parent, children)
+      if (data[i][opts.value]) {
+        size.set(child, data[i][opts.value].value)
+      }
+    }
+  }
+  function traverse(node) {
+    var list = pair.get(node)
+    if (list) {
+      var children = list.map(function(d) { return traverse(d) })
+      // sum of values of children
+      var subtotal = d3.sum(children, function(d) { return d.value })
+      // add a value of parent if exists
+      var total = d3.sum([subtotal, size.get(node)])
+      return {"name": node, "children": children, "value": total}
+    } else {
+      return {"name": node, "value": size.get(node) || 1}
+    }
+  }
+  var tree = traverse(root)
 
-	  if (d3sparql.debug) { console.log(JSON.stringify(tree)) }
-	  return tree
-	}
+  if (d3sparql.debug) { console.log(JSON.stringify(tree)) }
+  return tree
+}
 
 /*
   Rendering sparql-results+json object containing multiple rows into a HTML table
@@ -778,80 +777,79 @@ d3sparql.scatterplot = function(json, config) {
     Try other d3.layout.force options.
 */
 d3sparql.forcegraph = function(json, config) {
-	  config = config || {}
+  config = config || {}
 
-	  var graph = (json.head && json.results) ? d3sparql.graph(json, config) : json
+  var graph = (json.head && json.results) ? d3sparql.graph(json, config) : json
 
-	  var scale = d3.scale.linear()
-	    .domain(d3.extent(graph.nodes, function(d) { return parseFloat(d.value) }))
-	    .range([1, 20])
+  var scale = d3.scale.linear()
+    .domain(d3.extent(graph.nodes, function(d) { return parseFloat(d.value) }))
+    .range([1, 20])
 
-	  var opts = {
-	    "radius":    config.radius    || function(d) { return d.value ? scale(d.value) : 1 + d.label.length },
-	    "charge":    config.charge    || -500,
-	    "distance":  config.distance  || 50,
-	    "width":     config.width     || 1000,
-	    "height":    config.height    || 750,
-	    "label":     config.label     || false,
-	    "selector":  config.selector  || null
-	  }
+  var opts = {
+    "radius":    config.radius    || function(d) { return d.value ? scale(d.value) : 1 + d.label.length },
+    "charge":    config.charge    || -500,
+    "distance":  config.distance  || 50,
+    "width":     config.width     || 1000,
+    "height":    config.height    || 750,
+    "label":     config.label     || false,
+    "selector":  config.selector  || null
+  }
 
-	  var svg = d3sparql.select(opts.selector, "forcegraph").append("svg")
-	    .attr("width", opts.width)
-	    .attr("height", opts.height)
-	  var link = svg.selectAll(".link")
-	    .data(graph.links)
-	    .enter()
-	    .append("line")
-	    .attr("class", "link")
-	  var node = svg.selectAll(".node")
-	    .data(graph.nodes)
-	    .enter()
-	    .append("g")
-	  var circle = node.append("circle")
-	    .attr("class", "node")
-	    .attr("r", opts.radius)
-	  var text = node.append("text")
-	    .text(function(d) { return d[opts.label || "label"] })
-	    .attr("class", "node")
-	  var force = d3.layout.force()
-	    .charge(opts.charge)
-	    .linkDistance(opts.distance)
-	    .size([opts.width, opts.height])
-	    .nodes(graph.nodes)
-	    .links(graph.links)
-	    .start()
-	  force.on("tick", function() {
-	    link.attr("x1", function(d) { return d.source.x })
-	        .attr("y1", function(d) { return d.source.y })
-	        .attr("x2", function(d) { return d.target.x })
-	        .attr("y2", function(d) { return d.target.y })
-	    text.attr("x", function(d) { return d.x })
-	        .attr("y", function(d) { return d.y })
-	    circle.attr("cx", function(d) { return d.x })
-	          .attr("cy", function(d) { return d.y })
-	  })
-	  node.call(force.drag)
+  var svg = d3sparql.select(opts.selector, "forcegraph").append("svg")
+    .attr("width", opts.width)
+    .attr("height", opts.height)
+  var link = svg.selectAll(".link")
+    .data(graph.links)
+    .enter()
+    .append("line")
+    .attr("class", "link")
+  var node = svg.selectAll(".node")
+    .data(graph.nodes)
+    .enter()
+    .append("g")
+  var circle = node.append("circle")
+    .attr("class", "node")
+    .attr("r", opts.radius)
+  var text = node.append("text")
+    .text(function(d) { return d[opts.label || "label"] })
+    .attr("class", "node")
+  var force = d3.layout.force()
+    .charge(opts.charge)
+    .linkDistance(opts.distance)
+    .size([opts.width, opts.height])
+    .nodes(graph.nodes)
+    .links(graph.links)
+    .start()
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x })
+        .attr("y1", function(d) { return d.source.y })
+        .attr("x2", function(d) { return d.target.x })
+        .attr("y2", function(d) { return d.target.y })
+    text.attr("x", function(d) { return d.x })
+        .attr("y", function(d) { return d.y })
+    circle.attr("cx", function(d) { return d.x })
+          .attr("cy", function(d) { return d.y })
+  })
+  node.call(force.drag)
 
-	  // default CSS/SVG
-	  link.attr({
-	    "stroke": "#999999",
-	  })
-	  circle.attr({
-	    "stroke": "black",
-	    "stroke-width": "1px",
-	    "fill": "lightblue",
-	    "opacity": 1,
-	  })
-	  text.attr({
-	    "font-size": "8px",
-	    "font-family": "sans-serif",
-	  })
-	}
-
+  // default CSS/SVG
+  link.attr({
+    "stroke": "#999999",
+  })
+  circle.attr({
+    "stroke": "black",
+    "stroke-width": "1px",
+    "fill": "lightblue",
+    "opacity": 1,
+  })
+  text.attr({
+    "font-size": "8px",
+    "font-family": "sans-serif",
+  })
+}
 
 /*
-  Rendering sparql-results+json object into a sanky  
+  Rendering sparql-results+json object into a sanky graph
 
   References:
     https://github.com/d3/d3-plugins/tree/master/sankey
@@ -1130,122 +1128,65 @@ d3sparql.roundtree = function(json, config) {
     }
     </style>
 */
-d3sparql.dendrogram = function(json,config) {
+d3sparql.dendrogram = function(json, config) {
   config = config || {}
-  
+
+  var tree = (json.head && json.results) ? d3sparql.tree(json, config) : json
+
   var opts = {
-		    "width":    config.width    || 800,
-		    "height":   config.height   || 2000,
-		    "margin":   config.margin   || 350,
-		    "radius":   config.radius   || 5,
-		    "selector": config.selector || null
-		  }
-  
-	var tree = d3.layout.tree()
-    .size([opts.height, opts.width - 160]);
-  
+    "width":    config.width    || 800,
+    "height":   config.height   || 2000,
+    "margin":   config.margin   || 350,
+    "radius":   config.radius   || 5,
+    "selector": config.selector || null
+  }
+
+  var cluster = d3.layout.cluster()
+    .size([opts.height, opts.width - opts.margin])
   var diagonal = d3.svg.diagonal()
-      .projection(function (d) {
-          return [d.y, d.x];
-      });
-
-  var svg = d3.select("body").append("svg")
-      .attr("width", opts.width)
-      .attr("height", opts.height)
-      .append("g")
-      .attr("transform", "translate(40,0)");
-  
-  var root = getData(),
-  nodes = tree.nodes(root),
-  links = tree.links(nodes);
-
+    .projection(function(d) { return [d.y, d.x] })
+  var svg = d3sparql.select(opts.selector, "dendrogram").append("svg")
+    .attr("width", opts.width)
+    .attr("height", opts.height)
+    .append("g")
+    .attr("transform", "translate(40,0)")
+  var nodes = cluster.nodes(tree)
+  var links = cluster.links(nodes)
   var link = svg.selectAll(".link")
-      .data(links)
-      .enter()
-      .append("g")
-      .attr("class", "link");
-
-  link.append("path")
-      .attr("fill", "none")
-      .attr("stroke", "#ff8888")
-      .attr("stroke-width", "1.5px")
-      .attr("d", diagonal);
-
-  link.append("text")
-      .attr("font-family", "Arial, Helvetica, sans-serif")
-      .attr("fill", "Black")
-      .style("font", "normal 12px Arial")
-      .attr("transform", function(d) {
-          return "translate(" +
-              ((d.source.y + d.target.y)/2) + "," + 
-              ((d.source.x + d.target.x)/2) + ")";
-      })   
-      .attr("dy", ".35em")
-      .attr("text-anchor", "middle")
-      .text(function(d) {
-          console.log(d.target.rule);
-           return d.target.rule;
-      });
-
+    .data(links)
+    .enter().append("path")
+    .attr("class", "link")
+    .attr("d", diagonal)
   var node = svg.selectAll(".node")
-      .data(nodes)
-      .enter()
-      .append("g")
-      .attr("class", "node")
-      .attr("transform", function (d) {
-          return "translate(" + d.y + "," + d.x + ")";
-      });
+    .data(nodes)
+    .enter().append("g")
+    .attr("class", "node")
+    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")" })
+  var circle = node.append("circle")
+    .attr("r", opts.radius)
+  var text = node.append("text")
+    .attr("dx", function(d) { return (d.parent && d.children) ? -8 : 8 })
+    .attr("dy", 5)
+    .style("text-anchor", function(d) { return (d.parent && d.children) ? "end" : "start" })
+    .text(function(d) { return d.name })
 
-  node.append("circle")
-      .attr("r", 4.5);
-
-  node.append("text")
-      .attr("dx", function (d) {
-          return d.children ? -8 : 8;
-      })
-      .attr("dy", 3)
-      .style("text-anchor", function (d) {
-          return d.children ? "end" : "start";
-      })
-      .text(function (d) {
-          return d.name;
-      });
-  
-  function getData() {
-	    return {
-	        "name": "0",
-	        "rule": "null",
-	            "children": [{
-	            "name": "cero",
-	            "rule": "sunny",
-	                "children": [{
-	                "name": "no(3/100%)",
-	                "rule": "high"
-	            }, {
-	                "name": "yes(2/100%)",
-	                "rule": "normal"
-	            }]
-	        }, {
-	            "name": "yes(4/100%)",
-	            "rule": "overcast"
-	        }, {
-	            "name": "tres",
-	            "rule": "rainy",
-	                "children": [{
-	                "name": "no(2/100%)",
-	                "rule": "TRUE"
-	            }, {
-	                "name": "yes(3/100%)",
-	                "rule": "FALSE"
-	            }]
-	        }]
-	    }
-	;
-	};
+  // default CSS/SVG
+  link.attr({
+    "fill": "none",
+    "stroke": "#cccccc",
+    "stroke-width": "1.5px",
+  })
+  circle.attr({
+    "fill": "#ffffff",
+    "stroke": "steelblue",
+    "stroke-width": "1.5px",
+    "opacity": 1,
+  })
+  text.attr({
+    "font-size": "10px",
+    "font-family": "sans-serif",
+  })
 }
-
-
-
 
 /*
   Rendering sparql-results+json object into a sunburst

@@ -1,0 +1,156 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: 'Bellefair', serif;
+}
+
+h3 {
+	font-size: 10px;
+}
+
+body {
+	background-attachment: fixed;
+	background-size: 100%;
+	font-family: 'Bellefair', serif;
+}
+
+.blended_grid {
+	display: block;
+	/**	background-color: #D8D8D8;*/
+	width: 100% overflow: auto;
+	height: 100% overflow: auto;
+}
+
+.pageHeader {
+	float: left;
+	clear: none;
+	height: 15%;
+	width: 100%;
+	font-family: 'Bellefair', serif;
+}
+
+
+.glyphicon {
+	font-size: 15px;
+}
+
+.pageLeftMenu {
+	margin-top: 40px;
+	float: left;
+	clear: none;
+	height: 70%;
+	width: 20%;
+	font-size: large;
+	font-family: 'Bellefair', serif;
+}
+
+.pageContent {
+	padding: 10px 15px 15px 15px;
+	font-family: 'Bellefair', serif;
+}
+
+.form {
+	margin: auto;
+	width: 50%;
+	height: 70%;
+}
+
+.btn-group {
+	
+	float: right;
+}
+
+.btn {
+	margin-top : 15px;
+	margin-bottom : 15px;
+	float: left;
+	}
+.pageFooter {
+	float: left;
+	clear: none;
+	height: 15%;
+	width: 100%;
+	font-family: 'Bellefair', serif;
+}
+
+.table th{
+	text-align: center
+}
+
+
+.table{
+	width:90%;
+	text-align: center
+}
+.list-group-item {
+	font-family: 'Bellefair', serif;
+}
+
+path.link {
+	fill: none;
+	stroke: #666;
+}
+
+path.textpath {
+	fill: none;
+	stroke: none;
+}
+
+
+
+marker#end {
+	fill: green;
+}
+
+.checkbox {
+	position: relative;
+	display: block;
+	width: 80px;
+	height: 26px;
+	margin: 0 auto;
+	background: #FFF;
+	border: 1px solid #2E2E2E;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+span {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.custom-search-form {
+	float: right;
+	margin-top: 30px;
+	margin-right: 15px;
+	width: 45%;
+	font-size: large;
+	padding: 40px;
+}
+
+#busqueda {
+	font-size: large;
+}
+
+.btn-group {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.alertify-notifier .ajs-message.ajs-error {
+	background: #337ab7;
+}
+
+.alertify-notifier .ajs-message {
+	font-family: 'Bellefair', serif;
+}
+
+.alertify-notifier.ajs-right .ajs-message.ajs-visible {
+	left: 0px;
+}
+
+/* .table-striped{
+	background-color:#A9D0F5; 
+} */
