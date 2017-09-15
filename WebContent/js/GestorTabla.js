@@ -1,40 +1,41 @@
-function exec(json) {
+function createTable(json) {
 	var data = getFormatoJson(json);
-	
-	   var columns = addAllColumnHeaders(data);
-	   
-	     for (var i = 0 ; i < data.length ; i++) {
-	         var row$ = $('<tr/>');
-	         for (var colIndex = 0 ; colIndex < columns.length ; colIndex++) {
-	             var cellValue = data[i][columns[colIndex]];
-	 
-	             if (cellValue == null) { cellValue = ""; }
-	 
-	             row$.append($('<td/>').html(cellValue));
-	         }
-	         $("#table").append(row$);
-	     }
+	$("#table").html("");
+	$("svg").remove();
+	var columns = addAllColumnHeaders(data);
+
+	for (var i = 0; i < data.length; i++) {
+		var row$ = $('<tr/>');
+		for (var colIndex = 0; colIndex < columns.length; colIndex++) {
+			var cellValue = data[i][columns[colIndex]];
+
+			if (cellValue == null) {
+				cellValue = "";
+			}
+
+			row$.append($('<td/>').html(cellValue));
+		}
+		$("#table").append(row$);
+	}
 }
 
-function addAllColumnHeaders(data)
-{
-    var columnSet = [];
-    var headerTr$ = $('<tr/>');
+function addAllColumnHeaders(data) {
+	var columnSet = [];
+	var headerTr$ = $('<tr/>');
 
-    for (var i = 0 ; i < data.length ; i++) {
-        var rowHash = data[i];
-        for (var key in rowHash) {
-            if ($.inArray(key, columnSet) == -1){
-                columnSet.push(key);
-                headerTr$.append($('<th/>').html(key));
-            }
-        }
-    }
-    $("#table").append(headerTr$);
+	for (var i = 0; i < data.length; i++) {
+		var rowHash = data[i];
+		for ( var key in rowHash) {
+			if ($.inArray(key, columnSet) == -1) {
+				columnSet.push(key);
+				headerTr$.append($('<th/>').html(key));
+			}
+		}
+	}
+	$("#table").append(headerTr$);
 
-    return columnSet;
+	return columnSet;
 }
-
 
 function getFormatoJson(data) {
 	var data = JSON.parse(JSON.stringify(data));

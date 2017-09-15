@@ -1,7 +1,7 @@
-function crearGrafo(data) {
-	console.log(data);
-    var links = getFormatoJsonGrafo(data);
-    console.log(links);
+function createGraph(data) {
+	$("#table").html("");
+	$("svg").remove();
+	var links = getFormatoJsonGrafo(data);
     var nodos = {};
     links.forEach(function(link) {
         link.source = nodos[link.source] || (nodos[link.source] = {
@@ -14,7 +14,7 @@ function crearGrafo(data) {
     literales = {};
     recursos = {};
     
-    var w = $("#graph").width(),
+    var w = $("#resultGraph").width(),
         h = 1000;
     var force = d3.layout.force().nodes(d3.values(nodos)).links(links).size(
             [w, h]).linkDistance(180).charge(-500).theta(0.1).gravity(0.05)
@@ -34,7 +34,7 @@ function crearGrafo(data) {
         aux = {};
     }
 
-    var svg = d3.select("#result").append("svg:svg").attr("width", w).attr(
+    var svg = d3.select("#resultGraph").append("svg:svg").attr("width", w).attr(
         "height", h).attr(  "align-items", "center");
 
     svg.append("svg:defs").selectAll("marker").data(

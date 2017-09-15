@@ -35,12 +35,13 @@ public class ServGeneradorResultados extends HttpServlet {
 		String textAreaValue = request.getParameter("textArea");
 		GraphDB gdb = new GraphDB();
 		String result="";
-		try {
+		if(textAreaValue.toLowerCase().contains("construct")){
 			result = gdb.executeGraphQuery(textAreaValue);
-		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
+		else if (textAreaValue.toLowerCase().contains("select")){
+			result= gdb.executeQuery(textAreaValue);
+		}
+		
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(result);
