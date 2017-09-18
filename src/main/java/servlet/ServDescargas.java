@@ -3,14 +3,20 @@ package servlet;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.openrdf.query.MalformedQueryException;
+import org.openrdf.query.QueryEvaluationException;
+import org.openrdf.repository.RepositoryException;
+import org.openrdf.rio.RDFHandlerException;
+import org.openrdf.rio.UnsupportedRDFormatException;
+
+import triplestore.GraphDB;
 
 /**
  * Servlet implementation class ServDescargas
@@ -46,30 +52,28 @@ public class ServDescargas extends HttpServlet {
 		String query=request.getParameter("query");
 		System.out.println(selectedItem);
 		System.out.println(query);
-//		File downloadFile = new File("");
-//		FileInputStream is = new FileInputStream(downloadFile);
-//
-//		ServletContext context = getServletContext();
-//		String mime = context.getMimeType("");
-//
-//		if (mime == null) {
-//			mime = "application/octet-stream";
-//
-//		}
-//		response.setContentType(mime);
-//		response.setContentLength((int) downloadFile.length());
-//
-//		String headerKey = "Content-Disposition";
-//		String headerValue = String.format("attachment; filename=\"%s\"", downloadFile.getName());
-//		response.setHeader(headerKey, headerValue);
-//		OutputStream os = response.getOutputStream();
-//		byte[] buffer = new byte[4096];
-//		int bytesRead = -1;
-//		while ((bytesRead = is.read(buffer)) != -1) {
-//			os.write(buffer, 0, bytesRead);
-//		}
-//		is.close();
-//		os.close();
-
+		GraphDB  gdb = new GraphDB();
+		File file = null;
+		try {
+			file = gdb.getRDFXMLFile(query);
+		} catch (RepositoryException | MalformedQueryException | RDFHandlerException | UnsupportedRDFormatException
+				| QueryEvaluationException e) {
+			e.printStackTrace();
+		}
+		
+		//File downloadFile = new File("");
+		FileInputStream is = new FileInputStream(file);
+		int longitud = is.available();
+	    byte[] datos = new byte[longitud];
+	    is.read(datos);
+	    is.close();
+	    
+	    response.setContentType("application/octet-stream");
+	    response.setHeader("Content-Disposition","attachment;filename="+"C:/"+selectedItem+".rdf");    
+	    ServletOutputStream ouputStream = response.getOutputStream();
+	    ouputStream.write(datos);
+	    ouputStream.flush();
+	    ouputStream.close();
+	    System.out.println("TERMINO");
 	}
 }

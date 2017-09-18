@@ -96,7 +96,6 @@ public class GraphDB {
 		try {
 			query = repository.prepareGraphQuery(QueryLanguage.SPARQL, pQuery);
 			GraphQueryResult stataments = query.evaluate();
-			System.out.println("entra");
 			while (stataments.hasNext()) {
 				String statement = stataments.next().toString();
 				statement = statement.replace("[null]", "");
