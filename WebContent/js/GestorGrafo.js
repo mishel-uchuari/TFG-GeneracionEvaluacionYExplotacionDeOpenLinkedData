@@ -17,7 +17,9 @@ function createGraph(data) {
     var w = $("#resultGraph").width(),
         h = 1000;
     var force = d3.layout.force().nodes(d3.values(nodos)).links(links).size(
-            [w, h]).linkDistance(180).charge(-500).theta(0.1).gravity(0.05)
+            [w, h]).linkDistance(function(d) { 
+            	return (getTamanoTexto(d.type, "Bellefair","10px") + 35);}
+            ).charge(-500).theta(0.1).gravity(0.05)
         .on("tick", tick).start();
     aux = {};
 
