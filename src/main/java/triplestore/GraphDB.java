@@ -1,6 +1,9 @@
 
 package triplestore;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Iterator;
 
 import org.openrdf.model.Model;
@@ -12,10 +15,15 @@ import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.query.QueryLanguage;
 import org.openrdf.query.TupleQuery;
 import org.openrdf.query.TupleQueryResult;
-
+import org.openrdf.query.resultio.QueryResultIO;
 import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.repository.RepositoryException;
 import org.openrdf.repository.http.HTTPRepository;
+import org.openrdf.rio.RDFFormat;
+import org.openrdf.rio.RDFHandlerException;
+import org.openrdf.rio.UnsupportedRDFormatException;
+
+import com.healthmarketscience.jackcess.query.Query;
 
 import tratamiento.Json;
 
@@ -49,7 +57,7 @@ public class GraphDB {
 
 	}
 
-	public String executeQuery(String pQuery){
+	public String executeQuery(String pQuery) {
 		System.out.println(pQuery);
 		String resultados = "";
 		TupleQuery query;
@@ -82,12 +90,12 @@ public class GraphDB {
 	}
 
 	public String executeGraphQuery(String pQuery) {
-		GraphQuery query;		String resultados = "";
+		GraphQuery query;
+		String resultados = "";
 
 		try {
 			query = repository.prepareGraphQuery(QueryLanguage.SPARQL, pQuery);
 			GraphQueryResult stataments = query.evaluate();
-			System.out.println("entra");
 			while (stataments.hasNext()) {
 				String statement = stataments.next().toString();
 				statement = statement.replace("[null]", "");
@@ -103,9 +111,22 @@ public class GraphDB {
 			Json json = new Json();
 			resultados = json.parsearJSON(resultados);
 		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e1) {
-		resultados=	e1.getMessage();
-		System.out.println(resultados);
+			resultados = e1.getMessage();
+			System.out.println(resultados);
 		}
 		return resultados;
+	}
+
+	public File getRDFXMLFile(String pQuery) throws IOException, RepositoryException, MalformedQueryException,
+			RDFHandlerException, UnsupportedRDFormatException, QueryEvaluationException {
+		GraphQuery query;
+		File file = File.createTempFile("temporaryFile", null);
+		FileOutputStream fo = new FileOutputStream(file);
+		query = repository.prepareGraphQuery(QueryLanguage.SPARQL, pQuery);
+		GraphQueryResult stataments = query.evaluate();
+		System.out.println("entra");
+		QueryResultIO.write(stataments, RDFFormat.RDFXML, fo);
+		stataments.close();
+		return file;
 	}
 }
