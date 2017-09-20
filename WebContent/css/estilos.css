@@ -30,6 +30,24 @@ body {
 	font-family: 'Bellefair', serif;
 }
 
+/* #resultGraph {
+	overflow: scroll;
+} */
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .glyphicon {
 	font-size: 15px;
@@ -57,15 +75,15 @@ body {
 }
 
 .btn-group {
-	
 	float: right;
 }
 
 .btn {
-	margin-top : 15px;
-	margin-bottom : 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	float: left;
-	}
+}
+
 .pageFooter {
 	float: left;
 	clear: none;
@@ -74,15 +92,15 @@ body {
 	font-family: 'Bellefair', serif;
 }
 
-.table th{
+.table th {
 	text-align: center
 }
 
-
-.table{
-	width:90%;
+.table {
+	width: 90%;
 	text-align: center
 }
+
 .list-group-item {
 	font-family: 'Bellefair', serif;
 }
@@ -96,8 +114,6 @@ path.textpath {
 	fill: none;
 	stroke: none;
 }
-
-
 
 marker#end {
 	fill: green;
