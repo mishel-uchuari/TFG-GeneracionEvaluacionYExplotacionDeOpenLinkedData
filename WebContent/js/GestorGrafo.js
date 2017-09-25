@@ -1,3 +1,7 @@
+//http://bl.ocks.org/bentwonk/2514276
+//el que no me gusta--> http://bl.ocks.org/eyaler/10586116
+
+
 function createGraph(data) {
 	$("#table").html("");
     var graphDiv = document.getElementById("graphResult");
@@ -14,8 +18,8 @@ function createGraph(data) {
     });
     literales = {};
     recursos = {};
-    function redraw(){
-    $("svg").remove();
+ //   function redraw(){
+   // $("svg").remove();
     var w = $("#resultGraph").width(),
         h = window.innerHeight + (window.innerHeight/4)
     
@@ -41,10 +45,12 @@ function createGraph(data) {
 
     var svg = d3.select("#resultGraph").append("svg:svg").attr("width", w).attr(
         "height", h).attr("align-items", "center");
-
+    var g = svg.append("g").call(d3.behavior.zoom().on("zoom", redraw));
    
-
-    var link = svg.append("svg:g").selectAll("g.link").data(force.links())
+    function redraw() {
+    	
+    	}
+    var link = g.append("svg:g").selectAll("g.link").data(force.links())
         .enter().append('g').attr('class', 'link');
 
     var linkPath = link.append("svg:path").attr("class", function(d) {
@@ -61,7 +67,7 @@ function createGraph(data) {
         return d.source.index + "_" + d.target.index;
     }).attr("class", "textpath");
 
-    var circle = svg.append("svg:g").selectAll("circle").data(d3.values(recursos))
+    var circle = g.append("svg:g").selectAll("circle").data(d3.values(recursos))
         .enter().append("svg:circle").attr("class", function(d) {
             if (d.name.includes("http")) {
                 return "recurso";
@@ -78,7 +84,7 @@ function createGraph(data) {
             "stroke": "#000000"
         }).call(force.drag);
 
-    var rectangle = svg.append("svg:g").selectAll("rectangle").data(d3.values(literales))
+    var rectangle = g.append("svg:g").selectAll("rectangle").data(d3.values(literales))
         .enter().append("svg:rect").attr("class", function(d) {
             if (d.name.includes("http")) {
                 return "recurso";
@@ -101,7 +107,7 @@ function createGraph(data) {
         }).call(force.drag);
 
 
-    var textRectangles = svg.append("svg:g").selectAll("g").data(d3.values(literales)).enter()
+    var textRectangles = g.append("svg:g").selectAll("g").data(d3.values(literales)).enter()
         .append("svg:g");
 
     textRectangles.append("svg:text").attr({
@@ -117,7 +123,7 @@ function createGraph(data) {
     });
 
 
-    var textCircles = svg.append("svg:g").selectAll("g").data(d3.values(recursos)).enter()
+    var textCircles = g.append("svg:g").selectAll("g").data(d3.values(recursos)).enter()
         .append("svg:g");
 
     textCircles.append("svg:text").attr("x", 8).attr("y", ".31em").attr({
@@ -134,7 +140,7 @@ function createGraph(data) {
         return d.name;
     });
 
-    var path_label = svg.append("svg:g").selectAll(".path_label").data(
+    var path_label = g.append("svg:g").selectAll(".path_label").data(
         force.links()).enter().append("svg:text").attr({
         "class": "path_label",
         "id": function(d, i) {
@@ -193,8 +199,8 @@ function createGraph(data) {
             return "translate(" + d.x + "," + d.y + ")";
         });
     }
-    }
-    redraw();
+    
+    //redraw();
   
     window.addEventListener("resize", redraw);
 }
