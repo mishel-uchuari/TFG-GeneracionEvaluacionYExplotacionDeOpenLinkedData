@@ -2,6 +2,7 @@ function createGraph(data) {
 	$("#table").html("");
     var graphDiv = document.getElementById("graphResult");
 	var links = getFormatoJsonGrafo(data);
+	console.log(links);
     var nodos = {};
     links.forEach(function(link) {
         link.source = nodos[link.source] || (nodos[link.source] = {
@@ -39,14 +40,9 @@ function createGraph(data) {
     }
 
     var svg = d3.select("#resultGraph").append("svg:svg").attr("width", w).attr(
-        "height", h).attr(  "align-items", "center");
+        "height", h).attr("align-items", "center");
 
-    svg.append("svg:defs").selectAll("marker").data(
-            ["end"]).enter().append("svg:marker")
-        .attr("id", String).attr("viewBox", "0 -5 10 10").attr("refX", 15)
-        .attr("refY", -1.5).attr("markerWidth", 6).attr("markerHeight", 6)
-        .attr("orient", "auto").append("svg:path").attr("d",
-            "M0,-5L10,0L0,5");
+   
 
     var link = svg.append("svg:g").selectAll("g.link").data(force.links())
         .enter().append('g').attr('class', 'link');
@@ -75,7 +71,7 @@ function createGraph(data) {
         })
         .attr({
             "id":function(d) {
-            	return "b"+eliminarSimbolos(d.name);
+            	return "b"+eliminarSimbolos(d.name.toLowerCase());
             },
             "r": 15,
             "fill": "#ccc",
@@ -92,7 +88,7 @@ function createGraph(data) {
         })
         .attr({
         	"id":function(d) {
-            	return "b"+eliminarSimbolos(d.name);
+            	return "b"+eliminarSimbolos(d.name.toLowerCase());
             },
             "width": function(d) {
                 return getTamanoTexto(d.name, "Bellefair","10px")
@@ -225,7 +221,7 @@ function eliminarSimbolos(pString) {
 }
 
 function destacarElemento() {
-    var userInput = eliminarSimbolos(document.getElementById("busqueda").value);
+    var userInput = eliminarSimbolos(document.getElementById("busqueda").value.toLowerCase());
     var theNode = d3.select("#b" + userInput);
     theNode.attr("fill", "#337ab7");
     setTimeout(function(){ ocultarElemento("#b" + userInput); }, 9000);

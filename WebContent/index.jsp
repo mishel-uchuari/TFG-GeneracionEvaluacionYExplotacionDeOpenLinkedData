@@ -59,7 +59,7 @@
 </head>
 <body>
 	<div class="blended_grid">
-		<div class="pageHeader">
+		<div class="pageHeader" id="cabecera">
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -68,9 +68,9 @@
 				</div>
 			</nav>
 		</div>
-		<div id="formulario" class="pageContent" align=center>
+		<div id="formulario" class="pageContent">
 			<form name="form" id="form">
-				<textarea class="form-control" rows="7" cols="50" name="textArea"
+				<textarea class="form-control" rows="5" cols="2" name="textArea"
 					placeholder="Escribe tu consulta"></textarea>
 			</form>
 			<div id="button">
@@ -79,14 +79,14 @@
 					<span class="glyphicon glyphicon-play"></span>RUN
 				</button>
 			</div>
-
 			<div class="btn-group" role="group" aria-label="...">
 				<button type="button" class="btn btn-default"
 					onclick="createTable(json)">Tabla</button>
 				<button type="button" class="btn btn-default"
 					onclick="createGraph(json)">Grafo</button>
 				<button type="button" class="btn btn-default dropdown-toggle"
-					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenu">
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+					id="dropdownMenu">
 					Descargar <span class="caret"></span>
 				</button>
 				<ul class="dropdown-menu">
@@ -95,11 +95,13 @@
 				</ul>
 			</div>
 		</div>
+
 		<div id="resultTable">
 			<table id="table" border="1" class="table table-striped">
 			</table>
 		</div>
-		<div id="resultGraph"></div>
+
+		<div id="resultGraph" class="graph"></div>
 	</div>
 	<div class="pageFooter"></div>
 </body>

@@ -23,7 +23,6 @@ import org.openrdf.rio.RDFFormat;
 import org.openrdf.rio.RDFHandlerException;
 import org.openrdf.rio.UnsupportedRDFormatException;
 
-import com.healthmarketscience.jackcess.query.Query;
 
 import tratamiento.Json;
 

@@ -6,8 +6,6 @@ import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.repository.RepositoryException;
 import org.openrdf.rio.RDFHandlerException;
 
-import triplestore.GraphDB;
-
 
 public class main {
 	public static void main(String[] args) throws IOException, RDFHandlerException, RepositoryException, MalformedQueryException, QueryEvaluationException {
@@ -32,8 +30,9 @@ public class main {
 		// pipeEstacionesMetereologicas.start();
 		// pipeRelacionesPuestosT.start();
 		// pipeRetribNominativas.start();
-		GraphDB nd = new GraphDB();
-		String st = nd.executeGraphQuery("construct{ ?s ?p ?o} where { ?s ?p ?o } limit 10");
+		/**GraphDB nd = new GraphDB();
+		String st = nd.executeGraphQuery("construct{ ?s ?p ?o} where { ?s ?p ?o } limit 10");*/
 	//.out.println(st);
+		Peticion s = new Peticion("http://localhost:8083/page/Prot_B");
 	}
 }
