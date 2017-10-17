@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<title>Eurohelp Consulting</title>
+<title>Modelo Para La Generación De Datos Enlazados</title>
 <meta name="description"
 	content="Write some words to describe your html page">
 <!-- Progress bar -->
@@ -48,6 +48,17 @@
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<!-- YASGUI -->
+<script
+	src='//cdn.jsdelivr.net/npm/yasgui-yasqe@2.11.16/dist/yasqe.bundled.min.js'></script>
+<script
+	src='//cdn.jsdelivr.net/npm/yasgui-yasqe@2.11.16/dist/yasqe.min.js'></script>
+<link
+	href='//cdn.jsdelivr.net/npm/yasgui-yasqe@2.11.16/dist/yasqe.min.css'
+	rel='stylesheet' type='text/css' />
+<script src="https://cdn.jsdelivr.net/npm/yasgui@2.7.5/yasgui.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.jsdelivr.net/npm/yasgui@2.7.5/yasgui.min.css">
 <script
 	src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <script src="<%=request.getContextPath()%>/js/sweetalert2.min.js"></script>
@@ -58,20 +69,44 @@
 <script src="<%=request.getContextPath()%>/js/GestorTabla.js"></script>
 </head>
 <body>
+
 	<div class="blended_grid">
 		<div class="pageHeader">
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a class="navbar-brand"> Eurohelp Consulting </a>
+						<img src="<%=request.getContextPath()%>/img/rdf.png" width="30"
+							height="30"> <a class="navbar-brand"> Modelo Para La
+							Generación De Datos Enlazados </a>
 					</div>
 				</div>
 			</nav>
 		</div>
-		<div id="formulario" class="pageContent" align=center>
+		<div id="formulario" class="pageContent">
 			<form name="form" id="form">
-				<textarea class="form-control" rows="7" cols="50" name="textArea"
-					placeholder="Escribe tu consulta"></textarea>
+				<!-- <textarea class="form-control" rows="7" cols="50" id="textArea" name="textArea"
+					placeholder="Escribe tu consulta"></textarea> -->
+				<div id="yasgui" name="textArea"></div>
+				<script type="text/javascript">
+					var yasqe = YASQE(document.getElementById("yasgui"), {
+						backdrop : false,
+					//	value : "construct {?s ?p ?o} where {?s ?p ?o}",
+						createShareLink : null,
+						tabSize: 0,
+						textWrapping:false,
+						reindentOnLoad:true,
+						indentWithTabs: false,
+						indentUnit:1,
+						noScriptCaching:true,
+						sparql : {
+							//endpoint : "${url}",
+							showQueryButton : false
+						}
+					
+					});
+					console.log(yasqe.getValue());
+
+				</script>
 			</form>
 			<div id="button">
 				<button class="btn btn-primary" type="button"
@@ -86,7 +121,8 @@
 				<button type="button" class="btn btn-default"
 					onclick="createGraph(json)">Grafo</button>
 				<button type="button" class="btn btn-default dropdown-toggle"
-					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenu">
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+					id="dropdownMenu">
 					Descargar <span class="caret"></span>
 				</button>
 				<ul class="dropdown-menu">

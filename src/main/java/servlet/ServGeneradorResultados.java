@@ -33,6 +33,7 @@ public class ServGeneradorResultados extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String textAreaValue = request.getParameter("textArea");
+		System.out.println(textAreaValue);
 		GraphDB gdb = new GraphDB();
 		String result="";
 		if(textAreaValue.toLowerCase().contains("construct")){

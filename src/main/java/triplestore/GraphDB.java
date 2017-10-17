@@ -32,8 +32,8 @@ public class GraphDB {
 
 	public GraphDB() {
 		try {
-			HTTPRepository conn = new HTTPRepository("http://174.140.171.251:7200/repositories/pruebasMishel");
-			conn.setUsernameAndPassword("mishel", "mishel");
+			HTTPRepository conn = new HTTPRepository("http://192.168.0.17:7200/repositories/ModeloGeneracionDatosEnlazados");
+			//conn.setUsernameAndPassword("mishel", "mishel");
 			repository = conn.getConnection();
 			repository.begin();
 		} catch (RepositoryException e) {
@@ -94,6 +94,7 @@ public class GraphDB {
 		String resultados = "";
 
 		try {
+			
 			query = repository.prepareGraphQuery(QueryLanguage.SPARQL, pQuery);
 			GraphQueryResult stataments = query.evaluate();
 			while (stataments.hasNext()) {
