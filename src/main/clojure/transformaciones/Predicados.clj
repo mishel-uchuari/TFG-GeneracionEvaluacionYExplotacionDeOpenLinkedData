@@ -24,6 +24,7 @@
 (def formalized-date-predicate "http://contsem.unizar.es/def/sector-publico/pproc#formalizedDate")
 (def ending-date-predicate "http://contsem.unizar.es/def/sector-publico/pproc#actualEndDate")
 (def employee-predicate "http://schema.org/employee")
+(def person-resource "http://schema.org/Person")
 
 (def vitoria-station "http://opendata.euskadi.eus/recurso/medio-ambiente/estacion/C040")
 

@@ -30,8 +30,8 @@
 
 (defn uriGralDpto[dpto] 
   (contract-resource-base
-    (str (lower-case dpto))))
+    (str (str/lower-case dpto))))
 
 (defn uriGralEmployee[employee] 
   (contract-resource-base
-    (str (lower-case employee))))
+    (str (str/lower-case employee))))

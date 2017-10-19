@@ -44,7 +44,10 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUr
                  [modified-date-predicate (dateLabel (row "FechaActualizado"))]
                  [contract-economic-conditions-predicate (parseValue (row "Retribucion"))]
                  ]
-             ))) 
+                [employeeUri 
+                 [rdf:a person-resource]
+                 [rdfs:label (languageSpanish (row "NomAp"))]
+                 ]))) 
 			   
 (defn convert-data-to-data
   [data-file]
@@ -58,7 +61,7 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUr
       (mapc {"FechaInicio" organizeDate
             "FechaFin" organizeDate
             "FechaActualizado" organizeDate
-            "NomAp" removeSymbols
+            ;"NomAp" removeSymbols
             "CargoPublico" removeSymbols
             "IdDpto" parseValue
             "Retribucion" removeBlanks
@@ -66,9 +69,10 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUr
             "IdOrgano" parseValue
             "Organo" removeSymbols
             "IdCentro" parseValue
-          }) 
-  (derive-column  :uriGralRNominativas [:CargoPublico :NomAp :Departamento :Organo :FechaActualizado] uriGralRNominativas)
-  (derive-column :employeeUri [:NomAp] uriGralEmployee)
+          })
+  (derive-column :nomApWSymbols [:NomAp] removeSymbols)
+  (derive-column :uriGralRNominativas [:CargoPublico :nomApWSymbols :Departamento :Organo :FechaActualizado] uriGralRNominativas)
+  (derive-column :employeeUri [:nomApWSymbols] uriGralEmployee)
   (derive-column :departmentUri [:Departamento] uriGralDpto)
  ))
 
