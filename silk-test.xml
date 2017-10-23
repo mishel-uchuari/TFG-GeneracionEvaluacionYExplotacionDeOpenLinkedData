@@ -1,0 +1,60 @@
+<Silk>
+	<Prefixes>
+		<Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#" />
+		<Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+		<Prefix id="yago" namespace="http://dbpedia.org/class/yago/" />
+		<Prefix id="schema" namespace="http://schema.org/" />
+		<Prefix id="foaf" namespace="http://xmlns.com/foaf/0.1/" />
+		<Prefix id="umbel-rc" namespace="http://umbel.org/rc/" />
+		<Prefix id="frapo" namespace="http://purl.org/cerif/frapo/" />
+		<Prefix id="geo" namespace="http://www.w3.org/2003/01/geo/wgs84_pos#" />
+	</Prefixes>
+	<DataSources>
+		<DataSource id="dbpedia" type="sparqlEndpoint">
+			<Param name="endpointURI" value="http://es.dbpedia.org/sparql" />
+			<Param name="pageSize" value="20000" />
+			<Param name="graph" value="http://es.dbpedia.org" />
+		</DataSource>
+		<DataSource id="blazegraph" type="sparqlEndpoint">
+			<Param name="endpointURI" value="http://172.16.0.81:58080/blazegraph/namespace/replicate-mishell/sparql" />
+			<Param name="graph" value="http://lod.eurohelp.es/dataset/parkings" />
+		</DataSource>
+	</DataSources>
+	<Interlinks>
+		<Interlink id="persons">
+			<LinkType>owl:sameAs</LinkType>
+			<SourceDataset var="a" dataSource="dbpedia">
+				<RestrictTo>?a rdf:type schema:Place</RestrictTo>
+			</SourceDataset>
+			<TargetDataset var="c" dataSource="blazegraph">
+				<RestrictTo>?b geo:location ?c</RestrictTo>
+			</TargetDataset>
+			<LinkageRule>
+				<!--<Aggregate type="average">
+				 	<Compare metric="num" threshold="50">>
+						<Input path="?a/geo:lat" />
+						<Input path="?b/geo:lat" />
+					</Compare></Aggregate>-->
+				 	<Compare metric="jaccard" threshold="3">
+						<TransformInput function="lowerCase">
+							<Input path="?a/foaf:name" />
+						</TransformInput>
+						<TransformInput function="lowerCase">
+							<Input path="?c/rdfs:label" />
+						</TransformInput>
+					</Compare> 
+				
+			</LinkageRule>
+			<Outputs>
+				<Output type="file" minConfidence="0.8">
+					<Param value="accepted_links.nt" name="file" />
+					<Param value="ntriples" name="format" />
+				</Output>
+				<Output type="file" maxConfidence="0.95">
+					<Param value="verify_links.nt" name="file" />
+					<Param value="ntriples" name="format" />
+				</Output>
+			</Outputs>
+		</Interlink>
+	</Interlinks>
+</Silk>

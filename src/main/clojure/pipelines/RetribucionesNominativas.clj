@@ -29,7 +29,7 @@ NomAp CargoPublico FechaInicio FechaFin IdDpto uriGralRNominativas Retribucion
 Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUri departmentUri  retribucionSinEspacios
     ] :as row }]
            ;Nombre de la 
-             (graph (graph-base "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
+             (graph (graph-base "retribuciones-altos-cargos-y-personal-eventual-gobierno-vasco-y-organismos-autonomos-y-entes-publicos/") 
                 [uriGralRNominativas
                  [rdf:a employment-contract-predicate]
                  [employee-predicate employeeUri]
@@ -47,6 +47,7 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUr
                 [employeeUri 
                  [rdf:a person-resource]
                  [rdfs:label (languageSpanish (row "NomAp"))]
+                 [rdfs:label (languageEnglish (row "NomAp"))]
                  ]))) 
 			   
 (defn convert-data-to-data
