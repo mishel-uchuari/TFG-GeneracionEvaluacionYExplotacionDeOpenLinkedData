@@ -103,14 +103,16 @@
 							showQueryButton : false
 						}
 					
+					
 					});
-					console.log(yasqe.getValue());
-
+					function getQuery(){
+						return yasqe.getValue();
+					}
 				</script>
 			</form>
 			<div id="button">
 				<button class="btn btn-primary" type="button"
-					onclick="getQueryData()" id="botonRun">
+					onclick="getQueryData(getQuery())" id="botonRun">
 					<span class="glyphicon glyphicon-play"></span>RUN
 				</button>
 			</div>
