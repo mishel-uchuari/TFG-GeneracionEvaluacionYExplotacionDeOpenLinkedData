@@ -1,1 +1,9 @@
-http://localhost:8080/mydataset/page/def/sector-publico/contrato/cod-centro-destino
+#Para las peticiones
+http://localhost:8080/page/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-CO  --> Pagina "bonita"
+http://localhost:8080/data/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-CO  --> RDF
+
+#Formatos
+text/turtle  -->TURTLE
+application/rdf+xml -->RDF/XML
+text/plain  --> NTRIPLES
+text/rdf+n3 ---> N3
