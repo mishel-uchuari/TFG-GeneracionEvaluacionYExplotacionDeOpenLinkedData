@@ -32,7 +32,7 @@ public class GraphDB {
 
 	public GraphDB() {
 		try {
-			HTTPRepository conn = new HTTPRepository("http://10.109.186.189:7200/repositories/ModeloGeneracionDatosEnlazados");
+			HTTPRepository conn = new HTTPRepository("http://localhost:7200/repositories/ModeloGeneracionDatosEnlazados");
 			//conn.setUsernameAndPassword("mishel", "mishel");
 			repository = conn.getConnection();
 			repository.begin();

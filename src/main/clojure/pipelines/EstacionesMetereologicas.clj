@@ -32,7 +32,7 @@
   dateHour stationUri observation-VelMedia1100
     ] :as row }]
            ;Nombre de la 
-             (graph (graph-base "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
+             (graph (graph-base "estaciones-metereologicas-en-2017") 
                 [stationUri
                  [rdf:a qb:Observation]
                  [date-predicate dateHour]

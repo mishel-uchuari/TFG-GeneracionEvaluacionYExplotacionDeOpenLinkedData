@@ -169,7 +169,7 @@
                  [rdfs:comment Etilbenceno-coment]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "Etilbenceno")]
-                   ]   
+                   ]
              ))) 
 			   
 (defn convert-data-to-data

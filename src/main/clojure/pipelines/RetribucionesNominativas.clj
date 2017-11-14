@@ -26,10 +26,11 @@
 (def make-graph
  (graph-fn [{:keys [
 NomAp CargoPublico FechaInicio FechaFin IdDpto uriGralRNominativas Retribucion
-Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUri departmentUri  retribucionSinEspacios
+Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUri 
+departmentUri  retribucionSinEspacios NomApUri
     ] :as row }]
            ;Nombre de la 
-             (graph (graph-base "estaciones-meteorologicas-lecturas-recogidas-en-2017") 
+             (graph (graph-base "retribuciones-nominativas-2017") 
                 [uriGralRNominativas
                  [rdf:a employment-contract-predicate]
                  [employee-predicate employeeUri]
@@ -44,7 +45,12 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUr
                  [modified-date-predicate (dateLabel (row "FechaActualizado"))]
                  [contract-economic-conditions-predicate (parseValue (row "Retribucion"))]
                  ]
-             ))) 
+                [employeeUri 
+                 [rdf:a person-predicate]
+                 [rdfs:label (languageSpanish (row "NomAp"))]
+                 [rdfs:label (languageVasque (row "NomAp"))]
+                 ]
+                             ))) 
 			   
 (defn convert-data-to-data
   [data-file]
@@ -54,11 +60,12 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUr
               "Departamento" "IdOrgano" "Organo" "IdCentro" "CentroOrganico" "FechaActualizado"])
     ;Borra la primera fila correspondiente a los nombres de las columnas
 (drop-rows 1)
+  (derive-column  :nomApUri "NomAp")
   (derive-column  :retribucionSinEspacios "Retribucion")
       (mapc {"FechaInicio" organizeDate
             "FechaFin" organizeDate
             "FechaActualizado" organizeDate
-            "NomAp" removeSymbols
+            "NomApUri" removeSymbols
             "CargoPublico" removeSymbols
             "IdDpto" parseValue
             "Retribucion" removeBlanks
@@ -67,8 +74,8 @@ Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUr
             "Organo" removeSymbols
             "IdCentro" parseValue
           }) 
-  (derive-column  :uriGralRNominativas [:CargoPublico :NomAp :Departamento :Organo :FechaActualizado] uriGralRNominativas)
-  (derive-column :employeeUri [:NomAp] uriGralEmployee)
+  (derive-column  :uriGralRNominativas [:CargoPublico :NomApUri :Departamento :Organo :FechaActualizado] uriGralRNominativas)
+  (derive-column :employeeUri [:NomApUri] uriGralEmployee)
   (derive-column :departmentUri [:Departamento] uriGralDpto)
  ))
 

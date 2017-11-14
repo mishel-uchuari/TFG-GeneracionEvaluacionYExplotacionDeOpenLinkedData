@@ -12,28 +12,50 @@ import triplestore.GraphDB;
 public class main {
 	public static void main(String[] args) throws IOException, RDFHandlerException, RepositoryException, MalformedQueryException, QueryEvaluationException {
 
-		// Pipeline pipeCalidadAire = new Pipeline("CalidadDelAire",
-		// "convertidor", "./DatosIniciales/calidadAire-VitoriaGasteiz.csv",
-		// "./DatosConvertidos/calidadAire-VitoriaGasteiz.rdf");
-		// Pipeline pipeEstacionesMetereologicas = new
-		// Pipeline("EstacionesMetereologicas", "convertidor",
-		// "./DatosIniciales/estacionesMetereologicas-c040.csv",
-		// "./DatosConvertidos/estacionesMetereologicas-c040.rdf");
-		// Pipeline pipeRelacionesPuestosT = new
-		// Pipeline("RelacionesPuestoTrabajo", "convertidor",
-		// "./DatosIniciales/relacionPuestosTrabajo-2017.csv",
-		// "./DatosConvertidos/relacionPuestosTrabajo-2017.rdf");
-		// Pipeline pipeRetribNominativas = new
-		// Pipeline("RetribucionesNominativas", "convertidor",
-		// "./DatosIniciales/retribucionesNominativas-2017.csv",
-		// "./DatosConvertidos/retribucionesNominativas-2017.rdf");
+		System.out.println("|||||||||||||||||||||||\n"
+				+ "|| Calidad del aire  ||\n"
+				+ "|||||||||||||||||||||||\n");
+		 Pipeline pipeCalidadAire = new Pipeline("CalidadDelAire",
+		 "convertidor", "./DatosIniciales/calidadAire-VitoriaGasteiz.csv",
+		 "./DatosConvertidos/calidadAire-VitoriaGasteiz.rdf");
+		 pipeCalidadAire.run();
+		 
+		 System.out.println("RDF calidad del aire creado\n");
+		 
+		 System.out.println("||||||||||||||||||||||||||||||||\n"
+					+ "|| Estaciones Metereologicas  ||\n"
+					+ "||||||||||||||||||||||||||||||||\n");
+		 
+		 Pipeline pipeEstacionesMetereologicas = new
+		 Pipeline("EstacionesMetereologicas", "convertidor",
+		 "./DatosIniciales/estacionesMetereologicas-c040.csv",
+		 "./DatosConvertidos/estacionesMetereologicas-c040.rdf");
+		 pipeEstacionesMetereologicas.run();
+		 
+		 System.out.println("RDF estaciones metereologicas creado\n");
 
-		// pipeCalidadAire.start();
-		// pipeEstacionesMetereologicas.start();
-		// pipeRelacionesPuestosT.start();
-		// pipeRetribNominativas.start();
-		GraphDB nd = new GraphDB();
-		String st = nd.executeGraphQuery("construct{ ?s ?p ?o} where { ?s ?p ?o } limit 10");
-	//.out.println(st);
+		 System.out.println("||||||||||||||||||||||||||||||||\n"
+					+ "|| Relaciones puestos trabajo ||\n"
+					+ "||||||||||||||||||||||||||||||||\n");
+		 
+		 Pipeline pipeRelacionesPuestosT = new
+		 Pipeline("RelacionesPuestoTrabajo", "convertidor",
+		 "./DatosIniciales/relacionPuestosTrabajo-2017.csv",
+		 "./DatosConvertidos/relacionPuestosTrabajo-2017.rdf");
+		 pipeRelacionesPuestosT.run();
+
+		 System.out.println("RDF relaciones puestos trabajo creado\n");
+
+		 System.out.println("|||||||||||||||||||||||||||||||\n"
+					+ "|| Retribuciones Nominativas ||\n"
+					+ "|||||||||||||||||||||||||||||||\n");
+		 
+		 Pipeline pipeRetribNominativas = new
+		 Pipeline("RetribucionesNominativas", "convertidor",
+		 "./DatosIniciales/retribucionesNominativas-2017.csv",
+		 "./DatosConvertidos/retribucionesNominativas-2017.rdf");
+		 pipeRetribNominativas.run();
+		 
+		 System.out.println("RDF retribuciones nominativas creado\n");
 	}
 }

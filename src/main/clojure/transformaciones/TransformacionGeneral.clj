@@ -115,3 +115,4 @@
 ;Elimina los nodos que estan vacios
 (defn missing-data-filter [triples]
                                (remove #(nil? (pr/object %)) triples))
+

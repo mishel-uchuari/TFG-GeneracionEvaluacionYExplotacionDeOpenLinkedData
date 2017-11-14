@@ -13,19 +13,20 @@ import org.openrdf.rio.Rio;
 
 import clojure.lang.LazySeq;
 import clojure.lang.RT;
+import triplestore.GraphDB;
 
-public class Pipeline extends Thread {
+public class Pipeline  {
 
 	private String nameSpace;
 	private String rutaCsvInicial;
-	private String rutaRdfFinal;
+	private String nombreGrafo;
 	private String aEjecutar;
 
-	public Pipeline(String pNameSpace, String pMetodoEjecutar, String pRutaCsvInicial, String pRutaRdfFinal)
+	public Pipeline(String pNameSpace, String pMetodoEjecutar, String pRutaCsvInicial, String pNombreGrafo)
 			throws IOException, RDFHandlerException {
 		nameSpace = pNameSpace;
 		rutaCsvInicial = pRutaCsvInicial;
-		rutaRdfFinal = pRutaRdfFinal;
+		nombreGrafo = pNombreGrafo;
 		aEjecutar = pMetodoEjecutar;
 	}
 
@@ -41,17 +42,8 @@ public class Pipeline extends Thread {
 		while (ite.hasNext()) {
 			model.add((Statement) ite.next());
 		}
-		/**
-		 * Código para sacar el archivo RDF/XML-TURTLE
-		 */
-		File file = new File(rutaRdfFinal);
-		FileOutputStream fileTurtle;
-		try {
-			fileTurtle = new FileOutputStream(file);
-			Rio.write(model, fileTurtle, RDFFormat.RDFXML);
-		} catch (FileNotFoundException | RDFHandlerException e) {
-			e.printStackTrace();
-		}
+		GraphDB gdb = new GraphDB();
+		gdb.loadRDF4JModel(model);
 
 	}
 }

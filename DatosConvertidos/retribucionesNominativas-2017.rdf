@@ -511,7 +511,7 @@
 	<departamento xmlns="http://opendata.euskadi.eus/def/sector-publico/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</departamento>
 	<managingDepartment xmlns="http://contsem.unizar.es/def/sector-publico/pproc#" rdf:resource="http://opendata.euskadi.eus/recurso/sector-publico/contrato/01LEHENDAKARITZA"/>
 	<organo xmlns="http://opendata.euskadi.eus/def/sector-publico/contrato/" xml:lang="es">Lehendakaritza</organo>
-	<id-centro-organico xmlns="http://opendata.euskadi.eus/def/sector-publico/contrato/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1100000</id-centro-organico>
+	<id-centro-organico xmlns="http://opendata.euskadi.eus/def/sector-publico/contrato/" rdf:datatype="http://www.w3.�org/2001/XMLSchema#int">1100000</id-centro-organico>
 	<centro-organico xmlns="http://opendata.euskadi.eus/def/sector-publico/contrato/" xml:lang="es">SECRETARIA-GENERAL-DE-LA-PRESIDENCIA</centro-organico>
 	<modified xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-22T02:00:00.000+02:00</modified>
 	<ContractEconomicConditions xmlns="http://contsem.unizar.es/def/sector-publico/pproc#" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1279809</ContractEconomicConditions>
@@ -519,7 +519,7 @@
 
 <rdf:Description rdf:about="http://opendata.euskadi.eus/recurso/sector-publico/contrato/director-a-aldekogarai-labaka-i�aki-03desarrollo-economico-y-competitividad-departamento-de-desarrollo-economico-y-competitividad-2015-11-30">
 	<rdf:type rdf:resource="http://purl.org/cerif/frapo/EmploymentContract"/>
-	<employee xmlns="http://schema.org/" rdf:resource="http://opendata.euskadi.eus/recurso/sector-publico/contrato/ALDEKOGARAI-LABAKA-I�AKI"/>
+	<employee xmlns="http://schema.org/" rdf:resource="http://opendata.euskadi.eus/recurso/sector-publico/contrato/ALDEKOGARAI-LABAKA-IAKI"/>
 	<occupation xmlns="http://dbpedia.org/ontology/" xml:lang="es">DIRECTOR-A</occupation>
 	<formalizedDate xmlns="http://contsem.unizar.es/def/sector-publico/pproc#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-04-25T02:00:00.000+02:00</formalizedDate>
 	<actualEndDate xmlns="http://contsem.unizar.es/def/sector-publico/pproc#" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-06T02:00:00.000+02:00</actualEndDate>
