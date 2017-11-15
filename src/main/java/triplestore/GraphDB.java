@@ -1,10 +1,10 @@
-
 package triplestore;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.Properties;
 
 import org.openrdf.model.Model;
 import org.openrdf.model.Statement;
@@ -30,10 +30,10 @@ import tratamiento.Json;
 public class GraphDB {
 	private RepositoryConnection repository;
 
-	public GraphDB() {
+	public GraphDB() throws IOException {
 		try {
-			HTTPRepository conn = new HTTPRepository("http://localhost:7200/repositories/ModeloGeneracionDatosEnlazados");
-			//conn.setUsernameAndPassword("mishel", "mishel");
+			HTTPRepository conn = new HTTPRepository(PropertiesManager.getINSTANCE().getProperty("repository"));
+			conn.setUsernameAndPassword(PropertiesManager.getINSTANCE().getProperty("user"), PropertiesManager.getINSTANCE().getProperty("password"));
 			repository = conn.getConnection();
 			repository.begin();
 		} catch (RepositoryException e) {

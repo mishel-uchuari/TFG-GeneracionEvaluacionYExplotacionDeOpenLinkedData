@@ -15,34 +15,34 @@ public class main {
 		System.out.println("|||||||||||||||||||||||\n"
 				+ "|| Calidad del aire  ||\n"
 				+ "|||||||||||||||||||||||\n");
-		 Pipeline pipeCalidadAire = new Pipeline("CalidadDelAire",
-		 "convertidor", "./DatosIniciales/calidadAire-VitoriaGasteiz.csv",
-		 "./DatosConvertidos/calidadAire-VitoriaGasteiz.rdf");
-		 pipeCalidadAire.run();
-		 
-		 System.out.println("RDF calidad del aire creado\n");
-		 
-		 System.out.println("||||||||||||||||||||||||||||||||\n"
-					+ "|| Estaciones Metereologicas  ||\n"
-					+ "||||||||||||||||||||||||||||||||\n");
-		 
-		 Pipeline pipeEstacionesMetereologicas = new
-		 Pipeline("EstacionesMetereologicas", "convertidor",
-		 "./DatosIniciales/estacionesMetereologicas-c040.csv",
-		 "./DatosConvertidos/estacionesMetereologicas-c040.rdf");
-		 pipeEstacionesMetereologicas.run();
-		 
-		 System.out.println("RDF estaciones metereologicas creado\n");
-
-		 System.out.println("||||||||||||||||||||||||||||||||\n"
-					+ "|| Relaciones puestos trabajo ||\n"
-					+ "||||||||||||||||||||||||||||||||\n");
-		 
-		 Pipeline pipeRelacionesPuestosT = new
-		 Pipeline("RelacionesPuestoTrabajo", "convertidor",
-		 "./DatosIniciales/relacionPuestosTrabajo-2017.csv",
-		 "./DatosConvertidos/relacionPuestosTrabajo-2017.rdf");
-		 pipeRelacionesPuestosT.run();
+//		 Pipeline pipeCalidadAire = new Pipeline("CalidadDelAire",
+//		 "convertidor", "./DatosIniciales/calidadAire-VitoriaGasteiz.csv",
+//		 "./DatosConvertidos/calidadAire-VitoriaGasteiz.rdf");
+//		 pipeCalidadAire.run();
+//		 
+//		 System.out.println("RDF calidad del aire creado\n");
+//		 
+//		 System.out.println("||||||||||||||||||||||||||||||||\n"
+//					+ "|| Estaciones Metereologicas  ||\n"
+//					+ "||||||||||||||||||||||||||||||||\n");
+//		 
+//		 Pipeline pipeEstacionesMetereologicas = new
+//		 Pipeline("EstacionesMetereologicas", "convertidor",
+//		 "./DatosIniciales/estacionesMetereologicas-c040.csv",
+//		 "./DatosConvertidos/estacionesMetereologicas-c040.rdf");
+//		 pipeEstacionesMetereologicas.run();
+//		 
+//		 System.out.println("RDF estaciones metereologicas creado\n");
+//
+//		 System.out.println("||||||||||||||||||||||||||||||||\n"
+//					+ "|| Relaciones puestos trabajo ||\n"
+//					+ "||||||||||||||||||||||||||||||||\n");
+//		 
+//		 Pipeline pipeRelacionesPuestosT = new
+//		 Pipeline("RelacionesPuestoTrabajo", "convertidor",
+//		 "./DatosIniciales/relacionPuestosTrabajo-2017.csv",
+//		 "./DatosConvertidos/relacionPuestosTrabajo-2017.rdf");
+//		 pipeRelacionesPuestosT.run();
 
 		 System.out.println("RDF relaciones puestos trabajo creado\n");
 

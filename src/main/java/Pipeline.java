@@ -30,7 +30,7 @@ public class Pipeline  {
 		aEjecutar = pMetodoEjecutar;
 	}
 
-	public void run() {
+	public void run() throws IOException {
 		try {
 			RT.loadResourceScript("pipelines/" + nameSpace + ".clj");
 		} catch (IOException e) {
