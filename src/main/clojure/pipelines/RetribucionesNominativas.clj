@@ -75,7 +75,7 @@ departmentUri  retribucionSinEspacios NomApUri
             "IdCentro" parseValue
           }) 
   (derive-column  :uriGralRNominativas [:CargoPublico :NomApUri :Departamento :Organo :FechaActualizado] uriGralRNominativas)
-  (derive-column :employeeUri [:NomApUri] uriGralEmployee)
+  (derive-column :employeeUri [:nomApUri] uriGralEmployee)
   (derive-column :departmentUri [:Departamento] uriGralDpto)
  ))
 
