@@ -76,6 +76,16 @@
 			<artifactId>httpcore</artifactId>
 			<version>4.4</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.2.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.2.5</version>
+		</dependency>
 	</dependencies>
 	<repositories>
 		<!-- Repositorios Clojure -->
@@ -86,11 +96,6 @@
 		<repository>
 			<id>clojars</id>
 			<url>http://clojars.org/repo/</url>
-		</repository>
-		<!-- Repositorios Stardog -->
-		<repository>
-			<id>stardog-public</id>
-			<url>http://maven.stardog.com</url>
 		</repository>
 	</repositories>
 </project>
