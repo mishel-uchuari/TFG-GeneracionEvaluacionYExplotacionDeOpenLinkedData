@@ -1,0 +1,122 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:	<http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ex:	<http://lod.eurohelp.es/replicate/shacl/relaciones-puesto-trabajo> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix sector-publico-contrato: <http://opendata.euskadi.eus/def/sector-publico/contrato/> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix contsem:<http://contsem.unizar.es/def/sector-publico/pproc#> .
+
+#Los test sobre las observacioes
+ex:ContratoShape
+	a sh:NodeShape ;
+	sh:targetClass frapo:EmploymentContract;
+	sh:property [
+		sh:path dcterms:modified;
+		sh:datatype xsd:dateTime ;
+		sh:message "Si el contrato ha sufrido alguna modificacion deberia tener almacenada la fecha en la que se realizo@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path sector-publico-contrato:fecha-descarga;
+		sh:datatype xsd:dateTime ;
+		sh:message "El contrato deberia tener almacenada la fecha en la que se realizo la descarga de datos@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path sector-publico-contrato:cod-puesto;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debe tener asociado un codigo del puesto al que se refiere@es";
+		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path sector-publico-contrato:dotacion;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado un dotacion en referencia al puesto al que se refiere@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path sector-publico-contrato:cod-departamento;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado el codigo del departamento en el que se encontrará el puesto@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path sector-publico-contrato:cod-centro-destino;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado el codigo del centro de destino del puesto@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path sector-publico-contrato:cod-centro-organico;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado el codigo del centro organico del puesto@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+	sh:path contsem:managingDepartment ;
+	sh:languageIn ("es") ;
+	sh:minCount 1 ;
+	sh:message "El contrato debería tener asociado el nombre del departamento gerente del puesto@es";
+	sh:severity sh:Info ;
+	];
+	sh:property [
+	sh:path sector-publico-contrato:centro-organico ;
+	sh:minCount 1 ;
+	sh:languageIn ("es") ;
+	sh:message "El contrato debería tener asociado el nombre del centro organico del puesto@es";
+	sh:severity sh:Info ;
+	];
+	sh:property [
+	sh:path sector-publico-contrato:centro-destino ;
+	sh:minCount 1 ;
+	sh:languageIn ("es") ;
+	sh:message "El contrato debería tener asociado el nombre del centro destino del puesto@es";
+	sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path sector-publico-contrato:categoria-retributiva;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado el codigo de la categoria retributiva del puesto@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path sector-publico-contrato:perfil-linguistico;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado el codigo del perfil linguistico del puesto@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path contsem:ContractEconomicConditions;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado un sueldo@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+	sh:path dbpedia:occupation ;
+	sh:languageIn ("es") ;
+	sh:minCount 1 ;
+	sh:message "El contrato debe tener una 'descripcion' del puesto al que se refiere@es";
+	sh:severity sh:Violation ;
+	].

@@ -27,7 +27,7 @@
  (graph-fn [{:keys [
 NomAp CargoPublico FechaInicio FechaFin IdDpto uriGralRNominativas Retribucion
 Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUri 
-departmentUri  retribucionSinEspacios NomApUri
+departmentUri  retribucionSinEspacios nomApUri
     ] :as row }]
            ;Nombre de la 
              (graph (graph-base "retribuciones-nominativas-2017") 
@@ -65,7 +65,7 @@ departmentUri  retribucionSinEspacios NomApUri
       (mapc {"FechaInicio" organizeDate
             "FechaFin" organizeDate
             "FechaActualizado" organizeDate
-            "NomApUri" removeSymbols
+            "nomApUri" removeSymbols
             "CargoPublico" removeSymbols
             "IdDpto" parseValue
             "Retribucion" removeBlanks
@@ -74,7 +74,7 @@ departmentUri  retribucionSinEspacios NomApUri
             "Organo" removeSymbols
             "IdCentro" parseValue
           }) 
-  (derive-column  :uriGralRNominativas [:CargoPublico :NomApUri :Departamento :Organo :FechaActualizado] uriGralRNominativas)
+  (derive-column  :uriGralRNominativas [:CargoPublico :nomApUri :Departamento :Organo :FechaActualizado] uriGralRNominativas)
   (derive-column :employeeUri [:nomApUri] uriGralEmployee)
   (derive-column :departmentUri [:Departamento] uriGralDpto)
  ))

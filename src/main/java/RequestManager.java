@@ -23,14 +23,13 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
 
-import triplestore.PropertiesManager;
+import triplestore.utils.PropertiesManager;
 
 public class RequestManager {
 	private String uri, method, accept, responseString;
 	private int status;
 	private Map<String, String> params;
 	private BufferedHttpEntity bfHttpEntity;
-
 
 	public RequestManager(String pUri, String pMethod, String pAccept, Map<String, String> pParams) {
 		uri = pUri;
@@ -65,14 +64,13 @@ public class RequestManager {
 			}
 			httpPost.setEntity(new UrlEncodedFormEntity(postParameters));
 			response = client.execute(httpPost);
-		}
-		else{
+		} else {
 			int numParam = 0;
 
 			Map<String, String> parameters = params;
 
 			Iterator<String> iterator = parameters.keySet().iterator();
-			String completeUri=uri;
+			String completeUri = uri;
 			while (iterator.hasNext()) {
 				if (numParam == 0) {
 					completeUri = uri + "?";
@@ -87,15 +85,19 @@ public class RequestManager {
 			httpGet = new HttpGet(completeUri);
 			httpGet.setHeader("accept", accept);
 			response = client.execute(httpGet);
-			status=response.getStatusLine().getStatusCode();
-			
+			status = response.getStatusLine().getStatusCode();
+
 			String resultsPath = PropertiesManager.getINSTANCE().getProperty("reportpath");
 			PrintWriter pw = new PrintWriter(resultsPath);
-			responseString=EntityUtils.toString(bfHttpEntity);
+			responseString = EntityUtils.toString(bfHttpEntity);
 			pw.write(EntityUtils.toString(bfHttpEntity));
 			pw.close();
-			
+
 		}
 	}
-	
+
+	public int getStatus() {
+		return status;
+	}
+
 }

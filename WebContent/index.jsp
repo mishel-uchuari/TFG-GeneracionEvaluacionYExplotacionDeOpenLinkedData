@@ -2,8 +2,6 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <title>Modelo Para La Generación De Datos Enlazados</title>
-<meta name="description"
-	content="Write some words to describe your html page">
 <!-- Progress bar -->
 <script
 	src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
@@ -61,10 +59,9 @@
 	href="https://cdn.jsdelivr.net/npm/yasgui@2.7.5/yasgui.min.css">
 <script
 	src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
 <script src="<%=request.getContextPath()%>/js/sweetalert2.min.js"></script>
 <script src="<%=request.getContextPath()%>/js/GestorGrafo.js"></script>
-<script src="<%=request.getContextPath()%>/js/d3sparql.js"></script>
-<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
 <script src="<%=request.getContextPath()%>/js/GestorIndice.js"></script>
 <script src="<%=request.getContextPath()%>/js/GestorTabla.js"></script>
 </head>
@@ -82,30 +79,27 @@
 				</div>
 			</nav>
 		</div>
-		<div id="formulario" class="pageContent">
+		<div id="resultados" class="pageContent">
 			<form name="form" id="form">
-				<!-- <textarea class="form-control" rows="7" cols="50" id="textArea" name="textArea"
-					placeholder="Escribe tu consulta"></textarea> -->
 				<div id="yasgui" name="textArea"></div>
 				<script type="text/javascript">
 					var yasqe = YASQE(document.getElementById("yasgui"), {
 						backdrop : false,
-					//	value : "construct {?s ?p ?o} where {?s ?p ?o}",
+						//	value : "construct {?s ?p ?o} where {?s ?p ?o}",
 						createShareLink : null,
-						tabSize: 0,
-						textWrapping:false,
-						reindentOnLoad:true,
-						indentWithTabs: false,
-						indentUnit:1,
-						noScriptCaching:true,
+						tabSize : 0,
+						textWrapping : false,
+						reindentOnLoad : true,
+						indentWithTabs : false,
+						indentUnit : 1,
+						noScriptCaching : true,
 						sparql : {
 							//endpoint : "${url}",
 							showQueryButton : false
 						}
-					
-					
+
 					});
-					function getQuery(){
+					function getQuery() {
 						return yasqe.getValue();
 					}
 				</script>
@@ -116,21 +110,11 @@
 					<span class="glyphicon glyphicon-play"></span>RUN
 				</button>
 			</div>
-
 			<div class="btn-group" role="group" aria-label="...">
 				<button type="button" class="btn btn-default"
 					onclick="createTable(json)">Tabla</button>
 				<button type="button" class="btn btn-default"
 					onclick="createGraph(json)">Grafo</button>
-				<button type="button" class="btn btn-default dropdown-toggle"
-					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-					id="dropdownMenu">
-					Descargar <span class="caret"></span>
-				</button>
-				<ul class="dropdown-menu">
-					<li><a name="RDF/XML" onclick="getFile(name)">RDF/XML</a></li>
-					<li><a name="JSON-LD" onclick="getFile(name)">JSON-LD</a></li>
-				</ul>
 			</div>
 		</div>
 		<div id="resultTable">
@@ -139,6 +123,5 @@
 		</div>
 		<div id="resultGraph"></div>
 	</div>
-	<div class="pageFooter"></div>
 </body>
 </html>

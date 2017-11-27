@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:	<http://www.w3.org/ns/shacl#> .
+@prefix ex:	<http://lod.eurohelp.es/replicate/shacl/retribuciones-nominativas> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix contsem: <http://contsem.unizar.es/def/sector-publico/pproc#> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix opendata-contrato: <http://opendata.euskadi.eus/def/sector-publico/contrato/> .
+
+#Los test sobre las observacioes
+ex:ContratoShape
+	a sh:NodeShape ;
+	sh:targetClass frapo:EmploymentContract;
+	sh:property [
+		sh:path schema:employee;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:message "El contrato debe tener un empleado asociado@es";
+		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path contsem:formalizedDate;
+		sh:datatype xsd:dateTime ;
+		sh:message "El contrato debería tener asociada la fecha en la que se formalizo@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path contsem:actualEndData;
+		sh:datatype xsd:dateTime ;
+		sh:message "El contrato debería tener asociada la fecha en la que finalizara@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path opendata-contrato:departamento;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado el codigo del departamento en el que se encontrará el puesto@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path contsem:managingDepartment ;
+		sh:minCount 1 ;
+		sh:message "El contrato deberia tener datos del departamento gerente@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path opendata-contrato:organo ;
+		sh:minCount 1 ;
+		sh:languageIn ("es") ;
+		sh:message "El contrato debería tener asociado el nombre del centro organico del puesto@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path opendata-contrato:id-centro-organico ;
+		sh:minCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado el id del centro organico del puesto@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path dcterms:modified ;
+		sh:datatype xsd:dateTime ;
+		sh:message "Si el contrato ha sido modificado deberia almacenarse la fecha@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path contsem:ContractEconomicConditions;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:datatype xsd:int ;
+		sh:message "El contrato debería tener asociado un sueldo@es";
+		sh:severity sh:Info ;
+	];
+	sh:property [
+		sh:path dbpedia:occupation ;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:message "El contrato debe tener una 'descripcion' del puesto al que se refiere@es";
+		sh:severity sh:Violation ;
+	].

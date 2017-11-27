@@ -166,6 +166,22 @@ span {
 	left: 0px;
 }
 
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#olderResults {
+	float: left;
+	margin-top: 30px;
+	margin-right: 15px;
+	width: 45%;
+	font-size: large;
+	padding: 40px;
+}
+
 /* .table-striped{
 	background-color:#A9D0F5; 
 } */

@@ -10,7 +10,7 @@ import org.openrdf.query.MalformedQueryException;
 import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.repository.RepositoryException;
 
-import triplestore.GraphDB;
+import triplestore.utils.GraphDB;
 
 
 
@@ -42,7 +42,6 @@ public class ServGeneradorResultados extends HttpServlet {
 		else if (textAreaValue.toLowerCase().contains("select")){
 			result= gdb.executeQuery(textAreaValue);
 		}
-		
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(result);
