@@ -49,11 +49,19 @@ public class main {
 //		 System.out.println("|||||||||||||||||||||||||||||||\n"
 //					+ "|| Retribuciones Nominativas ||\n"
 //					+ "|||||||||||||||||||||||||||||||\n");
-		 
+//		 
+//		 Pipeline pipeRetribNominativas = new
+//		 Pipeline("RetribucionesNominativas", "convertidor",
+//		 "./DatosIniciales/retribucionesNominativas-2017.csv",
+//		 "./DatosConvertidos/retribucionesNominativas-2017.ttl");
+//		 pipeRetribNominativas.run();
+//		 
+//		 System.out.println("RDF retribuciones nominativas creado\n");
+		
 		 Pipeline pipeRetribNominativas = new
 		 Pipeline("RetribucionesNominativas", "convertidor",
-		 "./DatosIniciales/retribucionesNominativas-2017.csv",
-		 "./DatosConvertidos/retribucionesNominativas-2017.ttl");
+		 "./DatosIniciales/relacionPuestosTrabajo-2017.csv",
+		 "./DatosConvertidos/deprueba.ttl");
 		 pipeRetribNominativas.run();
 		 
 		 System.out.println("RDF retribuciones nominativas creado\n");
