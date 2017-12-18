@@ -132,11 +132,6 @@ marker#end {
 	-moz-border-radius: 2px;
 }
 
-span {
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
 .custom-search-form {
 	margin-top: 30px;
 	margin-right: 15px;
@@ -164,22 +159,6 @@ span {
 
 .alertify-notifier.ajs-right .ajs-message.ajs-visible {
 	left: 0px;
-}
-
-#container {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
-
-#olderResults {
-	float: left;
-	margin-top: 30px;
-	margin-right: 15px;
-	width: 45%;
-	font-size: large;
-	padding: 40px;
 }
 
 /* .table-striped{

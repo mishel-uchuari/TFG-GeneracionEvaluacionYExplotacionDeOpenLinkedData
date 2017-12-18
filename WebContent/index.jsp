@@ -31,7 +31,7 @@
 <!-- Bootstrap theme -->
 <link rel="stylesheet"
 	href="//cdn.jsdelivr.net/alertifyjs/1.10.0/css/themes/bootstrap.rtl.min.css" />
-<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link rel="stylesheet" type="text/css" href="css/estilos.css"> 
 <!-- Fuente -->
 <link href="https://fonts.googleapis.com/css?family=Bellefair"
 	rel="stylesheet">
@@ -55,8 +55,7 @@
 	href='//cdn.jsdelivr.net/npm/yasgui-yasqe@2.11.16/dist/yasqe.min.css'
 	rel='stylesheet' type='text/css' />
 <script src="https://cdn.jsdelivr.net/npm/yasgui@2.7.5/yasgui.min.js"></script>
-<link rel="stylesheet" type="text/css"
-	href="https://cdn.jsdelivr.net/npm/yasgui@2.7.5/yasgui.min.css">
+
 <script
 	src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
@@ -85,9 +84,9 @@
 				<script type="text/javascript">
 					var yasqe = YASQE(document.getElementById("yasgui"), {
 						backdrop : false,
-						//	value : "construct {?s ?p ?o} where {?s ?p ?o}",
+						value : "CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }",
 						createShareLink : null,
-						tabSize : 0,
+						tabSize : 1,
 						textWrapping : false,
 						reindentOnLoad : true,
 						indentWithTabs : false,
