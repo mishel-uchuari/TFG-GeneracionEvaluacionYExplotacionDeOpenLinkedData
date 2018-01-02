@@ -26,7 +26,8 @@ public class PropertiesManager {
 
 	private PropertiesManager() throws IOException {
 		properties = new Properties();
-		InputStream input = new FileInputStream("./src/main/resources/triplestore.properties");
+		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+		InputStream input = classLoader.getResourceAsStream("triplestore.properties");
 		try {
 			properties.load(input);
 		} catch (Exception e) {
