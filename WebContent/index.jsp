@@ -110,9 +110,9 @@
 			</div>
 			<div class="btn-group" role="group" aria-label="...">
 				<button type="button" class="btn btn-default"
-					onclick="createTable(json)" disabled>Tabla</button>
+					onclick="createTable(json)">Tabla</button>
 				<button type="button" class="btn btn-default"
-					onclick="createGraph(json)" disabled>Grafo</button>
+					onclick="createGraph(json)">Grafo</button>
 			</div>
 		</div>
 		<div id="resultTable" class="tabla">

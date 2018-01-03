@@ -77,6 +77,7 @@ public class GraphDB {
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#date>", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#long>", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#double>", "");
+				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#int>", "");
 				statement = statement.replace(", ", ",");
 				statement = statement.replace(" ", "");
 				System.out.println(statement);

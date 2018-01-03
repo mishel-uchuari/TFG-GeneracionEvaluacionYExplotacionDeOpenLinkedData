@@ -285,6 +285,7 @@ function eliminarSimbolos(pString) {
  pString = pString.replaceAll("%", "");
  pString = pString.replaceAll("/", "");
  pString = pString.replace(":", "");
+ pString = pString.replace("@", "");
  pString = pString.replace("#", "");
  pString = pString.replace(/\s/g, "");
  pString = pString.replace("+", "");
