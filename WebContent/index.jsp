@@ -79,12 +79,12 @@
 			</nav>
 		</div>
 		<div id="resultados" class="pageContent">
-			<form name="form" id="form">
 				<div id="yasgui" name="textArea"></div>
 				<script type="text/javascript">
 					var yasqe = YASQE(document.getElementById("yasgui"), {
-						backdrop : false,
-						value : "CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o }",
+						backdrop : true,
+						persistent: null,
+						value : "CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o } limit 30",
 						createShareLink : null,
 						tabSize : 1,
 						textWrapping : false,
@@ -102,7 +102,6 @@
 						return yasqe.getValue();
 					}
 				</script>
-			</form>
 			<div id="button">
 				<button class="btn btn-primary" type="button"
 					onclick="getQueryData(getQuery())" id="botonRun">
@@ -111,12 +110,12 @@
 			</div>
 			<div class="btn-group" role="group" aria-label="...">
 				<button type="button" class="btn btn-default"
-					onclick="createTable(json)">Tabla</button>
+					onclick="createTable(json)" disabled>Tabla</button>
 				<button type="button" class="btn btn-default"
-					onclick="createGraph(json)">Grafo</button>
+					onclick="createGraph(json)" disabled>Grafo</button>
 			</div>
 		</div>
-		<div id="resultTable">
+		<div id="resultTable" class="tabla">
 			<table id="table" border="1" class="table table-striped">
 			</table>
 		</div>

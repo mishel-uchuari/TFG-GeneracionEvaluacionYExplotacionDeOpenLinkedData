@@ -1,6 +1,7 @@
 var PATH_LABEL;
 
 function createGraph(data) {
+	
  $("#table").html("");
  var links = getFormatoJsonGrafo(data);
  var nodos = {};
@@ -69,7 +70,7 @@ console.log(nodos);
    "fill": "#ccc",
    "stroke": "#000000"
   }).on("dblclick", function(d) {
-   obtenerDatosRecurso(d.name, true)
+	  getResourceData(d.name, true)
   }).on("mouseover", function (d){connectedNodes(d, 0)}).on("mouseout", function (d){connectedNodes(d, 1)}).call(force.drag);
 
  var rectangle = svg.append("svg:g").selectAll("rectangle").data(d3.values(literales))
@@ -339,27 +340,9 @@ function getFormatoJsonGrafo(data){
 	return generalElements;
 	}
 
-function obtenerDatosRecurso(pRecurso, boolean) {
-    initProgressBar();
-    $.ajax({
-        url: "ServGetJson",
-        data: {
-            "accion": "recurso",
-            "recurso": pRecurso
-        },
-        type: "post",
-        success: function(data) {
-            deleteProgressBar();
-            $("#search").css("visibility", "visible");
-            $("svg").remove();
-            if (data.includes("vacio")) {
-                $("svg").remove();
-                swal("Oops...", "No hay datos para ese recurso concreto",
-                    "info");
-                obtenerDatosRecursoPrevio();
-            } else {
-                crearGrafo(data);
-            }
-        }
-    });
-}
+function getResourceData(resource){
+	var query = "construct{?nomRecurso ?p ?o} where{?nomRecurso ?p ?o " +
+			"FILTER(?nomRecurso = <"+resource+">)}"
+	getQueryData(query);
+			}
+

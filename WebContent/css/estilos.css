@@ -1,9 +1,7 @@
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
 	font-family: 'Bellefair', serif;
 }
+
 
 h3 {
 	font-size: 10px;
@@ -53,21 +51,21 @@ body {
 	font-size: 15px;
 }
 
-.pageLeftMenu {
-	margin-top: 40px;
-	float: left;
-	clear: none;
-	height: 70%;
-	width: 20%;
-	font-size: large;
-	font-family: 'Bellefair', serif;
-}
 
 .pageContent {
-	padding: 10px 15px 15px 15px;
+	padding-right: 20%;
+	padding-left: 20%;
+	font-family: 'Bellefair', serif;
+}
+.tabla {
+	padding-right: 15%;
+	padding-left: 15%;
 	font-family: 'Bellefair', serif;
 }
 
+#resultados.pageContent{
+	font-size: 18px;
+}
 .form {
 	margin: auto;
 	width: 50%;
@@ -98,7 +96,8 @@ body {
 
 .table {
 	width: 90%;
-	text-align: center
+	border: none;
+	
 }
 
 .list-group-item {
@@ -140,9 +139,6 @@ marker#end {
 	padding: 40px;
 }
 
-#busqueda {
-	font-size: large;
-}
 
 .btn-group {
 	padding-bottom: 5px;

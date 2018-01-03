@@ -2,7 +2,11 @@ package tratamiento;
 
 
 
-
+/**
+ * 
+ * @author dmuchuari
+ * @03/01/2018
+ */
 public class Json {
 
 	/**
