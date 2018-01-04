@@ -32,8 +32,8 @@ public class GraphDB {
 
 	public GraphDB() throws IOException {
 		try {
-			HTTPRepository conn = new HTTPRepository("http://174.140.171.251:7200/repositories/ModeloParaLaGeneracionDeDatosEnlazados");
-			conn.setUsernameAndPassword(PropertiesManager.getINSTANCE().getProperty("user"), PropertiesManager.getINSTANCE().getProperty("password"));
+			HTTPRepository conn = new HTTPRepository("http://10.225.180.97:7200/repositories/ModeloGeneracionDatosEnlazados");
+			//conn.setUsernameAndPassword(PropertiesManager.getINSTANCE().getProperty("user"), PropertiesManager.getINSTANCE().getProperty("password"));
 			repository = conn.getConnection();
 			repository.begin();
 		} catch (RepositoryException e) {

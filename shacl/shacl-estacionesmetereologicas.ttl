@@ -47,6 +47,13 @@ ex:SensorShape
 	sh:severity sh:Info ;
 	];
 	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
+	];
+	sh:property [
 	sh:path purl:unitMeasure ;
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
@@ -71,6 +78,13 @@ ex:SensorShape
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
 	sh:severity sh:Info ;
+	];
+	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
 	];
 	sh:property [
 	sh:path purl:unitMeasure ;
@@ -99,6 +113,13 @@ ex:SensorShape
 	sh:severity sh:Info ;
 	];
 	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
+	];
+	sh:property [
 	sh:path purl:unitMeasure ;
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
@@ -123,6 +144,13 @@ ex:SensorShape
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
 	sh:severity sh:Info ;
+	];
+	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
 	];
 	sh:property [
 	sh:path purl:unitMeasure ;
@@ -158,6 +186,13 @@ ex:SensorShape
 	sh:severity sh:Violation ;
 	];
 	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
+	];
+	sh:property [
 		sh:path purl:obsValue;
 		sh:minCount 1 ;
 		sh:maxCount 1 ;
@@ -175,6 +210,13 @@ ex:SensorShape
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
 	sh:severity sh:Info ;
+	];
+	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
 	];
 	sh:property [
 	sh:path purl:unitMeasure ;
@@ -203,6 +245,13 @@ ex:SensorShape
 	sh:severity sh:Info ;
 	];
 	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
+	];
+	sh:property [
 	sh:path purl:unitMeasure ;
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
@@ -229,6 +278,13 @@ ex:SensorShape
 	sh:severity sh:Info ;
 	];
 	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
+	];
+	sh:property [
 	sh:path purl:unitMeasure ;
 	sh:minCount 1 ;
 	sh:maxCount 1 ;
@@ -253,6 +309,13 @@ ex:SensorShape
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
 	sh:severity sh:Info ;
+	];
+	sh:property [
+	sh:path open-data-euskadi:observacion-asociada ;
+	sh:minCount 1 ;
+	sh:maxCount 1 ;
+	sh:message "La medicion deberia estar asociada a una observacion@es";
+	sh:severity sh:Violation ;
 	];
 	sh:property [
 	sh:path purl:unitMeasure ;
