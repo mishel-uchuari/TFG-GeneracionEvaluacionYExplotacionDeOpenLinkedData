@@ -34,14 +34,14 @@ departmentUri  retribucionSinEspacios nomApUri
                 [uriGralRNominativas
                  [rdf:a employment-contract-predicate]
                  [employee-predicate employeeUri]
-                 [occupation-predicate (languageSpanish (str (removeSymbols (row "CargoPublico"))))]
+                 [occupation-predicate (languageSpanish (str (row "CargoPublico")))]
                  [formalized-date-predicate (dateLabel (row "FechaInicio"))]
                  [ending-date-predicate (dateLabel (row "FechaFin"))]
                  [dpto-id-predicate (row "IdDpto")]
                  [managing-dpt-predicate departmentUri]
-                 [organ-predicate (languageSpanish (str (removeSymbols (row "Organo"))))]
+                 [organ-predicate (languageSpanish (str (row "Organo")))]
                  [organic-center-id-predicate (row "IdCentro")]
-                 [organic-center-predicate (languageSpanish (str (removeSymbols (row "CentroOrganico"))))]
+                 [organic-center-predicate (languageSpanish (str (row "CentroOrganico")))]
                  [modified-date-predicate (dateLabel (row "FechaActualizado"))]
                  [contract-economic-conditions-predicate (parseValue (row "Retribucion"))]
                  ]
@@ -62,21 +62,22 @@ departmentUri  retribucionSinEspacios nomApUri
 (drop-rows 1)
   (derive-column  :nomApUri "NomAp")
   (derive-column  :retribucionSinEspacios "Retribucion")
+  (derive-column  :cargoPublicoSinEspacios "CargoPublico")
+  (derive-column  :organoSinEspacios "Organo")
+  (derive-column  :departamentoSinEspacios "Departamento")
+
       (mapc {"FechaInicio" organizeDate
             "FechaFin" organizeDate
             "FechaActualizado" organizeDate
             "nomApUri" removeSymbols
-            "CargoPublico" removeSymbols
             "IdDpto" parseValue
             "Retribucion" removeBlanks
-            "Departamento" removeSymbols
             "IdOrgano" parseValue
-            "Organo" removeSymbols
             "IdCentro" parseValue
           }) 
-  (derive-column  :uriGralRNominativas [:CargoPublico :nomApUri :Departamento :Organo :FechaActualizado] uriGralRNominativas)
+  (derive-column  :uriGralRNominativas [:cargoPublicoSinEspacios :nomApUri :departamentoSinEspacios :organoSinEspacios :FechaActualizado] uriGralRNominativas)
   (derive-column :employeeUri [:nomApUri] uriGralEmployee)
-  (derive-column :departmentUri [:Departamento] uriGralDpto)
+  (derive-column :departmentUri [:departamentoSinEspacios] uriGralDpto)
  ))
 
 (defn convert-data-to-graph

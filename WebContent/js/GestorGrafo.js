@@ -17,7 +17,7 @@ function createGraph(data) {
  recursos = {};
  $("svg").remove();
  var w = $("#resultGraph").width(),
-  h = 1000;
+  h = 800;
  var force = d3.layout.force().nodes(d3.values(nodos)).links(links).size(
    [w, h]).linkDistance(function(d) {
    return (getTamanoTexto(d.type, "Bellefair", "10px") + 25);
@@ -66,9 +66,9 @@ console.log(nodos);
    "id": function(d) {
     return "b" + eliminarSimbolos(d.name.toLowerCase());
    },
-   "r": 15,
-   "fill": "#ccc",
-   "stroke": "#000000"
+   "r": 15,//#81BEF7
+   "fill": "#81BEF7",
+   "stroke": "#2e6da4"
   }).on("dblclick", function(d) {
 	  getResourceData(d.name, true)
   }).on("mouseover", function (d){connectedNodes(d, 0)}).on("mouseout", function (d){connectedNodes(d, 1)}).call(force.drag);
@@ -89,10 +89,10 @@ console.log(nodos);
     return getTamanoTexto(d.name, "Bellefair", "10px")
    },
    "height": 20,
-   "fill": "#ccc",
+   "fill": "#81BEF7",
    "justify-content": "center",
    "aling-items": "center",
-   "stroke": "#000000"
+   "stroke": "#2e6da4"
   }).on("mouseover", function (d){connectedNodes(d, 0)}).on("mouseout", function (d){connectedNodes(d, 1)}).call(force.drag);
 
 
@@ -285,13 +285,13 @@ String.prototype.replaceAll = function(search, replacement) {
 function eliminarSimbolos(pString) {
  pString = pString.replaceAll("%", "");
  pString = pString.replaceAll("/", "");
- pString = pString.replace(":", "");
  pString = pString.replace("@", "");
  pString = pString.replace("#", "");
  pString = pString.replace(/\s/g, "");
  pString = pString.replace("+", "");
  pString = pString.replace("//", "");
  pString = pString.replace("/", "");
+ pString = pString.replace(/:/g,'');
  pString = pString.replace(/\./g, "");
  pString = pString.replace("+", "");
  return pString;

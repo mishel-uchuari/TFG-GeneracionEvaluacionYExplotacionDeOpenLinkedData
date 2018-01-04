@@ -19,7 +19,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -42,7 +42,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -59,7 +59,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -70,12 +70,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -120,7 +120,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -142,7 +142,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -159,7 +159,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -170,12 +170,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -220,7 +220,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -242,7 +242,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -259,7 +259,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -270,12 +270,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -319,7 +319,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-05> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -341,7 +341,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-05> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -358,7 +358,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-05> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -369,12 +369,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-05> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-05> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -417,7 +417,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -439,7 +439,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -456,7 +456,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -467,12 +467,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -514,7 +514,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -536,7 +536,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -553,7 +553,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -564,12 +564,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -614,7 +614,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -637,7 +637,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -654,7 +654,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -665,12 +665,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -715,7 +715,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -738,7 +738,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -755,7 +755,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -766,12 +766,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-03-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -815,7 +815,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-28> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -837,7 +837,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-28> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -854,7 +854,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-28> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -865,12 +865,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-28> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-28> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -914,7 +914,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-27> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -936,7 +936,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-27> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -953,7 +953,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-27> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -964,12 +964,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-27> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-27> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1013,7 +1013,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-26> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1036,7 +1036,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-26> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1053,7 +1053,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-26> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1064,12 +1064,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-26> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-26> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1114,7 +1114,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-25> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1137,7 +1137,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-25> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1154,7 +1154,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-25> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1165,12 +1165,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-25> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-25> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1215,7 +1215,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-24> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1238,7 +1238,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-24> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1255,7 +1255,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-24> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1266,12 +1266,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-24> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-24> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1316,7 +1316,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-23> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1339,7 +1339,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-23> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Mejorable"@eu , "Hobetzeko modukoa"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Hobetzeko modukoa"@eu , "Mejorable"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1356,7 +1356,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-23> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1367,12 +1367,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-23> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-23> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Mejorable"@eu , "Hobetzeko modukoa"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Hobetzeko modukoa"@eu , "Mejorable"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1418,7 +1418,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-22> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1441,7 +1441,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-22> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1458,7 +1458,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-22> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1469,12 +1469,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-22> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-22> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1519,7 +1519,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-21> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1542,7 +1542,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-21> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1559,7 +1559,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-21> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1570,12 +1570,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-21> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-21> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1621,7 +1621,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-20> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1643,7 +1643,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-20> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1660,7 +1660,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-20> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1671,12 +1671,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-20> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-20> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1722,7 +1722,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-19> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1745,7 +1745,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-19> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1762,7 +1762,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-19> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1773,12 +1773,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-19> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-19> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1824,7 +1824,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-18> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1847,7 +1847,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-18> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1864,7 +1864,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-18> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1875,12 +1875,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-18> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-18> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -1926,7 +1926,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-17> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -1949,7 +1949,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-17> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -1966,7 +1966,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-17> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -1977,12 +1977,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-17> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-17> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2024,7 +2024,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-16> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2047,7 +2047,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-16> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2064,7 +2064,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-16> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2075,12 +2075,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-16> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-16> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2122,7 +2122,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-15> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2145,7 +2145,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-15> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2162,7 +2162,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-15> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2173,12 +2173,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-15> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-15> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2220,7 +2220,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-14> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2243,7 +2243,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-14> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2260,7 +2260,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-14> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2271,12 +2271,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-14> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-14> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2318,7 +2318,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-13> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2340,7 +2340,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-13> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2357,7 +2357,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-13> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2368,12 +2368,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-13> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-13> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2415,7 +2415,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-12> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2437,7 +2437,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-12> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2454,7 +2454,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-12> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2465,12 +2465,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-12> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-12> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2512,7 +2512,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-11> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2534,7 +2534,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-11> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2551,7 +2551,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-11> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2562,12 +2562,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-11> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-11> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2609,7 +2609,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-10> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2632,7 +2632,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-10> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2649,7 +2649,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-10> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2660,12 +2660,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-10> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-10> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2707,7 +2707,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-09> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2730,7 +2730,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-09> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2747,7 +2747,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-09> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2758,12 +2758,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-09> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-09> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2805,7 +2805,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2827,7 +2827,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2844,7 +2844,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2855,12 +2855,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-08> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2902,7 +2902,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -2924,7 +2924,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -2941,7 +2941,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -2952,12 +2952,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-07> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -2997,7 +2997,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -3017,7 +3017,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -3032,7 +3032,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -3042,12 +3042,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-06> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -3087,7 +3087,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -3107,7 +3107,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -3122,7 +3122,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -3132,12 +3132,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-04> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Sin datos"@eu , "Daturik gabe"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -3179,7 +3179,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -3201,7 +3201,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -3218,7 +3218,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -3229,12 +3229,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-03> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -3276,7 +3276,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -3298,7 +3298,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -3315,7 +3315,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -3326,12 +3326,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-02> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
@@ -3373,7 +3373,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire CO8h en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-NO> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NO en una fecha determinada"@es ;
@@ -3396,7 +3396,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire NO2AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-NOX> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NOX> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de NOX en una fecha determinada"@es ;
@@ -3413,7 +3413,7 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM10AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de PM25 en una fecha determinada"@es ;
@@ -3424,12 +3424,12 @@
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire PM25AirQuality en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Muy buena"@eu , "Oso ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-ICAEstacion> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/ICAEstacion> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> " La calidad del aire ICAEstacion en una fecha determinada"@es ;
 	<http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada> <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/av-gazteiz-2017-02-01> ;
-	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Buena"@eu , "Ona"@es .
+	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-Benceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Benceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#comment> "El valor de Benceno en una fecha determinada"@es ;
