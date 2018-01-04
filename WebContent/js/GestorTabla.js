@@ -1,4 +1,5 @@
 function createTable(json) {
+	console.log(json);
 	var data = getFormatoJson(json);
 	$("#table").html("");
 	$("svg").remove();

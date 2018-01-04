@@ -20,15 +20,15 @@
 ;Metodo hace split a un string determinado
 ;Version castellano
 (defn makeSplitCast[string]
-(def var (str/split string #"/"))
-(nth var 0)
+(def var (str/split (str/replace string " / " "/") #"/"))
+(nth var 1)
 )
 
 ;Metodo hace split a un string determinado
 ;Version euskera
 (defn makeSplitEusk[string]
-(def var (str/split string #"/"))
-(get var 1)
+(def var (str/split (str/replace string " / " "/") #"/"))
+(nth var 0)
 )
 
 (defn ->s [st] (if st (s st) ""))

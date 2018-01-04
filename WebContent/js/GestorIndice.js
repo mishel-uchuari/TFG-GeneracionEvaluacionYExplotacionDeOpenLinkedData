@@ -45,6 +45,7 @@ function getQueryData(query) {
 		type : "post",
 		success : function(receivedData) {
 			json = receivedData;
+			console.log(json);
 			if (!receivedData) {
 				console.log("vaciooooo")
 				swal({

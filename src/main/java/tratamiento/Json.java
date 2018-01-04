@@ -1,7 +1,5 @@
 package tratamiento;
 
-
-
 /**
  * 
  * @author dmuchuari

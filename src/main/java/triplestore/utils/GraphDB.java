@@ -108,9 +108,13 @@ public class GraphDB {
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#date>", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#long>", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#double>", "");
+				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#int>", "");
+				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#dateTime>", "");	
+				statement = statement.replace(") ", ")");
 				statement = statement.replace(", ", ",");
-				statement = statement.replace(" ", "");
-				resultados = resultados + statement;
+			//	statement = statement.replace(" ", "");
+				if(!resultados.contains(statement)){
+				resultados = resultados + statement;}
 			}
 			stataments.close();
 			Json json = new Json();

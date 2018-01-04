@@ -12,15 +12,15 @@ import triplestore.utils.GraphDB;
 public class main {
 	public static void main(String[] args) throws IOException, RDFHandlerException, RepositoryException, MalformedQueryException, QueryEvaluationException {
 
-//		System.out.println("|||||||||||||||||||||||\n"
-//				+ "|| Calidad del aire  ||\n"
-//				+ "|||||||||||||||||||||||\n");
-//		 Pipeline pipeCalidadAire = new Pipeline("CalidadDelAire",
-//		 "convertidor", "./DatosIniciales/calidadAire-VitoriaGasteiz.csv",
-//		 "./DatosConvertidos/calidadAire-VitoriaGasteiz.ttl");
-//		 pipeCalidadAire.run();
-//		 
-//		 System.out.println("RDF calidad del aire creado\n");
+		System.out.println("|||||||||||||||||||||||\n"
+				+ "|| Calidad del aire  ||\n"
+				+ "|||||||||||||||||||||||\n");
+		 Pipeline pipeCalidadAire = new Pipeline("CalidadDelAire",
+		 "convertidor", "./DatosIniciales/calidadAire-VitoriaGasteiz.csv",
+		 "./DatosConvertidos/calidadAire-VitoriaGasteiz.ttl");
+		 pipeCalidadAire.run();
+		 
+		 System.out.println("RDF calidad del aire creado\n");
 //		 
 //		 System.out.println("||||||||||||||||||||||||||||||||\n"
 //					+ "|| Estaciones Metereologicas  ||\n"
@@ -58,12 +58,5 @@ public class main {
 //		 
 //		 System.out.println("RDF retribuciones nominativas creado\n");
 		
-		 Pipeline pipeRetribNominativas = new
-		 Pipeline("RetribucionesNominativas", "convertidor",
-		 "./DatosIniciales/relacionPuestosTrabajo-2017.csv",
-		 "./DatosConvertidos/deprueba.ttl");
-		 pipeRetribNominativas.run();
-		 
-		 System.out.println("RDF retribuciones nominativas creado\n");
 	}
 }

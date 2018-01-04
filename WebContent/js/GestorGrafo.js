@@ -197,6 +197,7 @@ console.log(nodos);
   textCircles.attr("transform", function(d) {
    return "translate(" + d.x + "," + d.y + ")";
   });
+
  }
 
  // Create an array logging what is connected to what
@@ -209,14 +210,14 @@ console.log(nodos);
 
  function connectedNodes(elementIndex, toggle) {
   if (toggle == 0) {
-   $("[id^=text").attr("opacity", "0.04");
+   $("[id^=text").attr("opacity", "0");
    PATH_LABEL[0].map(function(x) {
-    x.setAttribute("opacity", "0.04")
+    x.setAttribute("opacity", "0")
    });
    var textRecursos;
    var textLiterales;
    circle.style("opacity", function(o) {
-    var opacity = 0.04;
+    var opacity = 0;
     if (linkedByIndex[elementIndex.name + "," + o.name] == 1 || linkedByIndex[o.name + "," + elementIndex.name] == 1) {
      opacity = 1;
      // Hace visibles el texto de los links adecuados
@@ -231,7 +232,7 @@ console.log(nodos);
    });
 
    rectangle.style("opacity", function(o) {
-    var opacity = 0.04;
+    var opacity = 0;
     if (linkedByIndex[elementIndex.name + "," + o.name] == 1 || linkedByIndex[o.name + "," + elementIndex.name] == 1) {
      opacity = 1;
      // Hace visibles el texto de los links adecuados
@@ -246,7 +247,7 @@ console.log(nodos);
     return opacity;
    });
    link.style("opacity", function(o) {
-    var opacity = 0.04;
+    var opacity = 0;
     if (linkedByIndex[elementIndex.name + "," + o.source.name] == 1 && elementIndex.index == o.source.index || elementIndex.index == o.target.index) {
      opacity = 1;
     }
