@@ -23,6 +23,7 @@
               )
      )
 
+;Construye el grafo a partir de las tripletas que se especifican
 (def make-graph
  (graph-fn [{:keys [
    ;Datos observaciones
@@ -44,10 +45,11 @@
     PM10 PM25 Tolueno NO2max Etilbenceno uriEstacion
     ]
              :as row }]
-           ;Nombre de la 
+           ;Nombre del grafo
              (graph (graph-base "calidad-aire-en-euskadi-2017") 
                 [uriEstacion
                  [rdf:a qb:Observation]
+                 [rdfs:label observationAvG-coment]
                  [date-predicate dateValue]
                  [location-predicate vitoria-station]
                  [resource-measurement-base uriCOgen]
@@ -70,125 +72,126 @@
                  ]          
                 [observation-CO
                  [rdf:a uriCOgen]
-                 [rdfs:comment CO-coment]
+                 [rdfs:label CO-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate milligram-cmeter-predicate]
                  [observation-value-predicate (row "CO") ]
                    ]
                 [observation-CO8hmax
                  [rdf:a uriCO8hmaxgen]
-                 [rdfs:comment CO8hmax-coment]
+                 [rdfs:label CO8hmax-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate milligram-cmeter-predicate]
                  [observation-value-predicate (row "CO-8hmax")]
                    ]
                 [observation-C8hAQ
                  [rdf:a uriCO8hAirQualitygen]
-                 [rdfs:comment CO8hAQ-coment]
+                 [rdfs:label CO8hAQ-coment]
                  [predicate-medition-associated uriEstacion]
                  [observation-value-predicate (languageVasque (str (row "CO-8h-Air-Quality")))]
                  [observation-value-predicate (languageSpanish (str varCO8AQ-CAST))]
                    ]
                    [observation-NO
                  [rdf:a uriNOgen]
-                 [rdfs:comment  NO-coment]
+                 [rdfs:label  NO-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "NO")]
                    ]
                     [observation-NO2
                  [rdf:a uriNO2gen]
-                 [rdfs:comment  NO2-coment]
+                 [rdfs:label  NO2-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "NO2")]
                    ]
                      [observation-NO2max
                  [rdf:a uriNO2maxgen]
-                 [rdfs:comment  NO2max-coment]
+                 [rdfs:label  NO2max-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "NO2max")]
                    ]
                    [observation-NO2AQ
                  [rdf:a uriNO2AirQualitygen]
-                 [rdfs:comment NO2AQ-coment]
+                 [rdfs:label NO2AQ-coment]
                  [predicate-medition-associated uriEstacion]
                  [observation-value-predicate (languageVasque (str (row "NO2-Air-Quality")))]
                  [observation-value-predicate (languageSpanish (str varNO2AQ-CAST))]
                    ]
                     [observation-NOX
                  [rdf:a uriNOXgen]
-                 [rdfs:comment  NOX-coment]
+                 [rdfs:label  NOX-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "NOX")]
                    ]
                      [observation-PM10
                  [rdf:a uriPM10gen]
-                 [rdfs:comment PM10-coment]
+                 [rdfs:label PM10-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "PM10")]
                    ] 
                  [observation-PM10AQ 
                  [rdf:a uriPM10AirQualitygen]
-                 [rdfs:comment PM10AQ-coment]
+                 [rdfs:label PM10AQ-coment]
                  [predicate-medition-associated uriEstacion]
                  [observation-value-predicate (languageVasque (str (row "PM10-Air-Quality")))]
                  [observation-value-predicate (languageSpanish (str varPM10AQ-CAST ))]
                    ] 
                    [observation-PM25
                  [rdf:a uriPM25gen]
-                 [rdfs:comment PM25-coment]
+                 [rdfs:label PM25-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "PM25")]
                    ]  
                     [observation-PM25AQ 
                  [rdf:a uriPM25AirQualitygen]
-                 [rdfs:comment PM25AQ-coment]
+                 [rdfs:label PM25AQ-coment]
                  [predicate-medition-associated uriEstacion]
                  [observation-value-predicate (languageVasque (str (row "PM25-Air-Quality")))]
                  [observation-value-predicate (languageSpanish (str varPM25AQ-CAST))]
                    ] 
                    [observation-ICAAQ
                  [rdf:a uriICAEstaciongen]
-                 [rdfs:comment ICAAQ-coment]
+                 [rdfs:label ICAAQ-coment]
                  [predicate-medition-associated uriEstacion]
                  [observation-value-predicate (languageVasque (str (row "ICA-estacion")))]
                  [observation-value-predicate (languageSpanish (str varICAE-CAST))]
                    ] 
                     [observation-Benceno
                  [rdf:a uriBencenogen]
-                 [rdfs:comment Benceno-coment]
+                 [rdfs:label Benceno-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "Benceno")]
                    ]
                     [observation-Tolueno
                  [rdf:a uriToluenogen]
-                 [rdfs:comment Tolueno-coment]
+                 [rdfs:label Tolueno-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "Tolueno")]
                    ]
                     [observation-Ortoxileno
                  [rdf:a uriOrtoxilenogen]
-                 [rdfs:comment Ortoxileno-coment]
+                 [rdfs:label Ortoxileno-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "Ortoxileno")]
                    ]
                    [observation-Etilbenceno
                  [rdf:a uriEtilbencenogen]
-                 [rdfs:comment Etilbenceno-coment]
+                 [rdfs:label Etilbenceno-coment]
                  [predicate-medition-associated uriEstacion]
                  [unit-measure-predicate micragram-cmeter-predicate]
                  [observation-value-predicate (row "Etilbenceno")]
                    ]
              ))) 
-			   
+
+;Convierte los datos del csv a datos clojure y aplica funciones sobre ellos
 (defn convert-data-to-data
   [data-file]
   (-> (read-dataset data-file)
@@ -266,7 +269,7 @@
   [dataset]
   (-> dataset convert-data-to-data make-graph missing-data-filter))
 
-
+;Se declara el pipeline
 (declare-pipeline convert-data-to-graph [Dataset -> (Seq Statement)]
                   {dataset "The data file to convert into a graph."})
 

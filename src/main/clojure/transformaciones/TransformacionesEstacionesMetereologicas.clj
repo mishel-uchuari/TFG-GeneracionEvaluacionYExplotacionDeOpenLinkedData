@@ -9,7 +9,7 @@
     ))
 
 (use 'clojure.java.io)
-
+;Prefijos
 (def dirMedia "direccionMedia1100")
 (def humedad620 "humedad620")
 (def irradia200 "irradia200")
@@ -30,6 +30,7 @@
 (def uriVelMax1100Gen (predicate-measurement-base velMax1100)) 
 (def uriVelMedia1100Gen (predicate-measurement-base velMedia1100)) 
 
+(def observationc040-coment (languageSpanish (str "Observacion realizada en la estacion c040 en una fecha determinada")))
 (def dirMedia-coment (languageSpanish (str "Direccion o procedencia media del viento expresada en grados")))
 (def sigDir-coment (languageSpanish (str "Sigma de la dirección del viento expresada en grados")))
 (def humedad-coment (languageSpanish (str "Humedad relativa del aire expresada en porcentaje")))

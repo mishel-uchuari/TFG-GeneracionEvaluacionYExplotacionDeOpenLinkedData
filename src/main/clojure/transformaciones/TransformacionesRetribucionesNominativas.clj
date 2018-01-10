@@ -9,7 +9,7 @@
 )
 
 (use 'clojure.java.io)
-
+;Prefijos
 (def cargoPublico "cargo-publico")
 (def idOrgano "id-organo")
 (def organo "organo")
@@ -35,3 +35,6 @@
 (defn uriGralEmployee[employee] 
   (contract-resource-base
     (str (str/lower-case employee))))
+
+;Comentario
+(def retribucionesNom-coment (languageSpanish (str "Retribucion nominativa durante el 2017")))

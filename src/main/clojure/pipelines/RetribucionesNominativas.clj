@@ -22,17 +22,18 @@
               )
      )
 (use 'clojure.java.io)
-
+;Construye el grafo a partir de las tripletas que se especifican
 (def make-graph
  (graph-fn [{:keys [
 NomAp CargoPublico FechaInicio FechaFin IdDpto uriGralRNominativas Retribucion
 Departamento IdOrgano Organo IdCentro CentroOrganico FechaActualizado employeeUri 
 departmentUri  retribucionSinEspacios nomApUri
     ] :as row }]
-           ;Nombre de la 
+           ;Nombre del grafo
              (graph (graph-base "retribuciones-nominativas-2017") 
                 [uriGralRNominativas
                  [rdf:a employment-contract-predicate]
+                 [rdfs:label retribucionesNom-coment]
                  [employee-predicate employeeUri]
                  [occupation-predicate (languageSpanish (str (row "CargoPublico")))]
                  [formalized-date-predicate (dateLabel (row "FechaInicio"))]
@@ -51,7 +52,7 @@ departmentUri  retribucionSinEspacios nomApUri
                  [rdfs:label (languageVasque (row "NomAp"))]
                  ]
                              ))) 
-			   
+;Convierte los datos del csv a datos clojure y aplica funciones sobre ellos
 (defn convert-data-to-data
   [data-file]
   (-> (read-dataset data-file)
@@ -83,7 +84,7 @@ departmentUri  retribucionSinEspacios nomApUri
 (defn convert-data-to-graph
   [dataset]
   (-> dataset convert-data-to-data make-graph missing-data-filter))
-
+;Se declara el pipeline
 (declare-pipeline convert-data-to-graph [Dataset -> (Seq Statement)]
                   {dataset "The data file to convert into a graph."})
 

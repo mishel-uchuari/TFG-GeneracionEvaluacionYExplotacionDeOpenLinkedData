@@ -24,6 +24,7 @@
               )
      )
 
+;Construye el grafo a partir de las tripletas que se especifican
 (def make-graph
  (graph-fn [{:keys [
   Fecha Hora DirMedia Humedad620 Irradia Presion observation-dirMedia observation-humedad620 observation-irradia200 
@@ -31,10 +32,11 @@
   SigDir SigVel TemAire VelMax VelMedia 
   dateHour stationUri observation-VelMedia1100
     ] :as row }]
-           ;Nombre de la 
+           ;Nombre del grafo
              (graph (graph-base "estaciones-metereologicas-en-2017") 
                 [stationUri
                  [rdf:a qb:Observation]
+                 [rdfs:label observationc040-coment]
                  [date-predicate dateHour]
                  [location-predicate vitoria-station]
                  [resource-measurement-base uriDirMediaGen]
@@ -120,7 +122,7 @@
                  [observation-value-predicate (row "VelMedia")]
                    ] 
              ))) 
-
+;Convierte los datos del csv a datos clojure y aplica funciones sobre ellos
 (defn convert-data-to-data
   [data-file]
   (-> (read-dataset data-file)
@@ -132,7 +134,6 @@
                ])
     ;Borra la primera fila correspondiente a los nombres de las columnas
 (drop-rows 1)
-    ;Creamos nuevas columnas donde almacenar el valor en castellano de las columnas
      (derive-column :hour [:Hora] removeSymbols)
      (mapc {
             "Fecha" organizeDateUSA
@@ -164,6 +165,7 @@
   [dataset]
   (-> dataset convert-data-to-data make-graph missing-data-filter))
 
+;Se declara el pipeline
 (declare-pipeline convert-data-to-graph [Dataset -> (Seq Statement)]
                   {dataset "The data file to convert into a graph."})
 

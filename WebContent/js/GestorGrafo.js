@@ -1,8 +1,9 @@
 var PATH_LABEL;
 
 function createGraph(data) {
-	
+// Se elimina la tabla
  $("#table").html("");
+// Se crea la estructura del json
  var links = getFormatoJsonGrafo(data);
  var nodos = {};
  links.forEach(function(link) {
@@ -15,16 +16,19 @@ function createGraph(data) {
  });
  literales = {};
  recursos = {};
- $("svg").remove();
+ // Se define la anchura maxima del grafo
  var w = $("#resultGraph").width(),
+ // Se define la altura maxima del grafo
   h = 800;
+ // Se configuran varios parametros para la forma de generarse el grafo como
+ // el tamaño de los enlaces
  var force = d3.layout.force().nodes(d3.values(nodos)).links(links).size(
    [w, h]).linkDistance(function(d) {
    return (getTamanoTexto(d.type, "Bellefair", "10px") + 25);
   }).charge(-500).theta(0.1).gravity(0.05)
   .on("tick", tick).start();
  aux = {};
-console.log(nodos);
+// Se separan los nodos entre literales y recursos
  for (var key in nodos) {
   if (nodos[key].name.includes("http")) {
    nodos[key].class = "recurso";
@@ -37,10 +41,11 @@ console.log(nodos);
   }
   aux = {};
  }
-
+// Se define la estructura del svg
  var svg = d3.select("#resultGraph").append("svg:svg").attr("width", w).attr(
   "height", h).attr("orient", "auto");
-
+ 
+ // Se configuran las caracteristicas de los enlaces
  var link = svg.append("svg:g").selectAll("g.link").data(force.links())
   .enter().append('g').attr('class', 'link');
 
@@ -53,7 +58,8 @@ console.log(nodos);
  var textPath = link.append("svg:path").attr("id", function(d) {
   return d.source.index + "_" + d.target.index;
  }).attr("class", "textpath");
-
+ 
+ // Se configuran las caracteristicas de los recursos
  var circle = svg.append("svg:g").selectAll("circle").data(d3.values(recursos))
   .enter().append("svg:circle").attr("class", function(d) {
    if (d.name.includes("http")) {
@@ -66,13 +72,18 @@ console.log(nodos);
    "id": function(d) {
     return "b" + eliminarSimbolos(d.name.toLowerCase());
    },
-   "r": 15,//#81BEF7
+   "r": 15,// #81BEF7
    "fill": "#81BEF7",
    "stroke": "#2e6da4"
-  }).on("dblclick", function(d) {
-	  getResourceData(d.name, true)
-  }).on("mouseover", function (d){connectedNodes(d, 0)}).on("mouseout", function (d){connectedNodes(d, 1)}).call(force.drag);
-
+  }).on("dblclick", function(d) {// Al hacer doble click sobre un recurso
+	  getResourceData(d.name, true)// Se mostrará un grafo solo con la
+		// información que le hace referencia
+  }).on("mouseover", function (d){// Al pasar el raton por encima se mostrara
+									// del grafo sólo su informacion
+	  // y la de sus adyacentes
+	  connectedNodes(d, 0)}).on("mouseout", function (d){connectedNodes(d, 1)}).call(force.drag);
+ 
+ // Se configuran las caracteristicas de los recursos
  var rectangle = svg.append("svg:g").selectAll("rectangle").data(d3.values(literales))
   .enter().append("svg:rect").attr("class", function(d) {
    if (d.name.includes("http")) {
@@ -92,10 +103,11 @@ console.log(nodos);
    "fill": "#81BEF7",
    "justify-content": "center",
    "aling-items": "center",
-   "stroke": "#2e6da4"
+   "stroke": "#2e6da4" // Al pasar el raton por encima se mostrara del grafo
+		// sólo su informacion y la de sus adyacentes
   }).on("mouseover", function (d){connectedNodes(d, 0)}).on("mouseout", function (d){connectedNodes(d, 1)}).call(force.drag);
 
-
+// Se configura el texto que aparecera describiendo literales
  var textRectangles = svg.append("svg:g").selectAll("g").data(d3.values(literales)).enter()
   .append("svg:g").attr("id", function(d) {
    return "text" + eliminarSimbolos(d.name);
@@ -112,7 +124,8 @@ console.log(nodos);
  }).text(function(d) {
   return d.name;
  });
-
+ 
+// Se configura el texto que aparecera describiendo recursos
  var textCircles = svg.append("svg:g").selectAll("g").data(d3.values(recursos)).enter()
   .append("svg:g").attr("id", function(d) {
    return "text" + eliminarSimbolos(d.name);
@@ -148,7 +161,8 @@ console.log(nodos);
   "font-size": "10",
   "font-family": "Arial"
  }).text(function(d) {
-  return d.type;
+  return d.type;// Al pasar el raton por encima mostrara texto asociado y al
+	// quitarlo el texto desaparecera
  }).on("mouseover", function(d) {
   onMouseOver(d);
   console.log("se muestra"+ d)
@@ -166,10 +180,12 @@ console.log(nodos);
   return "M" + start.x + "," + start.y + "A" + dr + "," + dr + " 0 0," +
    sweep + " " + end.x + "," + end.y;
  }
+ // Fija que inicialmente que el texto de los enlaces no se muestre
  PATH_LABEL[0].map(function(x) {
   x.setAttribute("opacity", "0")
  });
-
+ 
+ // Funcion fija las nuevas posiciones de los elementos del grafo al moverse
  function tick() {
   linkPath.attr("d", function(d) {
    return arcPath(false, d);
@@ -200,14 +216,15 @@ console.log(nodos);
 
  }
 
- // Create an array logging what is connected to what
- var linkedByIndex = {};
+ // Variable que hace referencia a los enlaces que se crean entre los
+ // recursos/literales var linkedByIndex = {};
  links.forEach(function(d) {
   linkedByIndex[d.source.name + "," + d.source.name] = 1;
   linkedByIndex[d.target.name + "," + d.target.name] = 1;
   linkedByIndex[d.source.name + "," + d.target.name] = 1;
  });
-
+ 
+ // Funcion focaliza los nodos conectados
  function connectedNodes(elementIndex, toggle) {
   if (toggle == 0) {
    $("[id^=text").attr("opacity", "0");
@@ -254,7 +271,7 @@ console.log(nodos);
     return opacity;
    });
   } else {
-   // Put them back to opacity=1
+   // Regresa todo a su estado inicial
    circle.style("opacity", 1);
    rectangle.style("opacity", 1);
    link.style("opacity", 1);
@@ -266,10 +283,12 @@ console.log(nodos);
  }
 }
 
+//Al pasar el raton sobre un enlace se muestra su texto asociado
 function onMouseOver(pElement) {
  d3.select("#r" + eliminarSimbolos(pElement.source.name) + eliminarSimbolos(pElement.target.name)).attr("opacity", "1");
 }
 
+//Al retirar el raton de un enlace se oculta su texto asociado
 function onMouseOut() {
  PATH_LABEL[0].map(function(x) {
   x.setAttribute("opacity", "0")
@@ -282,6 +301,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 
+//Elimina caracteres especiales
 function eliminarSimbolos(pString) {
  pString = pString.replaceAll("%", "");
  pString = pString.replaceAll("/", "");
@@ -297,6 +317,8 @@ function eliminarSimbolos(pString) {
  return pString;
 }
 
+//Funcion busca elemento en la informacion mostrada en el grafo y lo destaca
+//por unos segundos
 function destacarElemento() {
  var userInput = eliminarSimbolos(document.getElementById("busqueda").value.toLowerCase());
  var theNode = d3.select("#b" + userInput);
@@ -313,11 +335,14 @@ function destacarElemento() {
  }, 9000);
 }
 
+//Funcion oculta el elemento buscado anteriormente
 function ocultarElemento(element) {
  var theNode = d3.select(element);
  theNode.attr("fill", "#ccc");
 }
 
+//Funcion obtiene el tamaño del texto que se le pase por parametro para saber
+//que tamaño asignar al recuadro que lo englobara
 function getTamanoTexto(txt, fontname, fontsize) {
  this.e = document.createElement("span");
  this.e.style.fontSize = fontsize;
@@ -329,6 +354,7 @@ function getTamanoTexto(txt, fontname, fontsize) {
  return w + 10;
 }
 
+//Funcion termina de conformar el json y darle el formato adecuado
 function getFormatoJsonGrafo(data){
 	var data=JSON.parse(JSON.stringify(data));
 	var x=data.split(";");

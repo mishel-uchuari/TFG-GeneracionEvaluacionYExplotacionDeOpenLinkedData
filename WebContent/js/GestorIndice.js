@@ -1,12 +1,11 @@
 var json;
 
+//Inicia la barra de progreso
 function initProgressBar() {
 	$("svg").remove();
 	$("#resultados").append("<div id='container'></div>");
 	var bar = new ProgressBar.Circle(container, {
 		color : '#666',
-		// This has to be the same size as the maximum width to
-		// prevent clipping
 		strokeWidth : 4,
 		trailWidth : 1,
 		easing : 'easeInOut',
@@ -28,13 +27,15 @@ function initProgressBar() {
 			var value = Math.round(circle.value() * 100);
 		}
 	});
-	bar.animate(1.0); // Number from 0.0 to 1.0
+	bar.animate(1.0); 
 }
 
+//Elimina la barra de progreso
 function deleteProgressBar() {
 	$("#container").remove();
 }
 
+//Obtiene el json de la query
 function getQueryData(query) {
 	console.log(query);
 	$.ajax({

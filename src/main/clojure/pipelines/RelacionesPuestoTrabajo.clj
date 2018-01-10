@@ -22,7 +22,7 @@
               )
      )
 (use 'clojure.java.io)
-
+;Construye el grafo a partir de las tripletas que se especifican
 (def make-graph
  (graph-fn [{:keys [
    FechaMod FechaDescarga CodPuesto Dotacion CodDep CodCentroDest CodCentroO CatRetributiva 
@@ -30,10 +30,11 @@
    dCenter department occupation organicCenter
     ]
              :as row }]
-           ;Nombre de la 
+           ;Nombre del grafo
              (graph (graph-base "relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma-2017") 
                 [uriGeneralRPLaborales
                  [rdf:a employment-contract-predicate]
+                 [rdfs:label relPuestosTrab-coment]
                  [modified-date-predicate (dateLabel (row "FechaMod"))]
                  [discharge-date-predicate (dateLabel (row "FechaDescarga"))]
                  [occupation-cod-predicate (row "CodPuesto")]
@@ -52,6 +53,7 @@
                  ]
              ))) 
 			 
+;Convierte los datos del csv a datos clojure y aplica funciones sobre ellos
 (defn convert-data-to-data
   [data-file]
   (-> (read-dataset data-file)
@@ -62,7 +64,6 @@
                "FechaPreceptividad" "ImporteRetributivo"])
     ;Borra la primera fila correspondiente a los nombres de las columnas
 (drop-rows 1)
-    ;Creamos nuevas columnas donde almacenar el valor en castellano de las columnas
     (derive-column :cDestino [:CentroDestino] removeSymbols)
     (mapc {
         "FechaMod" organizeDate
@@ -87,7 +88,7 @@
 (defn convert-data-to-graph
   [dataset]
   (-> dataset convert-data-to-data make-graph missing-data-filter))
-
+;Se declara el pipeline
 (declare-pipeline convert-data-to-graph [Dataset -> (Seq Statement)]
                   {dataset "The data file to convert into a graph."})
 

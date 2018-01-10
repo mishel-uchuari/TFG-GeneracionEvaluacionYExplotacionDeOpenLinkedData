@@ -107,7 +107,7 @@
     (str date "-" Etilbenceno)))
 
 ;Comentarios Elementos
-
+(def observationAvG-coment (languageSpanish (str "Observacion realizada en sensor Av.Gasteiz en una fecha determinada")))
 (def CO-coment (languageSpanish (str "El valor de " CO " en una fecha determinada")))
 (def CO8hAQ-coment (languageSpanish (str " La calidad del aire " CO8hmax " en una fecha determinada")))
 (def CO8hmax-coment (languageSpanish (str "El valor de " CO8hmax " en una fecha determinada")))

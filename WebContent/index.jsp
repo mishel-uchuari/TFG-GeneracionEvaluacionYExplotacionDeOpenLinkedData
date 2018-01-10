@@ -96,7 +96,6 @@
 							//endpoint : "${url}",
 							showQueryButton : false
 						}
-
 					});
 					function getQuery() {
 						return yasqe.getValue();

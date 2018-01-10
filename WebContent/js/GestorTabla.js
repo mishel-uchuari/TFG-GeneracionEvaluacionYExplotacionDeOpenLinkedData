@@ -1,5 +1,5 @@
+//Funcion crea la tabla a partir del json
 function createTable(json) {
-	console.log(json);
 	var data = getFormatoJson(json);
 	$("#table").html("");
 	$("svg").remove();
@@ -20,6 +20,7 @@ function createTable(json) {
 	}
 }
 
+//Funcion añade las columnas
 function addAllColumnHeaders(data) {
 	var columnSet = [];
 	var headerTr$ = $('<tr/>');
@@ -38,6 +39,7 @@ function addAllColumnHeaders(data) {
 	return columnSet;
 }
 
+//Le da formato a los datos que se le pasan por parametro para construir un json adecuado
 function getFormatoJson(data) {
 	var data = JSON.parse(JSON.stringify(data));
 	var x = data.split(";");

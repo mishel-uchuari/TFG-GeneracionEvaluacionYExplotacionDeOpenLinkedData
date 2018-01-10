@@ -22,8 +22,8 @@ public class Pipeline {
 	private String aEjecutar;
 	private String rutaRdfFinal;
 
-	public Pipeline(String pNameSpace, String pMetodoEjecutar, String pRutaCsvInicial, 
-			String pRutaRdfFinal) throws IOException, RDFHandlerException {
+	public Pipeline(String pNameSpace, String pMetodoEjecutar, String pRutaCsvInicial, String pRutaRdfFinal)
+			throws IOException, RDFHandlerException {
 		nameSpace = pNameSpace;
 		rutaCsvInicial = pRutaCsvInicial;
 		aEjecutar = pMetodoEjecutar;
@@ -45,9 +45,6 @@ public class Pipeline {
 		while (ite.hasNext()) {
 			model.add((Statement) ite.next());
 		}
-		// Lo subimos a la triplestore
-		GraphDB gdb = new GraphDB();
-		gdb.loadRDF4JModel(model);
 		// Para la realización de las pruebas de calidad del RDF creamos un
 		// fichero
 		File file = new File(rutaRdfFinal);
@@ -58,6 +55,9 @@ public class Pipeline {
 		} catch (FileNotFoundException | RDFHandlerException e) {
 			e.printStackTrace();
 		}
+		// Lo subimos a la triplestore
+		GraphDB gdb = new GraphDB();
+		gdb.loadRDF4JModel(model);
 
 	}
 }
