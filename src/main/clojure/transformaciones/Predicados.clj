@@ -40,7 +40,6 @@
 (def resource-measurement-base  "http://opendata.euskadi.eus/def/medio-ambiente/medicion")
 (def predicate-measurement-base (prefixer "http://opendata.euskadi.eus/def/medio-ambiente/medicion/"))
 (def element-base (prefixer "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/"))
-(def predicate-medition-associated "http://opendata.euskadi.eus/def/medio-ambiente/observacion-asociada")
 
 
 (def contract-predicate-base (prefixer "http://opendata.euskadi.eus/def/sector-publico/contrato/"))

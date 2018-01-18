@@ -39,21 +39,20 @@
                  [rdfs:label observationc040-coment]
                  [date-predicate dateHour]
                  [location-predicate vitoria-station]
-                 [resource-measurement-base uriDirMediaGen]
-                 [resource-measurement-base uriHumedad620Gen]
-                 [resource-measurement-base uriIrradia200Gen]
-                 [resource-measurement-base uriPresion150Gen]
-                 [resource-measurement-base uriSigDir1100Gen]
-                 [resource-measurement-base uriSigVel1100Gen]
-                 [resource-measurement-base uriTemAire610Gen]
-                 [resource-measurement-base uriVelMax1100Gen]
-                 [resource-measurement-base uriVelMedia1100Gen]
+                 [resource-measurement-base observation-dirMedia]
+                 [resource-measurement-base observation-humedad620]
+                 [resource-measurement-base observation-irradia200]
+                 [resource-measurement-base observation-presion150]
+                 [resource-measurement-base observation-sigDir1100]
+                 [resource-measurement-base observation-sigVel1100]
+                 [resource-measurement-base observation-temAire610]
+                 [resource-measurement-base observation-velMax1100]
+                 [resource-measurement-base observation-VelMedia1100]
                  ]
                 ;Observacion direccion media
                 [observation-dirMedia
                  [rdf:a uriDirMediaGen]
                  [rdfs:label dirMedia-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate degrees-celsius-predicate]
                  [observation-value-predicate (row "DirMedia")]
                    ]
@@ -61,7 +60,6 @@
                 [observation-humedad620
                  [rdf:a uriHumedad620Gen]
                  [rdfs:label humedad-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate percentage-predicate]
                  [observation-value-predicate (row "Humedad620")]
                    ]
@@ -69,7 +67,6 @@
                 [observation-irradia200
                  [rdf:a uriIrradia200Gen]
                  [rdfs:label irradia-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate watios-m2-predicate]
                  [observation-value-predicate (row "Irradia")]
                    ]
@@ -77,7 +74,6 @@
                    [observation-presion150
                  [rdf:a uriPresion150Gen]
                  [rdfs:label  presion-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate milibar-predicate]
                  [observation-value-predicate (row "Presion")]
                    ]
@@ -85,7 +81,6 @@
                     [observation-sigDir1100
                  [rdf:a uriSigDir1100Gen]
                  [rdfs:label  sigDir-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate degrees-celsius-predicate]
                  [observation-value-predicate (row "SigDir")]
                    ]
@@ -93,7 +88,6 @@
                      [observation-sigVel1100
                  [rdf:a uriSigVel1100Gen]
                  [rdfs:label  sigVel-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate km-hour-predicate]
                  [observation-value-predicate (row "SigVel")]
                    ]
@@ -101,7 +95,6 @@
                    [observation-temAire610
                  [rdf:a uriTemAire610Gen]
                  [rdfs:label temAire-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate degrees-celsius-predicate]
                  [observation-value-predicate (row "TemAire")]
                    ]
@@ -109,7 +102,6 @@
                     [observation-velMax1100
                  [rdf:a uriVelMax1100Gen]
                  [rdfs:label  velMax-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate km-hour-predicate]
                  [observation-value-predicate (row "VelMax")]
                    ]
@@ -117,7 +109,6 @@
                      [observation-VelMedia1100
                  [rdf:a uriVelMedia1100Gen]
                  [rdfs:label velMedia-coment]
-                 [predicate-medition-associated stationUri]
                  [unit-measure-predicate km-hour-predicate]
                  [observation-value-predicate (row "VelMedia")]
                    ] 
