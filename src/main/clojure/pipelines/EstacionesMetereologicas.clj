@@ -36,7 +36,8 @@
              (graph (graph-base "estaciones-metereologicas-en-2017") 
                 [stationUri
                  [rdf:a qb:Observation]
-                 [rdfs:label observationc040-coment]
+                 [rdfs:label (languageSpanish(str "Observacion estacion c040"))]
+                 [rdfs:comment observationc040-coment]
                  [date-predicate dateHour]
                  [location-predicate vitoria-station]
                  [resource-measurement-base observation-dirMedia]
@@ -52,63 +53,72 @@
                 ;Observacion direccion media
                 [observation-dirMedia
                  [rdf:a uriDirMediaGen]
-                 [rdfs:label dirMedia-coment]
+                 [rdfs:label (languageSpanish(str "dirMedia"))]
+                 [rdfs:comment dirMedia-coment]
                  [unit-measure-predicate degrees-celsius-predicate]
                  [observation-value-predicate (row "DirMedia")]
                    ]
                 ;Observacion humedad 620
                 [observation-humedad620
                  [rdf:a uriHumedad620Gen]
-                 [rdfs:label humedad-coment]
+                 [rdfs:label (languageSpanish(str "Humedad 620"))]
+                 [rdfs:comment humedad-coment]
                  [unit-measure-predicate percentage-predicate]
                  [observation-value-predicate (row "Humedad620")]
                    ]
                 ;Observacion irradia 200
                 [observation-irradia200
                  [rdf:a uriIrradia200Gen]
-                 [rdfs:label irradia-coment]
+                 [rdfs:comment irradia-coment]
+                 [rdfs:label (languageSpanish(str "Irradia 200"))]
                  [unit-measure-predicate watios-m2-predicate]
                  [observation-value-predicate (row "Irradia")]
                    ]
                 ;Observacion Presion 150
                    [observation-presion150
                  [rdf:a uriPresion150Gen]
-                 [rdfs:label  presion-coment]
+                 [rdfs:label (languageSpanish(str "Presion 150"))]
+                 [rdfs:comment  presion-coment]
                  [unit-measure-predicate milibar-predicate]
                  [observation-value-predicate (row "Presion")]
                    ]
                    ;Observacion Sigdir 1100
                     [observation-sigDir1100
                  [rdf:a uriSigDir1100Gen]
-                 [rdfs:label  sigDir-coment]
+                 [rdfs:label (languageSpanish(str "Sig Dir 1100"))]
+                 [rdfs:comment  sigDir-coment]
                  [unit-measure-predicate degrees-celsius-predicate]
                  [observation-value-predicate (row "SigDir")]
                    ]
                     ;Observacion Sigvel 1100
                      [observation-sigVel1100
                  [rdf:a uriSigVel1100Gen]
-                 [rdfs:label  sigVel-coment]
+                 [rdfs:label (languageSpanish(str "Sig Vel 1100"))]
+                 [rdfs:comment  sigVel-coment]
                  [unit-measure-predicate km-hour-predicate]
                  [observation-value-predicate (row "SigVel")]
                    ]
                      ;Observacion Temperatura aire 610
                    [observation-temAire610
                  [rdf:a uriTemAire610Gen]
-                 [rdfs:label temAire-coment]
+                 [rdfs:label (languageSpanish(str "Temp Aire 610"))]
+                 [rdfs:comment temAire-coment]
                  [unit-measure-predicate degrees-celsius-predicate]
                  [observation-value-predicate (row "TemAire")]
                    ]
                    ;Observacion VelMax 1100
                     [observation-velMax1100
                  [rdf:a uriVelMax1100Gen]
-                 [rdfs:label  velMax-coment]
+                 [rdfs:label (languageSpanish(str "Vel Max 1100"))]
+                 [rdfs:comment  velMax-coment]
                  [unit-measure-predicate km-hour-predicate]
                  [observation-value-predicate (row "VelMax")]
                    ]
                     ;Observacion Vel Media 1100
                      [observation-VelMedia1100
                  [rdf:a uriVelMedia1100Gen]
-                 [rdfs:label velMedia-coment]
+                 [rdfs:label (languageSpanish(str "Vel Media 1100"))]
+                 [rdfs:comment velMedia-coment]
                  [unit-measure-predicate km-hour-predicate]
                  [observation-value-predicate (row "VelMedia")]
                    ] 

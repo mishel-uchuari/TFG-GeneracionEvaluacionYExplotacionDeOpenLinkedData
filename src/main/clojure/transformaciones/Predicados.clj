@@ -45,4 +45,4 @@
 (def contract-predicate-base (prefixer "http://opendata.euskadi.eus/def/sector-publico/contrato/"))
 (def contract-resource-base (prefixer "http://opendata.euskadi.eus/recurso/sector-publico/contrato/"))
 
-(def station-base (prefixer  "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observation/"))
+(def station-base (prefixer  "http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/"))

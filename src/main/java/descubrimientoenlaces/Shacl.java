@@ -55,11 +55,11 @@ public class Shacl {
 
 		// Data is not conformant
 		if (result) {
-			throw new Exception("SHACL violation: non-conformant RDF, see report at " + reportFile);
+			throw new Exception("Violacion SHACL, RDF no válido. Puedes ver los resultados en el report en : " + reportFile);
 		}
 		// Conformant data
 		else {
-			System.out.println("Valid RDF");
+			System.out.println("RDF válido. Puedes ver los resultados en el report en : " + reportFile);
 		}
 
 	}

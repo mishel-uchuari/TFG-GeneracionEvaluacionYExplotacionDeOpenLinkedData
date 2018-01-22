@@ -34,7 +34,8 @@
              (graph (graph-base "relaciones-de-puestos-de-trabajo-de-los-departamentos-y-organismos-autonomos-de-la-administracion-de-la-comunidad-autonoma-2017") 
                 [uriGeneralRPLaborales
                  [rdf:a employment-contract-predicate]
-                 [rdfs:label relPuestosTrab-coment]
+                 [rdfs:comment relPuestosTrab-coment]
+                 [rdfs:label (languageSpanish (str "Relaciones puesto trabajo"))]
                  [modified-date-predicate (dateLabel (row "FechaMod"))]
                  [discharge-date-predicate (dateLabel (row "FechaDescarga"))]
                  [occupation-cod-predicate (row "CodPuesto")]

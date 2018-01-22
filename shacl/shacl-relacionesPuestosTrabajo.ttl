@@ -61,33 +61,25 @@ ex:ContratoShape
 		sh:severity sh:Info ;
 	];
 	sh:property [
-		sh:path sector-publico-contrato:cod-centro-organico;
+		sh:path contsem:managingDepartment ;
+		sh:languageIn ("es") ;
 		sh:minCount 1 ;
-		sh:maxCount 1 ;
-		sh:datatype xsd:int ;
-		sh:message "El contrato debería tener asociado el codigo del centro organico del puesto@es";
+		sh:message "El contrato debería tener asociado el nombre del departamento gerente del puesto@es";
 		sh:severity sh:Info ;
 	];
 	sh:property [
-	sh:path contsem:managingDepartment ;
-	sh:languageIn ("es") ;
-	sh:minCount 1 ;
-	sh:message "El contrato debería tener asociado el nombre del departamento gerente del puesto@es";
-	sh:severity sh:Info ;
+		sh:path sector-publico-contrato:centro-organico ;
+		sh:minCount 1 ;
+		sh:languageIn ("es") ;
+		sh:message "El contrato debería tener asociado el nombre del centro organico del puesto@es";
+		sh:severity sh:Info ;
 	];
 	sh:property [
-	sh:path sector-publico-contrato:centro-organico ;
-	sh:minCount 1 ;
-	sh:languageIn ("es") ;
-	sh:message "El contrato debería tener asociado el nombre del centro organico del puesto@es";
-	sh:severity sh:Info ;
-	];
-	sh:property [
-	sh:path sector-publico-contrato:centro-destino ;
-	sh:minCount 1 ;
-	sh:languageIn ("es") ;
-	sh:message "El contrato debería tener asociado el nombre del centro destino del puesto@es";
-	sh:severity sh:Info ;
+		sh:path sector-publico-contrato:centro-destino ;
+		sh:minCount 1 ;
+		sh:languageIn ("es") ;
+		sh:message "El contrato debería tener asociado el nombre del centro destino del puesto@es";
+		sh:severity sh:Info ;
 	];
 	sh:property [
 		sh:path sector-publico-contrato:categoria-retributiva;
@@ -109,14 +101,27 @@ ex:ContratoShape
 		sh:path contsem:ContractEconomicConditions;
 		sh:minCount 1 ;
 		sh:maxCount 1 ;
-		sh:datatype xsd:int ;
+		sh:datatype xsd:double ;
 		sh:message "El contrato debería tener asociado un sueldo@es";
 		sh:severity sh:Info ;
 	];
 	sh:property [
-	sh:path dbpedia:occupation ;
-	sh:languageIn ("es") ;
-	sh:minCount 1 ;
-	sh:message "El contrato debe tener una 'descripcion' del puesto al que se refiere@es";
-	sh:severity sh:Violation ;
+		sh:path dbpedia:occupation ;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:message "El contrato debe tener una 'descripcion' del puesto al que se refiere@es";
+		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:label;
+		sh:minCount 1 ;
+		sh:languageIn ( "es") ;
+		sh:message "El recurso debe tener un label@es";
+		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:message "El recurso puede tener comentario@es";
+		sh:severity sh:Info ;
 	].

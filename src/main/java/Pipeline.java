@@ -56,8 +56,8 @@ public class Pipeline {
 			e.printStackTrace();
 		}
 		// Lo subimos a la triplestore
-		GraphDB gdb = new GraphDB();
-		gdb.loadRDF4JModel(model);
+//		GraphDB gdb = new GraphDB();
+//		gdb.loadRDF4JModel(model);
 
 	}
 }

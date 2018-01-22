@@ -10,7 +10,7 @@
 @prefix frapo: <http://purl.org/cerif/frapo/> .
 @prefix opendata-contrato: <http://opendata.euskadi.eus/def/sector-publico/contrato/> .
 
-#Los test sobre las observacioes
+#Tests sobre los contratos
 ex:ContratoShape
 	a sh:NodeShape ;
 	sh:targetClass frapo:EmploymentContract;
@@ -69,8 +69,6 @@ ex:ContratoShape
 	];
 	sh:property [
 		sh:path contsem:ContractEconomicConditions;
-		sh:minCount 1 ;
-		sh:maxCount 1 ;
 		sh:datatype xsd:int ;
 		sh:message "El contrato debería tener asociado un sueldo@es";
 		sh:severity sh:Info ;
@@ -80,5 +78,30 @@ ex:ContratoShape
 		sh:languageIn ("es") ;
 		sh:minCount 1 ;
 		sh:message "El contrato debe tener una 'descripcion' del puesto al que se refiere@es";
+		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:label;
+		sh:minCount 1 ;
+		sh:languageIn ( "es") ;
+		sh:message "El recurso debe tener un label@es";
+		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:message "El recurso puede tener comentario@es";
+		sh:severity sh:Info ;
+	].
+	
+#Tests sobre las personas
+ex:PersonShape
+	a sh:NodeShape ;
+	sh:targetClass schema:person;
+	sh:property [
+		sh:path rdfs:label;
+		sh:minCount 1 ;
+		sh:languageIn ( "es" "eu") ;
+		sh:message "El recurso debe tener un label@es";
 		sh:severity sh:Violation ;
 	].

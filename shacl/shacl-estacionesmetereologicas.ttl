@@ -17,7 +17,6 @@ ex:ObservationShape
 	sh:property [
 		sh:path dcterms:date;
 		sh:datatype xsd:dateTime ;
-		sh:minCount 1 ;
 		sh:message "La observacion debe tener asociada una fecha@es";
 		sh:severity sh:Violation ;
 	];
@@ -26,7 +25,7 @@ ex:ObservationShape
 		sh:minCount 1 ;
 		sh:maxCount 1 ;
 		sh:message "La observacion debería tener asociado una geo localizacion@es";
-		sh:severity sh:Warning ;
+		sh:severity sh:Info;
 	];
 	sh:property [
 		sh:path open-data-euskadi:medicion;
@@ -34,31 +33,39 @@ ex:ObservationShape
 		sh:maxCount 9 ;
 		sh:message "La observacion debe tener un resultado de tipo float@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+	    sh:path rdfs:label;
+	    sh:minCount 1 ;
+	    sh:languageIn ("es") ;
+	    sh:message "La observacion debe tener un label@es";
+	    sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La observacion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
 	a sh:NodeShape ;
 	sh:targetClass open-data-euskadi-medicion:direccionMedia1100;
 	sh:property [
-	sh:path rdfs:label ;
-	sh:languageIn ("es") ;
-	sh:minCount 1 ;
-	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
+		sh:path rdfs:label ;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:message "Una medicion debería tener un label@es";
+		sh:severity sh:Violation ;
 	];
 	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
-	sh:severity sh:Violation ;
-	];
-	sh:property [
-	sh:path purl:unitMeasure ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "El resultado de la medicion debe tener una unidad de medida asociada@es";
-	sh:severity sh:Violation ;
+		sh:path purl:unitMeasure ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:message "El resultado de la medicion debe tener una unidad de medida asociada@es";
+		sh:severity sh:Violation ;
 	];
 	sh:property [
 		sh:path purl:obsValue;
@@ -67,6 +74,14 @@ ex:SensorShape
 		sh:datatype xsd:double ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
@@ -74,24 +89,17 @@ ex:SensorShape
 	sh:targetClass open-data-euskadi-medicion:humedad620;
 	sh:property [
 	sh:path rdfs:label ;
-	sh:languageIn ( "es") ;
+	sh:languageIn ("es") ;
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
-	];
-	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
 	sh:severity sh:Violation ;
 	];
 	sh:property [
-	sh:path purl:unitMeasure ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "El resultado de la medicion debe tener una unidad de medida asociada@es";
-	sh:severity sh:Violation ;
+		sh:path purl:unitMeasure ;
+		sh:minCount 1 ;
+		sh:maxCount 1 ;
+		sh:message "El resultado de la medicion debe tener una unidad de medida asociada@es";
+		sh:severity sh:Violation ;
 	];
 	sh:property [
 		sh:path purl:obsValue;
@@ -100,6 +108,14 @@ ex:SensorShape
 		sh:datatype xsd:int ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
@@ -107,16 +123,9 @@ ex:SensorShape
 	sh:targetClass open-data-euskadi-medicion:irradia200;
 	sh:property [
 	sh:path rdfs:label ;
-	sh:languageIn ( "es") ;
+	sh:languageIn ("es") ;
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
-	];
-	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
 	sh:severity sh:Violation ;
 	];
 	sh:property [
@@ -133,6 +142,14 @@ ex:SensorShape
 		sh:datatype xsd:double ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
@@ -140,16 +157,9 @@ ex:SensorShape
 	sh:targetClass open-data-euskadi-medicion:presion150;
 	sh:property [
 	sh:path rdfs:label ;
-	sh:languageIn ( "es") ;
+	sh:languageIn ("es") ;
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
-	];
-	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
 	sh:severity sh:Violation ;
 	];
 	sh:property [
@@ -166,6 +176,14 @@ ex:SensorShape
 		sh:datatype xsd:double ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
@@ -173,10 +191,10 @@ ex:SensorShape
 	sh:targetClass open-data-euskadi-medicion:sigDir1100;
 	sh:property [
 	sh:path rdfs:label ;
-	sh:languageIn ( "es") ;
+	sh:languageIn ("es") ;
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
+	sh:severity sh:Violation ;
 	];
 	sh:property [
 	sh:path purl:unitMeasure ;
@@ -186,19 +204,20 @@ ex:SensorShape
 	sh:severity sh:Violation ;
 	];
 	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
-	sh:severity sh:Violation ;
-	];
-	sh:property [
 		sh:path purl:obsValue;
 		sh:minCount 1 ;
 		sh:maxCount 1 ;
 		sh:datatype xsd:double ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
@@ -206,16 +225,9 @@ ex:SensorShape
 	sh:targetClass open-data-euskadi-medicion:sigVel1100;
 	sh:property [
 	sh:path rdfs:label ;
-	sh:languageIn ( "es") ;
+	sh:languageIn ("es") ;
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
-	];
-	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
 	sh:severity sh:Violation ;
 	];
 	sh:property [
@@ -232,6 +244,14 @@ ex:SensorShape
 		sh:datatype xsd:double ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
@@ -239,16 +259,9 @@ ex:SensorShape
 	sh:targetClass open-data-euskadi-medicion:temAire610;
 	sh:property [
 	sh:path rdfs:label ;
-	sh:languageIn ( "es") ;
+	sh:languageIn ("es") ;
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
-	];
-	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
 	sh:severity sh:Violation ;
 	];
 	sh:property [
@@ -265,6 +278,14 @@ ex:SensorShape
 		sh:datatype xsd:double ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
@@ -272,16 +293,9 @@ ex:SensorShape
 	sh:targetClass open-data-euskadi-medicion:velMax1100;
 	sh:property [
 	sh:path rdfs:label ;
-	sh:languageIn ( "es") ;
+	sh:languageIn ("es") ;
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
-	];
-	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
 	sh:severity sh:Violation ;
 	];
 	sh:property [
@@ -298,6 +312,14 @@ ex:SensorShape
 		sh:datatype xsd:double ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].
 #Los test sobre las mediciones
 ex:SensorShape
@@ -305,16 +327,9 @@ ex:SensorShape
 	sh:targetClass open-data-euskadi-medicion:velMedia1100;
 	sh:property [
 	sh:path rdfs:label ;
-	sh:languageIn ( "es") ;
+	sh:languageIn ("es") ;
 	sh:minCount 1 ;
 	sh:message "Una medicion debería tener un label@es";
-	sh:severity sh:Info ;
-	];
-	sh:property [
-	sh:path open-data-euskadi:observacion-asociada ;
-	sh:minCount 1 ;
-	sh:maxCount 1 ;
-	sh:message "La medicion deberia estar asociada a una observacion@es";
 	sh:severity sh:Violation ;
 	];
 	sh:property [
@@ -331,4 +346,12 @@ ex:SensorShape
 		sh:datatype xsd:double ;
 		sh:message "La medicion debe tener un resultado@es";
 		sh:severity sh:Violation ;
+	];
+	sh:property [
+		sh:path rdfs:comment;
+		sh:languageIn ("es") ;
+		sh:minCount 1 ;
+		sh:maxCount 17 ;
+		sh:message "La medicion puede tener comentario@es";
+		sh:severity sh:Info ;
 	].

@@ -5,4 +5,5 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 ASK WHERE {  
   ?ValidationReport rdf:type sh:ValidationReport . 
   ?ValidationReport sh:conforms "false"^^xsd:boolean . 
+  ?ValidationReport sh:ResultSeverity sh:Violation.
  } 

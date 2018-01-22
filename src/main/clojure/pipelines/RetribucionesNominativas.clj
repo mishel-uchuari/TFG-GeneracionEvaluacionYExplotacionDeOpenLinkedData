@@ -33,7 +33,8 @@ departmentUri  retribucionSinEspacios nomApUri
              (graph (graph-base "retribuciones-nominativas-2017") 
                 [uriGralRNominativas
                  [rdf:a employment-contract-predicate]
-                 [rdfs:label retribucionesNom-coment]
+                 [rdfs:comment retribucionesNom-coment]
+                 [rdfs:label (languageSpanish(str "Retribuciones nominativas 2017"))]
                  [employee-predicate employeeUri]
                  [occupation-predicate (languageSpanish (str (row "CargoPublico")))]
                  [formalized-date-predicate (dateLabel (row "FechaInicio"))]
@@ -76,7 +77,7 @@ departmentUri  retribucionSinEspacios nomApUri
             "IdOrgano" parseValue
             "IdCentro" parseValue
           }) 
-  (derive-column  :uriGralRNominativas [:cargoPublicoSinEspacios :nomApUri :departamentoSinEspacios :organoSinEspacios :FechaActualizado] uriGralRNominativas)
+  (derive-column  :uriGralRNominativas [:cargoPublicoSinEspacios :nomApUri :Departamento :organoSinEspacios :FechaActualizado] uriGralRNominativas)
   (derive-column :employeeUri [:nomApUri] uriGralEmployee)
   (derive-column :departmentUri [:departamentoSinEspacios] uriGralDpto)
  ))

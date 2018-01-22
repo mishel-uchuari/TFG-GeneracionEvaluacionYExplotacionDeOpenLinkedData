@@ -31,9 +31,11 @@
 (def destination-center-predicate  (contract-predicate-base centroDestino)) 
 (def retributive-category-predicate  (contract-predicate-base categoriaRetrib)) 
 (def linguistic-profile-predicate  (contract-predicate-base perfilLing)) 
+
 ;Prefijo
 (defn uriGeneralRPuestoTrabajo[dotation destinationCenter occupationCod modifiedDate] 
   (contract-resource-base
     (str dotation "-" (str/lower-case destinationCenter) "-" occupationCod "-" modifiedDate)))
+
 ;Comentario
 (def relPuestosTrab-coment (languageSpanish (str "Descripcion contrato trabajo durante el 2017")))

@@ -30,11 +30,11 @@
 
 (defn uriGralDpto[dpto] 
   (contract-resource-base
-    (str (str/lower-case dpto))))
+    (str (removeSymbols (str/lower-case dpto)))))
 
 (defn uriGralEmployee[employee] 
   (contract-resource-base
     (str (str/lower-case employee))))
 
 ;Comentario
-(def retribucionesNom-coment (languageSpanish (str "Retribucion nominativa durante el 2017")))
+(def retribucionesNom-coment (languageSpanish (str "Retribuciones nominativa durante el 2017")))
