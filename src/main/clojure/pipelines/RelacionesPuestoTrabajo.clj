@@ -55,7 +55,7 @@
              ))) 
 			 
 ;Convierte los datos del csv a datos clojure y aplica funciones sobre ellos
-(defn convert-data-to-data
+(defn read-csv-data
   [data-file]
   (-> (read-dataset data-file)
     ;Creamos el dataset de los datos a cargar
@@ -88,11 +88,11 @@
 
 (defn convert-data-to-graph
   [dataset]
-  (-> dataset convert-data-to-data make-graph missing-data-filter))
+  (-> dataset read-csv-data make-graph missing-data-filter))
 ;Se declara el pipeline
 (declare-pipeline convert-data-to-graph [Dataset -> (Seq Statement)]
                   {dataset "The data file to convert into a graph."})
 
 ;Convierte una IStatement en una statement Sesame
-(defn convertidor [is]
+(defn create-graph [is]
   (map io/IStatement->sesame-statement (convert-data-to-graph is)))

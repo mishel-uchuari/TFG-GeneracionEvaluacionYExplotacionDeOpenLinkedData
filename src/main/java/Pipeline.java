@@ -22,23 +22,24 @@ public class Pipeline {
 	private String aEjecutar;
 	private String rutaRdfFinal;
 
-	public Pipeline(String pNameSpace, String pMetodoEjecutar, String pRutaCsvInicial, String pRutaRdfFinal)
-			throws IOException, RDFHandlerException {
-		nameSpace = pNameSpace;
-		rutaCsvInicial = pRutaCsvInicial;
-		aEjecutar = pMetodoEjecutar;
-		rutaRdfFinal = pRutaRdfFinal;
-	}
+	/**
+	 * En primer lugar se le pasa el nombre del pipeline que se quiere ejecutar
+	 * En segundo la ruta donde esta ubicado el CSV del que se tomaran los datos
+	 * En tercero la ruta donde se almacenará el turtle con los resultados
+	 * 
+	 * @param args
+	 */
 
-	public void run() throws IOException {
+	public static void main(String[] args) {
+
 		try {
 			// Cargamos el pipeline de clojure
-			RT.loadResourceScript("pipelines/" + nameSpace + ".clj");
+			RT.loadResourceScript("pipelines/" + args[0] + ".clj");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		// Ejecutamos el pipeline
-		LazySeq lazy = (LazySeq) RT.var("pipelines." + nameSpace, aEjecutar).invoke(rutaCsvInicial);
+		LazySeq lazy = (LazySeq) RT.var("pipelines." + args[0], "create-graph").invoke(args[1]);
 		Iterator ite = lazy.iterator();
 		// Lo guardamos en un model
 		Model model = new LinkedHashModel();
@@ -46,8 +47,8 @@ public class Pipeline {
 			model.add((Statement) ite.next());
 		}
 		// Para la realización de las pruebas de calidad del RDF creamos un
-		// fichero
-		File file = new File(rutaRdfFinal);
+		// fichero donde se almacenara el RDF generado en formato turtle
+		File file = new File(args[2]);
 		FileOutputStream fileTurtle;
 		try {
 			fileTurtle = new FileOutputStream(file);
@@ -55,9 +56,6 @@ public class Pipeline {
 		} catch (FileNotFoundException | RDFHandlerException e) {
 			e.printStackTrace();
 		}
-		// Lo subimos a la triplestore
-//		GraphDB gdb = new GraphDB();
-//		gdb.loadRDF4JModel(model);
 
 	}
 }
