@@ -32,7 +32,8 @@ public class GraphDB {
 
 	public GraphDB() throws IOException {
 		try {
-			HTTPRepository conn = new HTTPRepository("http://174.140.171.251:7200/repositories/ModeloParaLaGeneracionDeDatosEnlazados");
+			HTTPRepository conn = new HTTPRepository(
+					"http://174.140.171.251:7200/repositories/ModeloParaLaGeneracionDeDatosEnlazados");
 			conn.setUsernameAndPassword("admin", "ctxakurra");
 			repository = conn.getConnection();
 			repository.begin();
@@ -40,10 +41,12 @@ public class GraphDB {
 			e.printStackTrace();
 		}
 	}
-/**
- * Sube un model a la triple store
- * @param pModel
- */
+
+	/**
+	 * Sube un model a la triple store
+	 * 
+	 * @param pModel
+	 */
 	public void loadRDF4JModel(final Model pModel) {
 		try {
 			Iterable<? extends Statement> it = new Iterable<Statement>() {
@@ -98,7 +101,7 @@ public class GraphDB {
 		String resultados = "";
 
 		try {
-			
+
 			query = repository.prepareGraphQuery(QueryLanguage.SPARQL, pQuery);
 			GraphQueryResult stataments = query.evaluate();
 			while (stataments.hasNext()) {
@@ -109,27 +112,31 @@ public class GraphDB {
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#long>", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#double>", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#int>", "");
-				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#dateTime>", "");	
+				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#dateTime>", "");
 				statement = statement.replace(") ", ")");
 				statement = statement.replace(", ", ",");
-			//	statement = statement.replace(" ", "");
-				if(!resultados.contains(statement)){
-				resultados = resultados + statement;}
+				// statement = statement.replace(" ", "");
+				if (!resultados.contains(statement)) {
+					resultados = resultados + statement;
+				}
 			}
 			stataments.close();
-			Json json = new Json();
-			resultados = json.parsearJSON(resultados);
+			if (!resultados.equals("")) {
+				Json json = new Json();
+				resultados = json.parsearJSON(resultados);
+			}
+
 		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e1) {
 			resultados = e1.getMessage();
 			System.out.println(resultados);
 		}
 		return resultados;
 	}
-	
+
 	public String getResourceJson(String pRecurso) {
 		String query = "construct{?nomRecurso ?p ?o} where{graph<http://opendata.eurohelp.es/dataset/recursos-humanos>{?nomRecurso ?p ?o}FILTER(?nomRecurso = <recursoPeticion>)}";
 		String result = "";
-		query=query.replace("recursoPeticion", pRecurso);
+		query = query.replace("recursoPeticion", pRecurso);
 		try {
 			GraphQuery tupleQuery = repository.prepareGraphQuery(QueryLanguage.SPARQL, query);
 			GraphQueryResult results = tupleQuery.evaluate();

@@ -217,7 +217,8 @@ function createGraph(data) {
  }
 
  // Variable que hace referencia a los enlaces que se crean entre los
- // recursos/literales var linkedByIndex = {};
+ // recursos/literales
+ var linkedByIndex = {};
  links.forEach(function(d) {
   linkedByIndex[d.source.name + "," + d.source.name] = 1;
   linkedByIndex[d.target.name + "," + d.target.name] = 1;
@@ -283,12 +284,12 @@ function createGraph(data) {
  }
 }
 
-//Al pasar el raton sobre un enlace se muestra su texto asociado
+// Al pasar el raton sobre un enlace se muestra su texto asociado
 function onMouseOver(pElement) {
  d3.select("#r" + eliminarSimbolos(pElement.source.name) + eliminarSimbolos(pElement.target.name)).attr("opacity", "1");
 }
 
-//Al retirar el raton de un enlace se oculta su texto asociado
+// Al retirar el raton de un enlace se oculta su texto asociado
 function onMouseOut() {
  PATH_LABEL[0].map(function(x) {
   x.setAttribute("opacity", "0")
@@ -301,7 +302,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 
-//Elimina caracteres especiales
+// Elimina caracteres especiales
 function eliminarSimbolos(pString) {
  pString = pString.replaceAll("%", "");
  pString = pString.replaceAll("/", "");
@@ -317,8 +318,8 @@ function eliminarSimbolos(pString) {
  return pString;
 }
 
-//Funcion busca elemento en la informacion mostrada en el grafo y lo destaca
-//por unos segundos
+// Funcion busca elemento en la informacion mostrada en el grafo y lo destaca
+// por unos segundos
 function destacarElemento() {
  var userInput = eliminarSimbolos(document.getElementById("busqueda").value.toLowerCase());
  var theNode = d3.select("#b" + userInput);
@@ -335,14 +336,14 @@ function destacarElemento() {
  }, 9000);
 }
 
-//Funcion oculta el elemento buscado anteriormente
+// Funcion oculta el elemento buscado anteriormente
 function ocultarElemento(element) {
  var theNode = d3.select(element);
  theNode.attr("fill", "#ccc");
 }
 
-//Funcion obtiene el tamaño del texto que se le pase por parametro para saber
-//que tamaño asignar al recuadro que lo englobara
+// Funcion obtiene el tamaño del texto que se le pase por parametro para saber
+// que tamaño asignar al recuadro que lo englobara
 function getTamanoTexto(txt, fontname, fontsize) {
  this.e = document.createElement("span");
  this.e.style.fontSize = fontsize;
@@ -354,7 +355,7 @@ function getTamanoTexto(txt, fontname, fontsize) {
  return w + 10;
 }
 
-//Funcion termina de conformar el json y darle el formato adecuado
+// Funcion termina de conformar el json y darle el formato adecuado
 function getFormatoJsonGrafo(data){
 	var data=JSON.parse(JSON.stringify(data));
 	var x=data.split(";");

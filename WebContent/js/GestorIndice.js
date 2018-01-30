@@ -1,6 +1,6 @@
 var json;
 
-//Inicia la barra de progreso
+// Inicia la barra de progreso
 function initProgressBar() {
 	$("svg").remove();
 	$("#resultados").append("<div id='container'></div>");
@@ -27,56 +27,67 @@ function initProgressBar() {
 			var value = Math.round(circle.value() * 100);
 		}
 	});
-	bar.animate(1.0); 
+	bar.animate(1.0);
 }
 
-//Elimina la barra de progreso
+// Elimina la barra de progreso
 function deleteProgressBar() {
 	$("#container").remove();
 }
 
-//Obtiene el json de la query
+// Obtiene el json de la query
 function getQueryData(query) {
 	console.log(query);
-	$.ajax({
-		url : "ServGeneradorResultados",
-		data : {
-			"query" : query
-		},
-		type : "post",
-		success : function(receivedData) {
-			json = receivedData;
-			console.log(json);
-			if (!receivedData) {
-				console.log("vaciooooo")
-				swal({
-					title : "Query no permitida",
-					text : "Las querys deben limitarse a SELECT o CONSTRUCT",
-					type : "warning",
-					showCancelButton : false,
-					confirmButtonClass : "btn-primary",
-					confirmButtonText : "OK",
-					closeOnConfirm : false
-				}, function() {
-				});
-			} else if (receivedData.includes("error")
-					|| receivedData.includes("Encountered")) {
-				swal({
-					title : "Error de sintaxis",
-					text : receivedData,
-					type : "warning",
-					showCancelButton : false,
-					confirmButtonClass : "btn-primary",
-					confirmButtonText : "OK",
-					closeOnConfirm : false
-				}, function() {
-				});
-			} else {
-				createTable(json);
+	query = query.toLowerCase();
+	if (query.includes("select") || query.includes("construct")) {
+		$.ajax({
+			url : "ServGeneradorResultados",
+			data : {
+				"query" : query
+			},
+			type : "post",
+			success : function(recivedData) {
+				json = recivedData;
+				console.log(json);
+				if (recivedData.includes("error")
+						|| recivedData.includes("Encountered")) {
+					swal({
+						title : "Error de sintaxis",
+						text : receivedData,
+						type : "warning",
+						showCancelButton : false,
+						confirmButtonClass : "btn-primary",
+						confirmButtonText : "OK",
+						closeOnConfirm : false
+					}, function() {
+					});
+				} else if (recivedData.includes("recurso")) {
+					swal({
+						title : "Sin datos",
+						text : receivedData,
+						type : "warning",
+						showCancelButton : false,
+						confirmButtonClass : "btn-primary",
+						confirmButtonText : "OK",
+						closeOnConfirm : false
+					}, function() {
+					});
+				} else {
+					createTable(json);
+				}
 			}
-		}
-	});
+		});
+	} else {
+		swal({
+			title : "Query no permitida",
+			text : "Las querys deben limitarse a SELECT o CONSTRUCT",
+			type : "warning",
+			showCancelButton : false,
+			confirmButtonClass : "btn-primary",
+			confirmButtonText : "OK",
+			closeOnConfirm : false
+		}, function() {
+		});
+	}
+
 }
-
-
-
