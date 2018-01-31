@@ -44,17 +44,17 @@ public class main {
 //		
 //		 System.out.println("RDF relaciones puestos trabajo creado\n");
 
-		 System.out.println("|||||||||||||||||||||||||||||||\n"
-		 + "|| Retribuciones Nominativas ||\n"
-		 + "|||||||||||||||||||||||||||||||\n");
-		
-		 Pipeline pipeRetribNominativas = new
-		 Pipeline("RetribucionesNominativas", "convertidor",
-		 "./DatosIniciales/retribucionesNominativas-2017.csv",
-		 "./DatosConvertidos/retribucionesNominativas-2017.ttl");
-		 pipeRetribNominativas.run();
-		
-		 System.out.println("RDF retribuciones nominativas creado\n");
+//		 System.out.println("|||||||||||||||||||||||||||||||\n"
+//		 + "|| Retribuciones Nominativas ||\n"
+//		 + "|||||||||||||||||||||||||||||||\n");
+//		
+//		 Pipeline pipeRetribNominativas = new
+//		 Pipeline("RetribucionesNominativas", "convertidor",
+//		 "./DatosIniciales/retribucionesNominativas-2017.csv",
+//		 "./DatosConvertidos/retribucionesNominativas-2017.ttl");
+//		 pipeRetribNominativas.run();
+//		
+//		 System.out.println("RDF retribuciones nominativas creado\n");
 		
 	}
 }
