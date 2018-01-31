@@ -86,8 +86,8 @@ public class GraphDB {
 				System.out.println(statement);
 				resultados = resultados + statement;
 			}
-			Json json = new Json();
-			resultados = json.parsearJSON(resultados);
+			Json json = new Json(resultados);
+			resultados = json.parsearJSON();
 			statements.close();
 		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e1) {
 			resultados = e1.getMessage();
@@ -122,8 +122,8 @@ public class GraphDB {
 			}
 			stataments.close();
 			if (!resultados.equals("")) {
-				Json json = new Json();
-				resultados = json.parsearJSON(resultados);
+				Json json = new Json(resultados);
+				resultados = json.parsearJSON();
 			}
 
 		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e1) {
@@ -154,8 +154,8 @@ public class GraphDB {
 		if (result == "") {
 			result = "json vacio";
 		} else {
-			Json json = new Json();
-			result = json.parsearJSON(result);
+			Json json = new Json(result);
+			result = json.parsearJSON();
 		}
 		return result;
 	}
