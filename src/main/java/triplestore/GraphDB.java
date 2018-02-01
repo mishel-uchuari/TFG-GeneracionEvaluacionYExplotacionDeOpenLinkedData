@@ -125,30 +125,4 @@ public class GraphDB {
 		return resultados;
 	}
 
-	public String getResourceJson(String pRecurso) {
-		String query = "construct{?nomRecurso ?p ?o} where{graph<http://opendata.eurohelp.es/dataset/recursos-humanos>{?nomRecurso ?p ?o}FILTER(?nomRecurso = <recursoPeticion>)}";
-		String result = "";
-		query = query.replace("recursoPeticion", pRecurso);
-		try {
-			GraphQuery tupleQuery = repository.prepareGraphQuery(QueryLanguage.SPARQL, query);
-			GraphQueryResult results = tupleQuery.evaluate();
-			while (results.hasNext()) {
-				Statement statement = results.next();
-				String e = statement.toString().replace(", ", ",");
-				if (!result.contains(e)) {
-					result = result + e;
-				}
-			}
-			results.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		if (result == "") {
-			result = "json vacio";
-		} else {
-			Json json = new Json();
-			result = json.parsearJSON(result);
-		}
-		return result;
-	}
 }

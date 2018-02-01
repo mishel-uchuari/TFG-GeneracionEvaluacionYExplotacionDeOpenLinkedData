@@ -32,21 +32,19 @@ public class ServGeneradorResultados extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String textAreaValue = request.getParameter("query");
-		System.out.println("llegamos" + textAreaValue);
 		// AQUI TIENE QUE ESTAR EL ERROR
 		GraphDB gdb = new GraphDB();
 		String result = "";
 		if (textAreaValue.toLowerCase().contains("construct")) {
 			result = gdb.executeGraphQuery(textAreaValue);
+			if (result.equals("")) {
+				result = "No se han encontrado datos";
+			}
 		} else if (textAreaValue.toLowerCase().contains("select")) {
 			result = gdb.executeQuery(textAreaValue);
-			if (result.equals("")) {
-				result = "No se han encontrado datos sobre ese recurso";
-			}
 		}
 		response.setContentType("text/plain");
 		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(result);
 	}
-
 }

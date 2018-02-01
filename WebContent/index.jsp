@@ -31,7 +31,7 @@
 <!-- Bootstrap theme -->
 <link rel="stylesheet"
 	href="//cdn.jsdelivr.net/alertifyjs/1.10.0/css/themes/bootstrap.rtl.min.css" />
-<link rel="stylesheet" type="text/css" href="css/estilos.css"> 
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
 <!-- Fuente -->
 <link href="https://fonts.googleapis.com/css?family=Bellefair"
 	rel="stylesheet">
@@ -79,28 +79,30 @@
 			</nav>
 		</div>
 		<div id="resultados" class="pageContent">
-				<div id="yasgui" name="textArea"></div>
-				<script type="text/javascript">
-					var yasqe = YASQE(document.getElementById("yasgui"), {
-						backdrop : true,
-						persistent: null,
-						value : "CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o } limit 30",
-						createShareLink : null,
-						tabSize : 1,
-						textWrapping : false,
-						reindentOnLoad : true,
-						indentWithTabs : false,
-						indentUnit : 1,
-						noScriptCaching : true,
-						sparql : {
-							//endpoint : "${url}",
-							showQueryButton : false
-						}
-					});
-					function getQuery() {
-						return yasqe.getValue();
-					}
-				</script>
+			<div id="yasgui" name="textArea"></div>
+			<script type="text/javascript">
+				var yasqe = YASQE(
+						document.getElementById("yasgui"),
+						{
+							backdrop : true,
+							persistent : null,
+							value : "CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o } limit 30",
+							createShareLink : null,
+							tabSize : 1,
+							textWrapping : false,
+							reindentOnLoad : true,
+							indentWithTabs : false,
+							indentUnit : 1,
+							noScriptCaching : true,
+							sparql : {
+								//endpoint : "${url}",
+								showQueryButton : false
+							}
+						});
+				function getQuery() {
+					return yasqe.getValue();
+				}
+			</script>
 			<div id="button">
 				<button class="btn btn-primary" type="button"
 					onclick="getQueryData(getQuery())" id="botonRun">
@@ -108,9 +110,9 @@
 				</button>
 			</div>
 			<div class="btn-group" role="group" aria-label="...">
-				<button type="button" class="btn btn-default"
+				<button type="button" class="btn btn-default previous disabled" id="table-btn"
 					onclick="createTable(json)">Tabla</button>
-				<button type="button" class="btn btn-default"
+				<button type="button" class="btn btn-default previous disabled" id="graph-btn"
 					onclick="createGraph(json)">Grafo</button>
 			</div>
 		</div>

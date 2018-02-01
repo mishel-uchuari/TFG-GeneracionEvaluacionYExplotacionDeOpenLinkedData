@@ -1,5 +1,5 @@
+var grafo = false;
 var json;
-
 // Inicia la barra de progreso
 function initProgressBar() {
 	$("svg").remove();
@@ -37,8 +37,8 @@ function deleteProgressBar() {
 
 // Obtiene el json de la query
 function getQueryData(query) {
-	console.log(query);
 	query = query.toLowerCase();
+
 	if (query.includes("select") || query.includes("construct")) {
 		$.ajax({
 			url : "ServGeneradorResultados",
@@ -47,13 +47,11 @@ function getQueryData(query) {
 			},
 			type : "post",
 			success : function(recivedData) {
-				json = recivedData;
-				console.log(json);
 				if (recivedData.includes("error")
 						|| recivedData.includes("Encountered")) {
 					swal({
 						title : "Error de sintaxis",
-						text : receivedData,
+						text : recivedData,
 						type : "warning",
 						showCancelButton : false,
 						confirmButtonClass : "btn-primary",
@@ -61,10 +59,10 @@ function getQueryData(query) {
 						closeOnConfirm : false
 					}, function() {
 					});
-				} else if (recivedData.includes("recurso")) {
+				} else if (recivedData.includes("No se han encontrado datos")) {
 					swal({
 						title : "Sin datos",
-						text : receivedData,
+						text : recivedData,
 						type : "warning",
 						showCancelButton : false,
 						confirmButtonClass : "btn-primary",
@@ -73,7 +71,29 @@ function getQueryData(query) {
 					}, function() {
 					});
 				} else {
+					if (query.includes("select")) {
+						$("#table-btn").removeClass(
+								"btn btn-default previous disabled").addClass(
+								"btn btn-default previous");
+						if (grafo == true) {// Si estaba activado boton grafo,
+							// desactivarlo
+							$("#graph-btn").removeClass(
+									"btn btn-default previous").addClass(
+									"btn btn-default previous disabled");
+						}
+						grafo = false;// No grafo
+					} else if (query.includes("construct")) {
+						$("#table-btn").removeClass(
+								"btn btn-default previous disabled").addClass(
+								"btn btn-default previous");
+						$("#graph-btn").removeClass(
+								"btn btn-default previous disabled").addClass(
+								"btn btn-default previous");
+						grafo = true;// Se puede ver como grafo
+					}
+					json = recivedData;
 					createTable(json);
+
 				}
 			}
 		});
@@ -89,5 +109,4 @@ function getQueryData(query) {
 		}, function() {
 		});
 	}
-
 }
