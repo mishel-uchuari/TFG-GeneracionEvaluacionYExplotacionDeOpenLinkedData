@@ -2,14 +2,15 @@ var grafo = false;
 var json;
 // Inicia la barra de progreso
 function initProgressBar() {
-	$("svg").remove();
-	$("#resultados").append("<div id='container'></div>");
+	$("table").empty();
+	$("svg").remove;
+	$("#resultTable").append("<div id='container' class='container'></div>");
 	var bar = new ProgressBar.Circle(container, {
 		color : '#666',
 		strokeWidth : 4,
 		trailWidth : 1,
 		easing : 'easeInOut',
-		duration : 1700,
+		duration : 600,
 		text : {
 			autoStyleContainer : false
 		},
@@ -32,13 +33,13 @@ function initProgressBar() {
 
 // Elimina la barra de progreso
 function deleteProgressBar() {
-	$("#container").remove();
+	$(".container").remove();
 }
 
 // Obtiene el json de la query
 function getQueryData(query) {
 	query = query.toLowerCase();
-
+	initProgressBar();
 	if (query.includes("select") || query.includes("construct")) {
 		$.ajax({
 			url : "ServGeneradorResultados",
@@ -47,6 +48,7 @@ function getQueryData(query) {
 			},
 			type : "post",
 			success : function(recivedData) {
+				deleteProgressBar();
 				if (recivedData.includes("error")
 						|| recivedData.includes("Encountered")) {
 					swal({
@@ -57,19 +59,30 @@ function getQueryData(query) {
 						confirmButtonClass : "btn-primary",
 						confirmButtonText : "OK",
 						closeOnConfirm : false
-					}, function() {
 					});
 				} else if (recivedData.includes("No se han encontrado datos")) {
-					swal({
-						title : "Sin datos",
-						text : recivedData,
-						type : "warning",
-						showCancelButton : false,
-						confirmButtonClass : "btn-primary",
-						confirmButtonText : "OK",
-						closeOnConfirm : false
-					}, function() {
-					});
+					if(query.includes("recurso")){
+						swal({
+							title : "Sin datos",
+							text : 'No hay datos adicionales sobre ese recurso. Prueba con otro.',
+							type : "warning",
+							showCancelButton : false,
+							confirmButtonClass : "btn-primary",
+							confirmButtonText : "OK",
+							closeOnConfirm : false
+						});
+					}
+					else{
+						swal({
+							title : "Sin datos",
+							text : recivedData,
+							type : "warning",
+							showCancelButton : false,
+							confirmButtonClass : "btn-primary",
+							confirmButtonText : "OK",
+							closeOnConfirm : false
+						});
+					}
 				} else {
 					if (query.includes("select")) {
 						$("#table-btn").removeClass(

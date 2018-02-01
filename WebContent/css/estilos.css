@@ -2,7 +2,6 @@
 	font-family: 'Bellefair', serif;
 }
 
-
 h3 {
 	font-size: 10px;
 }
@@ -31,42 +30,51 @@ body {
 #resultGraph {
 	padding-left: 20px;
 	padding-right: 20px;
-} 
+}
+
+#container {
+	margin-left: 30%;
+	margin-right: 30%;
+	height: 400px;
+	width: 40% !important;
+}
 
 .svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    vertical-align: top;
-    overflow: hidden;
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%;
+	vertical-align: top;
+	overflow: hidden;
 }
+
 .svg-content {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .glyphicon {
 	font-size: 15px;
 }
 
-
 .pageContent {
 	padding-right: 20%;
 	padding-left: 20%;
 	font-family: 'Bellefair', serif;
 }
+
 .tabla {
 	padding-right: 15%;
 	padding-left: 15%;
 	font-family: 'Bellefair', serif;
 }
 
-#resultados.pageContent{
+#resultados.pageContent {
 	font-size: 18px;
 }
+
 .form {
 	margin: auto;
 	width: 50%;
@@ -98,7 +106,6 @@ body {
 .table {
 	width: 90%;
 	border: none;
-	
 }
 
 .list-group-item {
@@ -139,7 +146,6 @@ marker#end {
 	font-size: large;
 	padding: 40px;
 }
-
 
 .btn-group {
 	padding-bottom: 5px;
