@@ -23,34 +23,41 @@ public class PipelineManager {
 	 * En tercero la ruta donde se almacenará el turtle con los resultados
 	 * 
 	 * @param args
+	 * @throws Exception
 	 */
 
-	public static void main(String[] args) {
-
-		try {
-			// Cargamos el pipeline de clojure
-			RT.loadResourceScript("pipelines/" + args[0] + ".clj");
-		} catch (IOException e) {
-			e.printStackTrace();
+	public static void main(String[] args) throws Exception {
+		if (args.length == 3 && !args[0].contains(".clj") && args[1].contains(".csv") && args[2].contains(".ttl")) {
+			try {
+				// Cargamos el pipeline de clojure
+				RT.loadResourceScript("pipelines/" + args[0] + ".clj");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			// Ejecutamos el pipeline
+			LazySeq lazy = (LazySeq) RT.var("pipelines." + args[0], "create-graph").invoke(args[1]);
+			Iterator ite = lazy.iterator();
+			// Lo guardamos en un model
+			Model model = new LinkedHashModel();
+			while (ite.hasNext()) {
+				model.add((Statement) ite.next());
+			}
+			// Para la realización de las pruebas de calidad del RDF creamos un
+			// fichero donde se almacenara el RDF generado en formato turtle
+			File file = new File(args[2]);
+			FileOutputStream fileTurtle;
+			try {
+				fileTurtle = new FileOutputStream(file);
+				Rio.write(model, fileTurtle, RDFFormat.TURTLE);
+			} catch (FileNotFoundException | RDFHandlerException e) {
+				e.printStackTrace();
+			}
+		} else if (args.length != 3) {
+			throw new Exception(
+					"Se deben introducir tres parámetros, el nombre del pipeline a ejecutar, la ruta del CSV a convertir, y la ruta donde se almacenará el turtle con los resultados.");
+		} else if (args[0].contains(".clj") || !args[1].contains(".csv") || !args[2].contains(".ttl")) {
+			throw new Exception(
+					"Se deben introducir tres parámetros, el nombre del pipeline a ejecutar sin la extensión '.clj', la ruta del CSV a convertir con extension '.csv', y la ruta donde se almacenará el turtle con los resultados, con extensión 'ttl'.");
 		}
-		// Ejecutamos el pipeline
-		LazySeq lazy = (LazySeq) RT.var("pipelines." + args[0], "create-graph").invoke(args[1]);
-		Iterator ite = lazy.iterator();
-		// Lo guardamos en un model
-		Model model = new LinkedHashModel();
-		while (ite.hasNext()) {
-			model.add((Statement) ite.next());
-		}
-		// Para la realización de las pruebas de calidad del RDF creamos un
-		// fichero donde se almacenara el RDF generado en formato turtle
-		File file = new File(args[2]);
-		FileOutputStream fileTurtle;
-		try {
-			fileTurtle = new FileOutputStream(file);
-			Rio.write(model, fileTurtle, RDFFormat.TURTLE);
-		} catch (FileNotFoundException | RDFHandlerException e) {
-			e.printStackTrace();
-		}
-
 	}
 }
