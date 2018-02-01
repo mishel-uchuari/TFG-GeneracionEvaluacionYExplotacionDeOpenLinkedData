@@ -1,13 +1,13 @@
 package utils;
 
-public class Json {
+public class ResultAdapter {
 	/**
 	 * Devuelve las filas del resultado sparql
 	 * 
 	 * @param pResultados
 	 * @return
 	 */
-	public String[] getFilas(String pResultados) {
+	public String[] getRaws(String pResultados) {
 		pResultados = pResultados.replace("(", "");
 		if(pResultados.contains("\"")){
 		pResultados = pResultados.replace("\"", "");
@@ -24,9 +24,9 @@ public class Json {
 	 * @param pResultados
 	 * @return
 	 */
-	public String parsearJSON(String pResultados) {
+	public String putFormat(String pResultados) {
 		String json = "";
-		String[] filas = getFilas(pResultados);
+		String[] filas = getRaws(pResultados);
 		int i = filas.length - 1;
 		while (i > -1) {
 			String[] porElemento = filas[i].split(",");
@@ -37,7 +37,7 @@ public class Json {
 			}
 			i--;
 		}
-		System.out.println("el json??" + json);
 		return json;
 	}
+	
 }

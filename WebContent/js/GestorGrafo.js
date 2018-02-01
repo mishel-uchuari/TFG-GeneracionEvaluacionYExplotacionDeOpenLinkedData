@@ -1,10 +1,11 @@
 var PATH_LABEL;
-
 function createGraph(data) {
+	console.log(data);
 // Se elimina la tabla
- $("#table").html("");
 // Se crea la estructura del json
  var links = getFormatoJsonGrafo(data);
+ if(links.length<45){
+$("#table").html("");
  var nodos = {};
  links.forEach(function(link) {
      link.source = nodos[link.source] || (nodos[link.source] = {
@@ -281,6 +282,19 @@ function createGraph(data) {
    });
    $("[id^=text").attr("opacity", "1");
   }
+ }
+ }else{
+	 swal({
+			title : "No se puede representar datos mediante grafo",
+			text : 'La cantidad de datos a representar es demasiado grande',
+			type : "warning",
+			showCancelButton : false,
+			confirmButtonClass : "btn-primary",
+			confirmButtonText : "OK",
+			closeOnConfirm : false
+		});
+	 grafo=false;
+	 disableButton("graph");
  }
 }
 

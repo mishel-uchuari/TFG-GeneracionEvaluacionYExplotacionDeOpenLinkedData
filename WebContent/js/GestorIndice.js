@@ -85,28 +85,20 @@ function getQueryData(query) {
 					}
 				} else {
 					if (query.includes("select")) {
-						$("#table-btn").removeClass(
-								"btn btn-default previous disabled").addClass(
-								"btn btn-default previous");
+						activateButton("table");
 						if (grafo == true) {// Si estaba activado boton grafo,
 							// desactivarlo
-							$("#graph-btn").removeClass(
-									"btn btn-default previous").addClass(
-									"btn btn-default previous disabled");
+							disableButton("graph")
 						}
 						grafo = false;// No grafo
 					} else if (query.includes("construct")) {
-						$("#table-btn").removeClass(
-								"btn btn-default previous disabled").addClass(
-								"btn btn-default previous");
-						$("#graph-btn").removeClass(
-								"btn btn-default previous disabled").addClass(
-								"btn btn-default previous");
+						activateButton("table")
+						activateButton("graph")
 						grafo = true;// Se puede ver como grafo
 					}
 					json = recivedData;
+					console.log(json);
 					createTable(json);
-
 				}
 			}
 		});
@@ -122,4 +114,16 @@ function getQueryData(query) {
 		}, function() {
 		});
 	}
+}
+
+function activateButton(button){
+	$("#"+button+"-btn").removeClass(
+	"btn btn-default previous disabled").addClass(
+	"btn btn-default previous");
+}
+
+function disableButton(button){
+	$("#"+button+"-btn").removeClass(
+	"btn btn-default previous").addClass(
+	"btn btn-default previous disabled");
 }

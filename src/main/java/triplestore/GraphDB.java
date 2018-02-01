@@ -16,7 +16,7 @@ import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.repository.RepositoryException;
 import org.openrdf.repository.http.HTTPRepository;
 
-import utils.Json;
+import utils.ResultAdapter;
 
 
 public class GraphDB {
@@ -56,7 +56,6 @@ public class GraphDB {
 	}
 
 	public String executeQuery(String pQuery) {
-		System.out.println(pQuery);
 		String resultados = "";
 		TupleQuery query;
 		try {
@@ -64,10 +63,12 @@ public class GraphDB {
 			TupleQueryResult statements = query.evaluate();
 			while (statements.hasNext()) {
 				String statement = statements.next().toString();
-				statement = statement.replace("[", "");
-				statement = statement.replace("]", ";");
+				statement = statement.replace("[", "(");
 				statement = statement.replace(";", ",");
-
+				statement = statement.replace("]", ")");
+				statement = statement.replace("s=", "");
+				statement = statement.replace("p=", "");
+				statement = statement.replace("o=", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#string>", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#date>", "");
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#long>", "");
@@ -75,15 +76,13 @@ public class GraphDB {
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#int>", "");
 				statement = statement.replace(", ", ",");
 				statement = statement.replace(" ", "");
-				System.out.println(statement);
 				resultados = resultados + statement;
 			}
-			Json json = new Json();
-			resultados = json.parsearJSON(resultados);
+			ResultAdapter json = new ResultAdapter();
+			resultados = json.putFormat(resultados);
 			statements.close();
 		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e1) {
 			resultados = e1.getMessage();
-			System.out.println(resultados);
 		}
 		return resultados;
 	}
@@ -107,20 +106,18 @@ public class GraphDB {
 				statement = statement.replace("^^<http://www.w3.org/2001/XMLSchema#dateTime>", "");
 				statement = statement.replace(") ", ")");
 				statement = statement.replace(", ", ",");
-				// statement = statement.replace(" ", "");
 				if (!resultados.contains(statement)) {
 					resultados = resultados + statement;
 				}
 			}
 			stataments.close();
 			if (!resultados.equals("")) {
-				Json json = new Json();
-				resultados = json.parsearJSON(resultados);
+				ResultAdapter json = new ResultAdapter();
+				resultados = json.putFormat(resultados);
 			}
 
 		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e1) {
 			resultados = e1.getMessage();
-			System.out.println(resultados);
 		}
 		return resultados;
 	}
