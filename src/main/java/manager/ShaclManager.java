@@ -65,19 +65,18 @@ public class ShaclManager {
 				System.out.println("RDF válido. Puedes ver los resultados en el report en : " + reportFile);
 			}
 		}
-
 		else if (args.length != 4) {
 			throw new Exception("Se deben introducir 4 parámetros. \nEl primer parametro corresponderá a los datos.\n"
 					+ "El segundo parametro será la configuracion de SHACL sobre esos datos\n"
 					+ "El tercero la ruta al fichero que contiene la query a hacerse sobre el report\n"
 					+ "El cuarto a la ruta donde se almacenara el report\n");
-		}
-		else if (!args[0].contains(".ttl") || !args[1].contains(".ttl") || !args[2].contains(".sparql")
-				|| !args[3].contains(".ttl")){
-			throw new Exception("Formato incorrecto de los parámetros. El primer parametro corresponderá a los datos y será de tipo .ttl\n"
-					+ "El segundo parametro será la configuracion de SHACL sobre esos datos y será de tipo .ttl\n"
-					+ "El tercero la ruta al fichero que contiene la query a hacerse sobre el report y sera de tipo .sparql\n"
-					+ "El cuarto a la ruta donde se almacenara el report y sera de tipo .ttl\n");
+		} else if (!args[0].contains(".ttl") || !args[1].contains(".ttl") || !args[2].contains(".sparql")
+				|| !args[3].contains(".ttl")) {
+			throw new Exception(
+					"Formato incorrecto de los parámetros. El primer parametro corresponderá a los datos y será de tipo .ttl\n"
+							+ "El segundo parametro será la configuracion de SHACL sobre esos datos y será de tipo .ttl\n"
+							+ "El tercero la ruta al fichero que contiene la query a hacerse sobre el report y sera de tipo .sparql\n"
+							+ "El cuarto a la ruta donde se almacenara el report y sera de tipo .ttl\n");
 		}
 	}
 }
