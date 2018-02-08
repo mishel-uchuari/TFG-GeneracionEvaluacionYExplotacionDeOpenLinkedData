@@ -32,7 +32,7 @@ ex:ObservationShape
 	sh:path open-data-euskadi:medicion;
 	sh:minCount 1 ;
 	sh:maxCount 17 ;
-	sh:message "La observacion debe tener un resultado de tipo float@es";
+	sh:message "La observacion debe tener mediciones asociadas@es";
 	sh:severity sh:Violation ;
 	];
 	sh:property [
