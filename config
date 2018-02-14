@@ -7,3 +7,55 @@ application/rdf+xml -->RDF/XML
 text/plain  --> NTRIPLES
 text/rdf+n3 ---> N3
 
+##Query consulta sobre calidad aire
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+construct { ?medicion ?tipo ?tipoMedicion ;
+        ?comentario ?comentarioMedicion;
+        ?unidadMedida ?unidadMedidaMedicion;
+        ?resultado ?resultadoMedicion;
+		?observacionAsociada ?observacionMedicion. 
+} where{
+    graph<http://opendata.euskadi.eus/catalogo/id/calidad-aire-en-euskadi-2017>{
+        ?medicion ?tipo ?tipoMedicion ;
+        ?comentario ?comentarioMedicion;
+        ?unidadMedida ?unidadMedidaMedicion;
+        ?resultado ?resultadoMedicion;
+		?observacionAsociada ?observacionMedicion.
+    }
+    FILTER ( ?tipo = rdf:type)
+    FILTER (?medicion IN (<http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-NO>,<http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-PM25AirQuality>))
+}
+
+
+INDICE
+MEMORIA
+1.INTRODUCCIÓN
+1.1 MOTIVACION
+1.2 INTRODUCCIÓN AL RDF
+1.3 LOS DATOS
+1.4 CONTEXTO (ACTUAL DESCRIPCION Y SITUACION DEL TRABAJO)
+2. CONTEXTO (ACTUAL DESCRIPCION Y SITUACION DEL TRABAJO)
+3. OBJETIVOS Y ALCANCE DEL PROYECTO (OBJETIVOS Y ALCANCE)
+4. BENEFICIOS QUE APORTA EL TRABAJO (BENEFICIOS)
+5. ANALISIS DE ALTERNATIVAS ¿?????????????
+6. ANALISIS DE RIESGOS
+7. SELECCIÓN DESCRIPCION DE LA PROPUESTA ¿???
+METODOLOGIA SEGUIDA EN EL DESARROLLO DEL TRABAJO
+8.DESCRIPCION DE TAREAS 
+9.DIAGRAMA DE GANTT
+10. Cálculos, algoritmos (dependiendo de cada caso) (NO PROCEDE??)
+11. Descripción de los resultados (si procede)
+12. Plan de proyecto y planificación (si procede)
+ASPECTOS ECONOMICOS
+13. Descripción del presupuesto y/o del presupuesto ejecutado
+14. Análisis de rentabilidad (en su caso) (NO PROCEDE??)
+CONCLUSIONES
+ANEXO I
+Pliego de condiciones. Normativa aplicable. Plan de pruebas
+15. Plan de pruebas?
+ANEXO II
+DIAGRAMA CASOS DE USO, MODELO DE DOMINIO, DIAGRAMAS SECUENCIA.
+DESARROLLO.
+ANEXO III LOS DATOSSSSSSSS?
