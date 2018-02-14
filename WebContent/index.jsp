@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<title>Modelo Para La Generación De Datos Enlazados</title>
+<title>Modelo Para La GeneraciÃ³n De Datos Enlazados</title>
 <!-- Progress bar -->
 <script
 	src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
@@ -73,7 +73,7 @@
 					<div class="navbar-header">
 						<img src="<%=request.getContextPath()%>/img/rdf.png" width="30"
 							height="30"> <a class="navbar-brand"> Modelo Para La
-							Generación De Datos Enlazados </a>
+							GeneraciÃ³n De Datos Enlazados </a>
 					</div>
 				</div>
 			</nav>
@@ -95,7 +95,6 @@
 							indentUnit : 1,
 							noScriptCaching : true,
 							sparql : {
-								//endpoint : "${url}",
 								showQueryButton : false
 							}
 						});
