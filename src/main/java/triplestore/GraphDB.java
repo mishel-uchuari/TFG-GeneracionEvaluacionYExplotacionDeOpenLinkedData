@@ -1,8 +1,10 @@
 package triplestore;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
 
+import org.apache.log4j.lf5.util.Resource;
 import org.openrdf.model.Model;
 import org.openrdf.model.Statement;
 import org.openrdf.query.GraphQuery;
@@ -15,6 +17,8 @@ import org.openrdf.query.TupleQueryResult;
 import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.repository.RepositoryException;
 import org.openrdf.repository.http.HTTPRepository;
+import org.openrdf.rio.RDFFormat;
+import org.openrdf.rio.RDFParseException;
 
 import utils.ResultAdapter;
 
@@ -25,8 +29,8 @@ public class GraphDB {
 	public GraphDB() throws IOException {
 		try {
 			HTTPRepository conn = new HTTPRepository(
-					"http://174.140.171.251:7200/repositories/ModeloParaLaGeneracionDeDatosEnlazados");
-			conn.setUsernameAndPassword("admin", "ctxakurra");
+					"http://localhost:7200/repositories/ModeloGeneracionDatosEnlazados");
+			//conn.setUsernameAndPassword("admin", "ctxakurra");
 			repository = conn.getConnection();
 			repository.begin();
 		} catch (RepositoryException e) {
@@ -120,6 +124,10 @@ public class GraphDB {
 			resultados = e1.getMessage();
 		}
 		return resultados;
+	}
+	public void uploadFile(File pFile) throws RDFParseException, RepositoryException, IOException{
+		repository.add(pFile, "", RDFFormat.TURTLE);
+		repository.commit();
 	}
 
 }

@@ -1,7 +1,10 @@
 package manager;
 
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
@@ -12,6 +15,9 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.util.FileUtils;
 import org.topbraid.shacl.validation.ValidationUtil;
 import org.topbraid.spin.util.JenaUtil;
+
+import jline.internal.InputStreamReader;
+import triplestore.GraphDB;
 
 public class ShaclManager {
 	/**
@@ -62,6 +68,10 @@ public class ShaclManager {
 			}
 			// Conformant data
 			else {
+				FileInputStream d = new FileInputStream(targetFile);
+			    Path path = Paths.get(targetFile);
+			    GraphDB gdb = new GraphDB();
+				gdb.uploadFile(path.toFile());
 				System.out.println("RDF válido. Puedes ver los resultados en el report en : " + reportFile);
 			}
 		}
