@@ -10,7 +10,7 @@
 @prefix open-data-euskadi: <http://opendata.euskadi.eus/def/medio-ambiente/> .
 @prefix open-data-euskadi-medicion: <http://opendata.euskadi.eus/def/medio-ambiente/medicion> .
 @prefix purl: <http://purl.org/linked-data/sdmx/2009/attribute#> .
-#Los test sobre las observacioes
+#Los test sobre las observaciones
 ex:ObservationShape
 	a sh:NodeShape ;
 	sh:targetClass qb:Observation;
