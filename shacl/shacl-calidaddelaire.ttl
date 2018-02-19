@@ -10,10 +10,23 @@
 @prefix open-data-euskadi: <http://opendata.euskadi.eus/def/medio-ambiente/> .
 @prefix open-data-euskadi-medicion: <http://opendata.euskadi.eus/def/medio-ambiente/medicion> .
 @prefix purl: <http://purl.org/linked-data/sdmx/2009/attribute#> .
-#Los test sobre las observacioes
+#Los test sobre las observaciones
 ex:ObservationShape
 	a sh:NodeShape ;
 	sh:targetClass qb:Observation;
+	sh:property [
+	sh:path rdfs:label;
+	sh:minCount 1 ;
+	sh:languageIn ( "es") ;
+	sh:message "La observacion debe tener un label@es";
+	sh:severity sh:Violation ;
+	];
+	sh:property [
+	sh:path rdfs:comment;
+	sh:languageIn ("es") ;
+	sh:message "La observacion puede tener comentario@es";
+	sh:severity sh:Info ;
+	];
 	sh:property [
 	sh:path dcterms:date;
 	sh:datatype xsd:dateTime ;
@@ -34,19 +47,6 @@ ex:ObservationShape
 	sh:maxCount 17 ;
 	sh:message "La observacion debe tener mediciones asociadas@es";
 	sh:severity sh:Violation ;
-	];
-	sh:property [
-	sh:path rdfs:label;
-	sh:minCount 1 ;
-	sh:languageIn ( "es") ;
-	sh:message "La observacion debe tener un label@es";
-	sh:severity sh:Violation ;
-	];
-	sh:property [
-	sh:path rdfs:comment;
-	sh:languageIn ("es") ;
-	sh:message "La observacion puede tener comentario@es";
-	sh:severity sh:Info ;
 	].
 	
 #Los test sobre las mediciones
