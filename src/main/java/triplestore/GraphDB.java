@@ -29,7 +29,7 @@ public class GraphDB {
 	public GraphDB() throws IOException {
 		try {
 			HTTPRepository conn = new HTTPRepository(
-					"http://localhost:7200/repositories/ModeloGeneracionDatosEnlazados");
+					"http://172.16.0.113:7200/repositories/pruebasMishell");
 			//conn.setUsernameAndPassword("admin", "ctxakurra");
 			repository = conn.getConnection();
 			repository.begin();
