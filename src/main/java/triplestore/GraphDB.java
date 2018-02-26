@@ -22,15 +22,13 @@ import org.openrdf.rio.RDFParseException;
 
 import utils.ResultAdapter;
 
-
 public class GraphDB {
 	private RepositoryConnection repository;
 
 	public GraphDB() throws IOException {
 		try {
 			HTTPRepository conn = new HTTPRepository(
-					"http://172.16.0.113:7200/repositories/pruebasMishell");
-			//conn.setUsernameAndPassword("admin", "ctxakurra");
+					"http://localhost:7200/repositories/ModeloGeneracionDatosEnlazados");
 			repository = conn.getConnection();
 			repository.begin();
 		} catch (RepositoryException e) {
@@ -125,7 +123,8 @@ public class GraphDB {
 		}
 		return resultados;
 	}
-	public void uploadFile(File pFile, RDFFormat format) throws RDFParseException, RepositoryException, IOException{
+
+	public void uploadFile(File pFile, RDFFormat format) throws RDFParseException, RepositoryException, IOException {
 		repository.add(pFile, "", format);
 		repository.commit();
 	}

@@ -18,7 +18,7 @@
 		</DataSource>
 		<DataSource id="graphdb" type="sparqlEndpoint">
 			<Param name="endpointURI"
-				value="http://172.16.0.113:7200/repositories/pruebasMishell" />
+				value="http://localhost:7200/repositories/ModeloGeneracionDatosEnlazados" />
 		</DataSource>
 	</DataSources>
 	<Interlinks>
