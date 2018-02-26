@@ -27,6 +27,7 @@ public class SilkManager {
 				RDFFormat format = RDFFormat.forFileName(args[1]);
 				// Si se han descubierto enlaces se suben a la triple store
 				if (initialFile.length() != 0) {
+					System.out.println("Se han encontrado enlaces. Revísalos en: " + args[1]);
 					GraphDB gdb = new GraphDB();
 					gdb.uploadFile(initialFile, format);
 				} else {
