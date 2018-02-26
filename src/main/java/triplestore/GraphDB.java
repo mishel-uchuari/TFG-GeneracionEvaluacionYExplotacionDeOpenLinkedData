@@ -125,8 +125,8 @@ public class GraphDB {
 		}
 		return resultados;
 	}
-	public void uploadFile(File pFile) throws RDFParseException, RepositoryException, IOException{
-		repository.add(pFile, "", RDFFormat.TURTLE);
+	public void uploadFile(File pFile, RDFFormat format) throws RDFParseException, RepositoryException, IOException{
+		repository.add(pFile, "", format);
 		repository.commit();
 	}
 

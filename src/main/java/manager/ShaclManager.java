@@ -13,6 +13,7 @@ import org.apache.jena.query.QueryFactory;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.util.FileUtils;
+import org.openrdf.rio.RDFFormat;
 import org.topbraid.shacl.validation.ValidationUtil;
 import org.topbraid.spin.util.JenaUtil;
 
@@ -69,13 +70,13 @@ public class ShaclManager {
 			// Conformant data
 			else {
 				FileInputStream d = new FileInputStream(targetFile);
-			    Path path = Paths.get(targetFile);
-			    GraphDB gdb = new GraphDB();
-				gdb.uploadFile(path.toFile());
+				Path path = Paths.get(targetFile);
+				RDFFormat format = RDFFormat.forFileName(targetFile);
+				GraphDB gdb = new GraphDB();
+				gdb.uploadFile(path.toFile(), format);
 				System.out.println("RDF válido. Puedes ver los resultados en el report en : " + reportFile);
 			}
-		}
-		else if (args.length != 4) {
+		} else if (args.length != 4) {
 			throw new Exception("Se deben introducir 4 parámetros. \nEl primer parametro corresponderá a los datos.\n"
 					+ "El segundo parametro será la configuracion de SHACL sobre esos datos\n"
 					+ "El tercero la ruta al fichero que contiene la query a hacerse sobre el report\n"
