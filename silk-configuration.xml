@@ -19,8 +19,6 @@
 		<DataSource id="graphdb" type="sparqlEndpoint">
 			<Param name="endpointURI"
 				value="http://localhost:7200/repositories/ModeloGeneracionDatosEnlazados" />
-			<Param name="graph"
-				value="http://opendata.euskadi.eus/catalogo/id/retribuciones-nominativas-2017" />
 		</DataSource>
 	</DataSources>
 	<Interlinks>

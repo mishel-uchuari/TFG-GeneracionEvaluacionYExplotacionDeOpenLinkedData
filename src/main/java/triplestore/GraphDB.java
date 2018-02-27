@@ -22,7 +22,6 @@ import org.openrdf.rio.RDFParseException;
 
 import utils.ResultAdapter;
 
-
 public class GraphDB {
 	private RepositoryConnection repository;
 
@@ -30,7 +29,6 @@ public class GraphDB {
 		try {
 			HTTPRepository conn = new HTTPRepository(
 					"http://localhost:7200/repositories/ModeloGeneracionDatosEnlazados");
-			//conn.setUsernameAndPassword("admin", "ctxakurra");
 			repository = conn.getConnection();
 			repository.begin();
 		} catch (RepositoryException e) {
@@ -125,8 +123,9 @@ public class GraphDB {
 		}
 		return resultados;
 	}
-	public void uploadFile(File pFile) throws RDFParseException, RepositoryException, IOException{
-		repository.add(pFile, "", RDFFormat.TURTLE);
+
+	public void uploadFile(File pFile, RDFFormat format) throws RDFParseException, RepositoryException, IOException {
+		repository.add(pFile, "", format);
 		repository.commit();
 	}
 
