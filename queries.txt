@@ -1,0 +1,62 @@
+#Query calidad aire
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+construct { 
+    	?observacion ?posee ?medicion.
+    	?medicion ?tipo ?tipoMedicion ;
+        ?comentario ?comentarioMedicion;
+        ?unidadMedida ?unidadMedidaMedicion;
+        ?resultado ?resultadoMedicion;
+		?observacionAsociada ?observacionMedicion. 
+} where{
+    	?observacion ?posee ?medicion.
+        ?medicion ?tipo ?tipoMedicion ;
+        ?comentario ?comentarioMedicion;
+        ?unidadMedida ?unidadMedidaMedicion;
+        ?resultado ?resultadoMedicion;
+		?observacionAsociada ?observacionMedicion.
+    
+    FILTER (?tipo = rdf:type)
+    FILTER (?medicion IN (<http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-NO>,<http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-PM25AirQuality>))
+}
+
+#Query retribuciones nominativas
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+construct { 
+		?contrato ?tipo ?tipoContrato;
+        ?comentario ?comentarioContrato;
+        ?label ?labelContrato;
+        ?ocupacion ?puestoContrato;
+        ?fechaFormalizacion ?fechaFormContrato;
+        ?fechaFinalizacion ?fechaFinalizacionContrato;
+        ?departamento ?deptContrato;
+        ?codDpto ?codDptoContrato;
+        ?centroOrgan ?centroOrgContr;
+    	?idCentroOrganico ?idCentroOrgContrato;
+     	?centroOrganico ?idCentroOrga;
+        ?fechaModificacion ?fechaModContrato;
+        ?condicionesRetrib ?sueldo.
+    	?persona ?tipo ?empleado.
+    	?persona ?label ?labelEmpleado.
+} where{
+    	?contrato ?tipo ?tipoContrato;
+        ?comentario ?comentarioContrato;
+        ?label ?labelContrato;
+        ?ocupacion ?puestoContrato;
+        ?fechaFormalizacion ?fechaFormContrato;
+        ?fechaFinalizacion ?fechaFinalizacionContrato;
+        ?departamento ?deptContrato;
+        ?codDpto ?codDptoContrato;
+        ?centroOrgan ?centroOrgContr;
+    	?idCentroOrganico ?idCentroOrgContrato;
+     	?centroOrganico ?idCentroOrga;
+        ?fechaModificacion ?fechaModContrato;
+        ?condicionesRetrib ?sueldo.
+    	?persona ?tipo ?empleado.
+    	?persona ?label ?labelEmpleado.
+    	FILTER ( ?tipo = rdf:type)
+        FILTER (?persona IN (<http://opendata.euskadi.eus/recurso/sector-publico/contrato/jon-darpon-sierra>,<http://opendata.euskadi.eus/recurso/sector-publico/contrato/juan-maria-aburto>))
+
+} limit 50
