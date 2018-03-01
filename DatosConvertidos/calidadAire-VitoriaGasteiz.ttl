@@ -19,7 +19,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -42,7 +42,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "57"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -59,18 +59,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -99,7 +99,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-08-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.66"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -122,7 +122,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -144,7 +144,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "73"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -161,18 +161,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "26"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "7"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -200,7 +200,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-07-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.61"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -224,7 +224,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -246,7 +246,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "29"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -263,18 +263,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -301,7 +301,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-06-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.05"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -325,7 +325,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -347,7 +347,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "30"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -364,18 +364,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "7"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -402,7 +402,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-05-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.07"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -425,7 +425,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -447,7 +447,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "72"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -464,18 +464,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -502,7 +502,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-04-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.06"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -524,7 +524,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -546,7 +546,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "75"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -563,18 +563,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -602,7 +602,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-03-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.17"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -626,7 +626,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -649,7 +649,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "86"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -666,18 +666,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "11"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -705,7 +705,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-02-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.09"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -729,7 +729,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -752,7 +752,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "75"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -769,18 +769,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -807,7 +807,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-03-01-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.32"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -831,7 +831,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -853,7 +853,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "56"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -870,18 +870,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -908,7 +908,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-28-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.07"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -932,7 +932,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -954,7 +954,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "31"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -971,18 +971,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "9"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1009,7 +1009,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-27-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.05"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1033,7 +1033,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1056,7 +1056,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "77"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1073,18 +1073,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "23"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1112,7 +1112,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-26-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.19"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1136,7 +1136,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1159,7 +1159,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "82"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1176,18 +1176,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1215,7 +1215,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-25-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.42"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1239,7 +1239,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1262,7 +1262,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "51"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1279,18 +1279,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1318,7 +1318,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-24-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.05"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1342,7 +1342,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1365,7 +1365,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "111"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Hobetzeko modukoa"@eu , "Mejorable"@es .
 
@@ -1382,18 +1382,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "49"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "24"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1422,7 +1422,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-23-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.8"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1446,7 +1446,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1469,7 +1469,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "82"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1486,18 +1486,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "25"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1526,7 +1526,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-22-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.75"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1549,7 +1549,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -1572,7 +1572,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "67"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1589,18 +1589,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "18"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "9"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1629,7 +1629,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-21-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.34"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1653,7 +1653,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1675,7 +1675,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "64"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1692,18 +1692,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "19"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1732,7 +1732,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-20-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1756,7 +1756,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1779,7 +1779,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "60"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1796,18 +1796,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "19"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1836,7 +1836,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-19-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.06"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1860,7 +1860,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1883,7 +1883,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "74"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -1900,18 +1900,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "24"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "11"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1940,7 +1940,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-18-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "0.64"^^<http://www.w3.org/2001/XMLSchema#double> .
 
@@ -1964,7 +1964,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -1987,7 +1987,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "87"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -2004,18 +2004,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "26"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "12"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2041,7 +2041,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-17-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-16> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2064,7 +2064,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2087,7 +2087,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "84"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -2104,18 +2104,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "28"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "12"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2141,7 +2141,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-16-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-15> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2164,7 +2164,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2187,7 +2187,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "95"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -2204,18 +2204,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "19"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "9"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2241,7 +2241,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-15-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-14> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2264,7 +2264,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2287,7 +2287,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "83"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -2304,18 +2304,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2341,7 +2341,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-14-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-13> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2364,7 +2364,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2386,7 +2386,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "41"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2403,18 +2403,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "7"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2440,7 +2440,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-13-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-12> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2463,7 +2463,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2485,7 +2485,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "29"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2502,18 +2502,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "27"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2539,7 +2539,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-12-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-11> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2562,7 +2562,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2584,7 +2584,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "47"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2601,18 +2601,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "13"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2638,7 +2638,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-11-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-10> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2661,7 +2661,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2684,7 +2684,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "62"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -2701,18 +2701,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "14"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2738,7 +2738,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-10-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-09> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2761,7 +2761,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2784,7 +2784,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "82"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -2801,18 +2801,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "15"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2838,7 +2838,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-09-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-08> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2861,7 +2861,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2883,7 +2883,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "50"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2900,18 +2900,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "7"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2937,7 +2937,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-08-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-07> a <http://purl.org/linked-data/cube#Observation> ;
@@ -2960,7 +2960,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -2982,7 +2982,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "69"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -2999,18 +2999,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "16"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "4"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3036,7 +3036,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-07-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-06> a <http://purl.org/linked-data/cube#Observation> ;
@@ -3057,7 +3057,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -3077,7 +3077,7 @@
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -3092,17 +3092,17 @@
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -3128,7 +3128,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-06-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-04> a <http://purl.org/linked-data/cube#Observation> ;
@@ -3149,7 +3149,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -3169,7 +3169,7 @@
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -3184,17 +3184,17 @@
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Daturik gabe"@eu , "Sin datos"@es .
 
@@ -3220,7 +3220,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-04-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-03> a <http://purl.org/linked-data/cube#Observation> ;
@@ -3243,7 +3243,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3265,7 +3265,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "43"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3282,18 +3282,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "12"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3319,7 +3319,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-03-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-02> a <http://purl.org/linked-data/cube#Observation> ;
@@ -3342,7 +3342,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3364,7 +3364,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "36"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3381,18 +3381,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3418,7 +3418,7 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-02-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/observacion/av-gazteiz-2017-02-01> a <http://purl.org/linked-data/cube#Observation> ;
@@ -3441,7 +3441,7 @@
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hmax"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-CO8hAirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/CO8hAirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  de CO y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "CO8hAirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3464,7 +3464,7 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "55"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-NO2AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/NO2AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante NO2 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "NO2AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Ona"@eu , "Buena"@es .
 
@@ -3481,18 +3481,18 @@
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "18"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-PM10AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM10AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM10 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM10AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-PM25> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> ") Es el promedio diario de concentración PM2.5"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración PM2.5"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "9"^^<http://www.w3.org/2001/XMLSchema#int> .
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-PM25AirQuality> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/PM25AirQuality> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire (ICA) de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es la clasificación de Índice de Calidad del Aire de la CAPV correspondiente al contaminante  PM2.5 y  al periodo temporal de 1 día"@es ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "PM25AirQuality"@es ;
 	<http://purl.org/linked-data/sdmx/2009/measure#obsValue> "Oso ona"@eu , "Muy buena"@es .
 
@@ -3518,5 +3518,5 @@
 
 <http://opendata.euskadi.eus/recurso/medio-ambiente/calidad-del-aire/elemento/2017-02-01-Etilbenceno> a <http://opendata.euskadi.eus/def/medio-ambiente/medicion/Etilbenceno> ;
 	<http://www.w3.org/2000/01/rdf-schema#label> "Etilbenceno"@es ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración  etilbenceno"@es ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Es el promedio diario de concentración etilbenceno"@es ;
 	<http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure> <http://dd.eionet.europa.eu/vocabulary/uom/concentration/ug.m-3> .

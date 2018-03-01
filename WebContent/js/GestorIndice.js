@@ -38,9 +38,10 @@ function deleteProgressBar() {
 
 // Obtiene el json de la query
 function getQueryData(query) {
-	query = query.toLowerCase();
+	queryToCompare = query;
+	queryToCompare = queryToCompare.toLowerCase();
 	initProgressBar();
-	if (query.includes("select") || query.includes("construct")) {
+	if (queryToCompare.includes("select") || queryToCompare.includes("construct")) {
 		$.ajax({
 			url : "ServGeneradorResultados",
 			data : {
@@ -61,7 +62,7 @@ function getQueryData(query) {
 						closeOnConfirm : false
 					});
 				} else if (recivedData.includes("No se han encontrado datos")) {
-					if(query.includes("recurso")){
+					if(queryToCompare.includes("recurso")){
 						swal({
 							title : "Sin datos",
 							text : 'No hay datos adicionales sobre ese recurso. Prueba con otro.',
@@ -84,14 +85,14 @@ function getQueryData(query) {
 						});
 					}
 				} else {
-					if (query.includes("select")) {
+					if (queryToCompare.includes("select")) {
 						activateButton("table");
 						if (grafo == true) {// Si estaba activado boton grafo,
 							// desactivarlo
 							disableButton("graph")
 						}
 						grafo = false;// No grafo
-					} else if (query.includes("construct")) {
+					} else if (queryToCompare.includes("construct")) {
 						activateButton("table")
 						activateButton("graph")
 						grafo = true;// Se puede ver como grafo

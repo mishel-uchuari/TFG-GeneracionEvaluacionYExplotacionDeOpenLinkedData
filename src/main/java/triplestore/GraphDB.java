@@ -94,7 +94,7 @@ public class GraphDB {
 		String resultados = "";
 
 		try {
-
+			System.out.println("La query"+pQuery);
 			query = repository.prepareGraphQuery(QueryLanguage.SPARQL, pQuery);
 			GraphQueryResult stataments = query.evaluate();
 			while (stataments.hasNext()) {
@@ -120,6 +120,7 @@ public class GraphDB {
 
 		} catch (RepositoryException | MalformedQueryException | QueryEvaluationException e1) {
 			resultados = e1.getMessage();
+			e1.printStackTrace();
 		}
 		return resultados;
 	}
