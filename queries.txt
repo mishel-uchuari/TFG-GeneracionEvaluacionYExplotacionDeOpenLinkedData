@@ -64,6 +64,4 @@ construct {
 
 } limit 50
 
-
-
-SELECT DISTINCT ?q ?k ?x WHERE{  <http://opendata.euskadi.eus/recurso/sector-publico/contrato/jon-darpon-sierra> ?p ?o. ?q ?r <http://opendata.euskadi.eus/recurso/sector-publico/contrato/jon-darpon-sierra> SERVICE <http://es.dbpedia.org/sparql> { OPTIONAL{?q ?k ?x}}} LIMIT 83
+SELECT DISTINCT ?s ?p ?o WHERE{  <http://opendata.euskadi.eus/recurso/sector-publico/contrato/jon-darpon-sierra> ?k ?x. ?s ?r <http://opendata.euskadi.eus/recurso/sector-publico/contrato/jon-darpon-sierra> SERVICE <http://es.dbpedia.org/sparql> { OPTIONAL{?s ?p ?o}}} LIMIT 83
